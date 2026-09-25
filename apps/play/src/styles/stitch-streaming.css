@@ -290,14 +290,50 @@
   display: flex;
   align-items: center;
   z-index: 100;
+  isolation: isolate;
   pointer-events: auto;
-  transition: background-color 0.25s ease, backdrop-filter 0.25s ease;
+  border-bottom: 1px solid transparent;
+  transition: border-color 1s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cdk-stitch-header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0;
+  background-color: rgba(8, 9, 11, 0.70);
+  -webkit-backdrop-filter: blur(18px) saturate(135%);
+  backdrop-filter: blur(18px) saturate(135%);
+  transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+
+/* Ao rolar, o próprio conteúdo visual que passa atrás do cabeçalho é desfocado.
+   Não usa vídeo adicional nem camada pesada: é o efeito de vidro sobre o hero atual. */
+.cdk-stitch-header.is-scrolled:not(.cdk-stitch-header--tv) {
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.20);
+}
+
+.cdk-stitch-header.is-scrolled:not(.cdk-stitch-header--tv)::before {
+  opacity: 1;
+}
+
+/* TVs têm menos GPU: preserva o cabeçalho fixo, sem blur custoso. */
+.cdk-stitch-header.cdk-stitch-header--tv.is-scrolled {
+  background-color: rgba(8, 9, 11, 0.94);
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+.cdk-stitch-header.cdk-stitch-header--tv::before {
+  display: none;
 }
 
 .cdk-header-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 100%;
   padding-left: clamp(14px, 2vw, 28px);
   padding-right: clamp(14px, 2vw, 28px);
@@ -331,6 +367,9 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   background: transparent;
 }
 
@@ -380,6 +419,7 @@
   display: flex;
   align-items: center;
   gap: 16px;
+  margin-left: 8px;
 }
 
 .cdk-header-icon-btn {
@@ -1549,4 +1589,3 @@
 .cdk-profile-logout-item:hover .cdk-profile-logout-title {
   color: #ef4444;
 }
-

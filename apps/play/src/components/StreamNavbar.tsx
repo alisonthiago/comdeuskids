@@ -88,12 +88,7 @@ export default function StreamNavbar() {
 
   return (
     <header
-      className="cdk-stitch-header"
-      style={{
-        backgroundColor: isScrolled ? 'rgba(8, 9, 11, 0.92)' : 'transparent',
-        backdropFilter: isScrolled ? 'blur(16px)' : 'none',
-        transition: 'background-color 0.2s ease, border-color 0.2s ease'
-      }}
+      className={`cdk-stitch-header${isScrolled ? ' is-scrolled' : ''}${isTV ? ' cdk-stitch-header--tv' : ''}`}
     >
       <div className="cdk-stream-container cdk-header-inner">
         {/* 1. LADO ESQUERDO: LOGOTIPO OFICIAL COM DEUS KIDS */}
