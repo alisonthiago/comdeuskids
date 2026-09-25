@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'on-surface-variant': '#cbc3d7', 'primary': '#d0bcff', 'inverse-primary': '#6d3bd7', 'surface-container-highest': '#353437', 'outline': '#958ea0', 'surface-variant': '#353437', 'tertiary-fixed': '#c4e7ff', 'inverse-on-surface': '#313032', 'surface-container': '#201f21', 'secondary': '#ffb95f', 'on-tertiary-fixed-variant': '#004c69', 'tertiary': '#7bd0ff', 'on-secondary': '#472a00', 'on-tertiary-fixed': '#001e2c', 'primary-fixed': '#e9ddff', 'surface-container-high': '#2a2a2c', 'on-secondary-container': '#5b3800', 'on-surface': '#e5e1e4', 'on-primary-fixed': '#23005c', 'tertiary-fixed-dim': '#7bd0ff', 'background': '#131315', 'on-tertiary': '#00354a', 'primary-container': '#a078ff', 'surface-container-lowest': '#0e0e10', 'on-secondary-fixed-variant': '#653e00', 'secondary-container': '#ee9800', 'secondary-fixed-dim': '#ffb95f', 'inverse-surface': '#e5e1e4', 'on-error': '#690005', 'secondary-fixed': '#ffddb8', 'on-primary-container': '#340080', 'surface-container-low': '#1c1b1d', 'on-background': '#e5e1e4', 'error-container': '#93000a', 'surface-bright': '#39393b', 'on-primary-fixed-variant': '#5516be', 'error': '#ffb4ab', 'on-primary': '#3c0091', 'surface': '#131315', 'on-tertiary-container': '#002d40', 'primary-fixed-dim': '#d0bcff', 'surface-tint': '#d0bcff', 'on-error-container': '#ffdad6', 'tertiary-container': '#009bd1', 'outline-variant': '#494454', 'surface-dim': '#131315', 'on-secondary-fixed': '#2a1700' }, borderRadius: { DEFAULT: '0.25rem', lg: '0.5rem', xl: '0.75rem', full: '9999px' }, spacing: { margin: '1rem', 'space-lg': '1.5rem', 'space-xs': '0.25rem', 'space-sm': '0.5rem', gutter: '1.25rem', 'gutter-desktop': '1.75rem', 'space-md': '1rem', 'margin-desktop': '3.5rem', 'space-xl': '2.5rem', 'margin-tablet': '2rem' }, fontFamily: { 'label-badge': ['Plus Jakarta Sans'], 'body-sm': ['Plus Jakarta Sans'], 'body-md': ['Plus Jakarta Sans'], 'headline-md': ['Plus Jakarta Sans'], 'display-hero-mobile': ['Plus Jakarta Sans'], 'label-md': ['Plus Jakarta Sans'], 'display-hero': ['Plus Jakarta Sans'], 'label-lg': ['Plus Jakarta Sans'], 'headline-lg': ['Plus Jakarta Sans'], 'headline-sm': ['Plus Jakarta Sans'], 'body-lg': ['Plus Jakarta Sans'] }, fontSize: { 'label-badge': ['11px', { lineHeight: '12px', letterSpacing: '0.05em', fontWeight: '800' }], 'body-sm': ['12px', { lineHeight: '16px', fontWeight: '500' }], 'body-md': ['14px', { lineHeight: '20px', fontWeight: '400' }], 'headline-md': ['22px', { lineHeight: '28px', fontWeight: '700' }], 'display-hero-mobile': ['32px', { lineHeight: '40px', letterSpacing: '-0.02em', fontWeight: '800' }], 'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.02em', fontWeight: '700' }], 'display-hero': ['48px', { lineHeight: '56px', letterSpacing: '-0.02em', fontWeight: '800' }], 'label-lg': ['14px', { lineHeight: '18px', letterSpacing: '0.01em', fontWeight: '700' }], 'headline-lg': ['28px', { lineHeight: '36px', letterSpacing: '-0.01em', fontWeight: '700' }], 'headline-sm': ['18px', { lineHeight: '24px', fontWeight: '600' }], 'body-lg': ['16px', { lineHeight: '24px', fontWeight: '400' }] } } } };</script><style>@layer base { html, body { margin: 0; padding: 0; min-height: 100vh; background-color: #131315; color: #e5e1e4; overscroll-behavior-y: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } ::-webkit-scrollbar { display: none; }</style></head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_4px_24px_rgba(0,0,0,0.4)]"><div class="h-28 px-margin flex flex-col justify-center gap-space-xs"><div class="flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-primary-container to-secondary flex items-center justify-center shadow-[0_0_12px_rgba(160,120,255,0.4)]"><span class="material-symbols-outlined text-surface-container-lowest text-[22px] font-bold">auto_stories</span></div><div class="flex flex-col"><span class="font-label-badge text-label-badge text-secondary tracking-widest uppercase">Com Deus Kids</span><h1 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Materiais</h1></div></div><div class="flex items-center gap-space-xs"><button aria-label="Favoritos" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[24px]">bookmark_added</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ring-2 ring-primary/40 shadow-[0_0_10px_rgba(208,188,255,0.35)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="relative w-full"><div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-on-surface-variant"><span class="material-symbols-outlined text-[20px]">search</span></div><input class="w-full h-10 pl-10 pr-4 rounded-xl bg-surface-container-high text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary shadow-inner transition-all" placeholder="Buscar livretos, desenhos para colorir e cards..." type="text"/></div></div></header><main class="flex flex-col relative w-full pt-28 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full px-margin pb-10 gap-space-xl">
+<!-- Subtítulo e Busca com Filtros Rápidos -->
+<section class="flex flex-col gap-space-sm pt-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_#ffb95f]"></span>
+<span class="font-label-badge text-label-badge text-secondary tracking-widest uppercase">Materiais &amp; Atividades</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">print</span>
+        Impressão Liberada
+      </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+      Atividades para aprender, brincar e crescer com Deus em família ou na EBD.
+    </p>
+<!-- Barra de Busca Temática -->
+<div class="relative w-full mt-1">
+<div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="w-full h-12 pl-11 pr-10 rounded-2xl bg-surface-container-high text-on-surface placeholder:text-on-surface-variant font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary shadow-inner transition-all" placeholder="Buscar materiais, histórias, colorir..." type="text"/>
+<button aria-label="Filtro avançado" class="absolute inset-y-0 right-0 pr-3 flex items-center text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+<!-- Tags Rápidas de Busca -->
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-1">
+<button class="px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[14px] text-secondary">palette</span> Colorir Hoje
+      </button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[14px] text-tertiary">school</span> EBD Dominical
+      </button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[14px] text-primary">family_restroom</span> Para Casa
+      </button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed">psychology</span> Labirintos
+      </button>
+</div>
+</section>
+<!-- Hero Cinematográfico -->
+<section class="relative w-full rounded-3xl overflow-hidden bg-surface-container-low shadow-[0_16px_40px_rgba(0,0,0,0.5)]">
+<!-- Imagem de Fundo 3D Pixar Style -->
+<div class="relative w-full h-80 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida/AEtjO1Vcxzi4L34qdpY6AFoPAjKqv3DGZc8Y2Q9uSX8diG9JbSOt__vuqw6RdBVqUhdKjPw2TSA5E09hA8jOLmvwUCe5fDLoA7TNUt30bUQ93djfNbwnaGt188MZ7AZwuPyJ4EMldl949W_rCxq4z9MhZtlDvRYxhVjbbjyHkMmOUqbc1CYqk1aMTDX4iPhMSFwbryjw88F2ZleTO5snrKIQsjqiP4kiOLq6gMIYXouVvVKCxJ3cu3TPBWDyD54');">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/60 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-low/80 via-transparent to-transparent"></div>
+<!-- Selo Especial Superior -->
+<div class="absolute top-4 left-4 flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md">
+<span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-badge text-label-badge text-secondary tracking-wider uppercase">Coleção Especial de Páscoa</span>
+</div>
+</div>
+<!-- Conteúdo do Hero -->
+<div class="relative -mt-24 p-5 flex flex-col gap-space-sm">
+<h2 class="font-headline-lg text-headline-lg text-on-surface leading-tight">
+        Aprender Também Pode Ser Divertido!
+      </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Cadernos de colorir, jogos, quizzes bíblicos e atividades prontas para imprimir em família ou no ministério infantil.
+      </p>
+<div class="flex items-center gap-space-sm pt-2">
+<button class="flex-1 h-12 rounded-2xl bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(208,188,255,0.4)] active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">palette</span>
+          Explorar Coleções
+        </button>
+<button class="h-12 px-4 rounded-2xl bg-surface-container-highest/70 text-on-surface backdrop-blur-md font-label-lg text-label-lg flex items-center justify-center gap-2 hover:bg-surface-container-highest transition-colors active:scale-95">
+<span class="material-symbols-outlined text-[20px]">bookmark</span>
+          Meus Salvos
+        </button>
+</div>
+</div>
+</section>
+<!-- Carrossel: Continue de Onde Parou -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-lg bg-primary-container/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-primary">history</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Continue de Onde Parou</h3>
+</div>
+<span class="font-label-md text-label-md text-primary hover:underline cursor-pointer">Ver todos</span>
+</div>
+<!-- Track Horizontal de Cards -->
+<div class="flex gap-space-md overflow-x-auto no-scrollbar -mx-margin px-margin py-1">
+<!-- Card 1: A Criação do Mundo -->
+<div class="shrink-0 w-64 rounded-2xl bg-surface-container p-3 flex flex-col gap-2.5 shadow-md">
+<div class="relative w-full h-28 rounded-xl overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Charming Disney Pixar 3D style illustration of the creation of the world with glowing stars, verdant green earth, and warm golden light streams, magical celestial atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4JNhITPl0QNGcaCWY7ZtbIL4-OZJSsL3sYCkwPleJtwzfQhJvct2nXlpMeqkMDahhS2A0iJiKuij3Gx_ji6un06REtUSHIh4Z7MKzhXArnD2jm13NmtJerWtveh2dhvrCHp-Bf5Wh1l5xqCfs_iIvk7_WpKdSI2RPzOQpiFfnwZy0Wx4lKc17vUR_Pdggf3xSufqZNI8Iyb05SHIoXqqmVSi8a7vFg2xL7_0gbfGUpkSQTkqVSgV2"/>
+<span class="absolute top-2 right-2 px-2 py-0.5 rounded-md bg-surface-container-lowest/80 backdrop-blur-md font-label-badge text-label-badge text-secondary">
+            75% Feito
+          </span>
+<!-- Barra de Progresso Embutida -->
+<div class="absolute bottom-0 inset-x-0 h-1.5 bg-surface-container-highest">
+<div class="h-full bg-primary shadow-[0_0_8px_#d0bcff]" style="width: 75%;"></div>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-tertiary uppercase">Caderno de Desenho</span>
+<h4 class="font-headline-sm text-[15px] text-on-surface truncate">A Criação do Mundo</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Faltam 3 páginas</span>
+</div>
+<button class="w-full h-9 rounded-xl bg-surface-container-high hover:bg-primary hover:text-on-primary text-primary font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+          Continuar
+        </button>
+</div>
+<!-- Card 2: Davi & Golias -->
+<div class="shrink-0 w-64 rounded-2xl bg-surface-container p-3 flex flex-col gap-2.5 shadow-md">
+<div class="relative w-full h-28 rounded-xl overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Cute 3D Pixar animated brave young shepherd David holding a small sling with stone, looking up courageously with warm cinematic sunbeam lighting and dramatic shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-uSu0Y2q0AfAG4nIoqvMbkkKcQim4x8DAOAyk0EUwNIlbQk33Tkm6hIL3R2O1E04JC0hnyEV3C8J4Yxbms0qbN34QdMzOdbt1A2mNJtKKXy7ZYHAH1gy6CipZyM8KacavhmwT-u4JLZovJxCwK7SaeGzGLIKhVVeR5OlNqpasKRtu_aNtQ-2Ee4VGgQkbga-9JWHDfgUD4SkRxZ54hKGXueKKINqRBw8INaf5vii-iyUbamueKotP"/>
+<span class="absolute top-2 right-2 px-2 py-0.5 rounded-md bg-surface-container-lowest/80 backdrop-blur-md font-label-badge text-label-badge text-secondary">
+            40% Feito
+          </span>
+<div class="absolute bottom-0 inset-x-0 h-1.5 bg-surface-container-highest">
+<div class="h-full bg-secondary shadow-[0_0_8px_#ffb95f]" style="width: 40%;"></div>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-secondary uppercase">Desafios &amp; Labirintos</span>
+<h4 class="font-headline-sm text-[15px] text-on-surface truncate">Davi &amp; Golias</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Faltam 6 labirintos</span>
+</div>
+<button class="w-full h-9 rounded-xl bg-surface-container-high hover:bg-secondary hover:text-on-secondary text-secondary font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+          Continuar
+        </button>
+</div>
+<!-- Card 3: A Arca de Noé -->
+<div class="shrink-0 w-64 rounded-2xl bg-surface-container p-3 flex flex-col gap-2.5 shadow-md">
+<div class="relative w-full h-28 rounded-xl overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Playful 3D Disney animated Noah ark resting on lush Mount Ararat with vibrant double rainbow across gentle dark blue skies and smiling pairs of animals" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiybccGZygUoPfxicfhjLG2qTdNMgrVbYZKOUEeV4RAnJvEqqNW5AEtc8n-U74j9bMuD6wVLa-zcpxfnMnSdkQ1oEK92ooXl6IMkaMpyjUyx9dKQe2fZygJhZg-JNh8DLJxqUnZv6cEnBMpirC-kJZ5Jq5HP585GpRA_d0xpZ8eHjAz4zWYIlz1dxtXn7mb_7qbeVZV_v0G0LRuNjEQhm09VrDpn5lcg7TInH3QMpeHGTQB7tCD7Kr"/>
+<span class="absolute top-2 right-2 px-2 py-0.5 rounded-md bg-surface-container-lowest/80 backdrop-blur-md font-label-badge text-label-badge text-secondary">
+            90% Feito
+          </span>
+<div class="absolute bottom-0 inset-x-0 h-1.5 bg-surface-container-highest">
+<div class="h-full bg-primary shadow-[0_0_8px_#d0bcff]" style="width: 90%;"></div>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-tertiary uppercase">Recortar &amp; Montar</span>
+<h4 class="font-headline-sm text-[15px] text-on-surface truncate">A Arca de Noé</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Quase concluído!</span>
+</div>
+<button class="w-full h-9 rounded-xl bg-surface-container-high hover:bg-primary hover:text-on-primary text-primary font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+          Continuar
+        </button>
+</div>
+</div>
+</section>
+<!-- Conexão Exclusiva: Você Assistiu no Streaming -> Continue Aprendendo -->
+<section class="relative w-full rounded-3xl bg-gradient-to-br from-surface-container via-surface-container to-surface-container-low p-4 flex flex-col gap-space-sm shadow-xl">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">smart_display</span>
+<span class="font-label-badge text-label-badge text-secondary uppercase tracking-wider">Você Assistiu no Streaming</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="w-20 h-20 rounded-2xl overflow-hidden bg-surface-container-highest shrink-0 shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Cinematic 3D miniature scene of the biblical battle of David and Goliath, Pixar animation rendering, vibrant glowing sling and majestic mountain landscape" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAupYg5RgqmDyvUTehvu0j_eaJhfzaQtqpD1FhLWwaS0U9XywYviBPk5Xg7YY7Nct6tXiHLgMj2VHvlJkoZCdygmx_8iZjMmAxdZM2XD6dUgd0xhXSa8VHSUyoXW7VTBllMXEf7vYk4WEQFHE6QzGC9cRIvjK6JY9DAFtOeoRmC_KNWdd3aUacsoHXehz1ECc-t2N-fxYNbyX1kparP3hNUdiycP2i6gz91BH9iRka6ydd3Z0x9il3D"/>
+</div>
+<div class="flex flex-col min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Davi &amp; Golias (45 min)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Aprofunde o aprendizado com o kit prático oficial do episódio!
+        </p>
+</div>
+</div>
+<!-- Mini Vitrine Interativa de 3 Atividades -->
+<div class="grid grid-cols-3 gap-2 pt-1">
+<div class="p-2.5 rounded-xl bg-surface-container-high/60 flex flex-col items-center text-center gap-1 hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-tertiary text-[20px]">auto_stories</span>
+<span class="font-label-md text-[11px] text-on-surface">Lição do Dia</span>
+<span class="font-body-sm text-[10px] text-on-surface-variant">3 min leitura</span>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container-high/60 flex flex-col items-center text-center gap-1 hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-secondary text-[20px]">quiz</span>
+<span class="font-label-md text-[11px] text-on-surface">Fazer Quiz</span>
+<span class="font-body-sm text-[10px] text-on-surface-variant">5 perguntas</span>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container-high/60 flex flex-col items-center text-center gap-1 hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-primary text-[20px]">format_paint</span>
+<span class="font-label-md text-[11px] text-on-surface">Colorir</span>
+<span class="font-body-sm text-[10px] text-on-surface-variant">24 páginas</span>
+</div>
+</div>
+<!-- CTA de Download do Caderno Temático Oficial -->
+<button class="w-full h-11 mt-1 rounded-xl bg-secondary text-on-secondary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-[0_0_16px_rgba(255,185,95,0.35)] active:scale-95 transition-transform" onclick="triggerDownload()">
+<span class="material-symbols-outlined text-[18px]">download</span>
+      Baixar Caderno Completo em PDF (Grátis)
+    </button>
+</section>
+<!-- Filtros Lúdicos por Categoria -->
+<section class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Categorias de Atividades</h3>
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar -mx-margin px-margin py-2">
+<!-- Filtro Ativo -->
+<button class="px-4 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md shrink-0 flex items-center gap-1.5 shadow-[0_0_12px_rgba(208,188,255,0.45)]">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+        Todos
+      </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[16px] text-secondary">palette</span>
+        Colorir
+      </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[16px] text-tertiary">alt_route</span>
+        Labirintos
+      </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[16px] text-primary">search_check</span>
+        Caça-Palavras
+      </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[16px] text-secondary">content_cut</span>
+        Cortar &amp; Montar
+      </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[16px] text-tertiary">menu_book</span>
+        Lições EBD
+      </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[16px] text-primary">volunteer_activism</span>
+        Devocionais
+      </button>
+</div>
+</section>
+<!-- Seção: Cadernos em Destaque (Grid 2 Colunas) -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Cadernos em Destaque</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Prontos para imprimir em formato A4</span>
+</div>
+<button class="font-label-md text-label-md text-primary hover:underline">Ver +40</button>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Caderno 1: Jesus 2.0 -->
+<div class="flex flex-col rounded-2xl bg-surface-container overflow-hidden shadow-md group">
+<div class="relative w-full aspect-[3/4] bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Vibrant 3D Disney Pixar style vertical poster cover of Jesus with open welcoming warm arms surrounded by playful smiling children and celestial sparkles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAaCbOnzqmN4pPCWrXLATUFSPfl6yrfz9b-S-vncIMlBtL4Mbsk-sUPEI_PhDskGGKZVSGeTQdLBF8FX0BolbChm8wPXSB1xnDEvu1NHEIl4Uhx-rx5xReU47LWJj1GGVGgLkH5wjfaStmaZXoF3htP-Uet686mtktWfCOz3VhS3U4zQR4ESEuhW_FOxUHcSw32hzRWkF-bvdTVQTVrvirjaVSP2_F77PUTqqaBnFKf8ZmHDgqegZ3"/>
+<div class="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-primary-container text-on-primary-container font-label-badge text-[10px]">
+            PDF • 64 PÁG
+          </div>
+<div class="absolute bottom-2 left-2 flex items-center gap-1 px-2 py-0.5 rounded-md bg-surface-container-lowest/80 backdrop-blur-md">
+<span class="material-symbols-outlined text-[12px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-badge text-[10px] text-on-surface">5.0</span>
+</div>
+</div>
+<div class="p-3 flex flex-col gap-1.5">
+<span class="font-label-badge text-[10px] text-secondary uppercase tracking-wider">4 a 8 anos</span>
+<h4 class="font-headline-sm text-[14px] text-on-surface leading-tight line-clamp-2">Jesus: Amigo de Todos</h4>
+<div class="flex items-center gap-1.5 pt-1">
+<button class="flex-1 h-8 rounded-xl bg-surface-container-high text-on-surface font-label-md text-[11px] flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors">
+              Abrir
+            </button>
+<button aria-label="Baixar PDF" class="w-8 h-8 rounded-xl bg-primary/20 text-primary flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors" onclick="triggerDownload()">
+<span class="material-symbols-outlined text-[16px]">download</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Caderno 2: Fruto do Espírito Santo -->
+<div class="flex flex-col rounded-2xl bg-surface-container overflow-hidden shadow-md group">
+<div class="relative w-full aspect-[3/4] bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Charming 3D Pixar vertical cover illustration of cute animals tending a glowing magical tree with nine glowing golden fruits of the Holy Spirit, dark celestial backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwI-sMHsOwB2XeLOzTWXJCX9BbW_aS300RDo5hTPfI6kP-Wd4gRD_0Q8Rj31AfkBpO45uLLA3i8OwxIl_gCk37mTsWKWh0e6oAS_QVjTgupVUHA6dKSpzVLtY65_cGmsCYDXLFN64-E5u6GOLCfHhGOFYz6-pJqieNewaZOjqzIdL4X7CNB67_qY7OMpGDdThTILPzjDX1LwOBKf3Yu9g9eH2tMk4hBxEqX82EJmu9x-654HOIhPMG"/>
+<div class="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-primary-container text-on-primary-container font-label-badge text-[10px]">
+            PDF • 32 PÁG
+          </div>
+<div class="absolute bottom-2 left-2 flex items-center gap-1 px-2 py-0.5 rounded-md bg-surface-container-lowest/80 backdrop-blur-md">
+<span class="material-symbols-outlined text-[12px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-badge text-[10px] text-on-surface">4.9</span>
+</div>
+</div>
+<div class="p-3 flex flex-col gap-1.5">
+<span class="font-label-badge text-[10px] text-secondary uppercase tracking-wider">3 a 7 anos</span>
+<h4 class="font-headline-sm text-[14px] text-on-surface leading-tight line-clamp-2">Fruto do Espírito</h4>
+<div class="flex items-center gap-1.5 pt-1">
+<button class="flex-1 h-8 rounded-xl bg-surface-container-high text-on-surface font-label-md text-[11px] flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors">
+              Abrir
+            </button>
+<button aria-label="Baixar PDF" class="w-8 h-8 rounded-xl bg-primary/20 text-primary flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors" onclick="triggerDownload()">
+<span class="material-symbols-outlined text-[16px]">download</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Caderno 3: 15 Cadernos da Arca de Noé -->
+<div class="flex flex-col rounded-2xl bg-surface-container overflow-hidden shadow-md group">
+<div class="relative w-full aspect-[3/4] bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Magnificent 3D Disney Pixar style vertical cover of Noah and smiling animals looking out of the wooden ark window under starry sky, bright purple and golden highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIX_fBuwH0exuD2y6yEjzwmyTi0V1Uro449wiFsclWUIe5l-b_C3XpxrFcbKnqAHqV4aWPcD3IBBHf2i1boEnM7dfbEn_KerS51UZNn0Oml1x9jd7unfAN4MLftkHQsy5zFwjU1Gn4Q9zFaYh82DuLZRE2g9gD3t9sVNtuKBaT5VJjJw4fKs1sG9FA68tf4ncq_9XJvvlpJCjKekzIpPZsbv4XDaNX17td0er5lkecFjQvUyQKDVlJ"/>
+<div class="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-secondary-container text-on-secondary-container font-label-badge text-[10px]">
+            MEGA KIT • 48 PÁG
+          </div>
+<div class="absolute bottom-2 left-2 flex items-center gap-1 px-2 py-0.5 rounded-md bg-surface-container-lowest/80 backdrop-blur-md">
+<span class="material-symbols-outlined text-[12px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-badge text-[10px] text-on-surface">5.0</span>
+</div>
+</div>
+<div class="p-3 flex flex-col gap-1.5">
+<span class="font-label-badge text-[10px] text-tertiary uppercase tracking-wider">Todas as idades</span>
+<h4 class="font-headline-sm text-[14px] text-on-surface leading-tight line-clamp-2">A Grande Arca de Noé</h4>
+<div class="flex items-center gap-1.5 pt-1">
+<button class="flex-1 h-8 rounded-xl bg-surface-container-high text-on-surface font-label-md text-[11px] flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors">
+              Abrir
+            </button>
+<button aria-label="Baixar PDF" class="w-8 h-8 rounded-xl bg-primary/20 text-primary flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors" onclick="triggerDownload()">
+<span class="material-symbols-outlined text-[16px]">download</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Caderno 4: Heróis da Fé: Moisés e o Mar -->
+<div class="flex flex-col rounded-2xl bg-surface-container overflow-hidden shadow-md group">
+<div class="relative w-full aspect-[3/4] bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Dramatic inspiring 3D Pixar animated vertical cover of young Moses holding wooden staff as the Red Sea parts in crystalline waves with luminous golden glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyczvI5l5PAR3oSmFdIPzRpAr4aRDpRZXq47Xf4p5Iqqg9owUuRPJGRSdZhiiF73HLUIOERm2EZowNjQ_Ttk9W1ZSwsPnpdvPYIITvDo7p9HErE_DJrCEaMXALO5zM9OW0hTKZbk32ATpQUz2z4qIsuj71-IVjwJdaoazIZokbzzofPnOWouVdtQ3oKMPW7yTlcFk9UQtZsbvt0tdAy6_anWY5kzpJlS1L5tzJ1rFp_ax-vA5fPefU"/>
+<div class="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-primary-container text-on-primary-container font-label-badge text-[10px]">
+            PDF • 28 PÁG
+          </div>
+<div class="absolute bottom-2 left-2 flex items-center gap-1 px-2 py-0.5 rounded-md bg-surface-container-lowest/80 backdrop-blur-md">
+<span class="material-symbols-outlined text-[12px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-badge text-[10px] text-on-surface">4.8</span>
+</div>
+</div>
+<div class="p-3 flex flex-col gap-1.5">
+<span class="font-label-badge text-[10px] text-secondary uppercase tracking-wider">6 a 10 anos</span>
+<h4 class="font-headline-sm text-[14px] text-on-surface leading-tight line-clamp-2">Moisés &amp; o Mar Vermelho</h4>
+<div class="flex items-center gap-1.5 pt-1">
+<button class="flex-1 h-8 rounded-xl bg-surface-container-high text-on-surface font-label-md text-[11px] flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors">
+              Abrir
+            </button>
+<button aria-label="Baixar PDF" class="w-8 h-8 rounded-xl bg-primary/20 text-primary flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors" onclick="triggerDownload()">
+<span class="material-symbols-outlined text-[16px]">download</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Coleção por Personagens Favoritos -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">stars</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Aprenda com seus Heróis</h3>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Toque para filtrar</span>
+</div>
+<div class="flex items-center gap-space-md overflow-x-auto no-scrollbar -mx-margin px-margin py-2">
+<!-- Personagem 1: Jesus -->
+<button class="flex flex-col items-center gap-1.5 shrink-0 group active:scale-95 transition-transform">
+<div class="w-16 h-16 rounded-full p-0.5 bg-gradient-to-tr from-secondary to-primary shadow-[0_0_12px_rgba(255,185,95,0.4)]">
+<div class="w-full h-full rounded-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Cute 3D Pixar avatar face of smiling Jesus with gentle celestial golden halo, dark rich background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOcPpEouemx7nLYmjXhhBozlrcwV9v-_KGOLAs5NJbLP4RcPtqKqV_Wfumzk1M4pZUJ3HKBmL6_y71UGcnLleyNrSu21cJKyPezJKsRfF2-Y7F5DwZ_ljIlUQDvqoaWq7ojeHFkifqX62262_q4wV1gOCXLvPBPgRT3BwsYZ0SY0ueU_AE1OTlbqnueBRXVKilC5itu2IGpnhM5iieVFKjL_UVvBnvFVZs07VESc8nb3aB2NfWB_Ig"/>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface group-hover:text-primary transition-colors">Jesus</span>
+</button>
+<!-- Personagem 2: Davi -->
+<button class="flex flex-col items-center gap-1.5 shrink-0 group active:scale-95 transition-transform">
+<div class="w-16 h-16 rounded-full p-0.5 bg-gradient-to-tr from-primary to-primary-container shadow-[0_0_10px_rgba(208,188,255,0.3)]">
+<div class="w-full h-full rounded-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Playful 3D Disney Pixar avatar icon of brave shepherd boy David with curls, bright purple aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6Xd8dvt-3xWGJDzxpFAd4SdOEnwGCYzGVb7CkONEvrWdhhNV2se1BgUHAxdKK87dt9kKRhMGqxWNjDEYHfS9UIldCg4yIhxRX-jDZ3JgVLhKkG46lMFDc204bXzypnTd_IYDsc_N3gPCgty4-bhbAoxE6LYpBrtgj8oaSGxA3-gRHLS2-m8tap6nmaQrq4q8Q1z5HbKftIvND5I2G7gS69sqpA63UZYLBlXfwR9cXfGTnZCZO8a7O"/>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface group-hover:text-primary transition-colors">Davi</span>
+</button>
+<!-- Personagem 3: Ester -->
+<button class="flex flex-col items-center gap-1.5 shrink-0 group active:scale-95 transition-transform">
+<div class="w-16 h-16 rounded-full p-0.5 bg-gradient-to-tr from-secondary to-secondary-container shadow-[0_0_10px_rgba(255,185,95,0.3)]">
+<div class="w-full h-full rounded-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Graceful 3D animated avatar of Queen Esther with delicate glowing golden crown and joyful smile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQIXueYYB4MoQWWfLbjzDD3fsMiBK_zzidQ3hu53sGLGOxwy8ZUgEwCPElS9Nrm4eq1VZPXWdLJDuqMjkv7-5LsGj4m8qdm_2YIMWEfMmoF_6SWZJDgkWPoSNn9sbUZpxd8E5N9k2bOcAQEcTsi_DhyQQIS8JC5PE9_xiEJqn9AC3v2Xb9PL89vnWgZ22U8UDhXeLOfxZXdORwDAJTksYWy_nf6uSD-n6dGrC9H-QlL_c8_DEz3iga"/>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface group-hover:text-primary transition-colors">Ester</span>
+</button>
+<!-- Personagem 4: Noé -->
+<button class="flex flex-col items-center gap-1.5 shrink-0 group active:scale-95 transition-transform">
+<div class="w-16 h-16 rounded-full p-0.5 bg-gradient-to-tr from-tertiary to-primary shadow-[0_0_10px_rgba(123,208,255,0.3)]">
+<div class="w-full h-full rounded-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Kind grandfatherly 3D Pixar avatar of Noah with white beard and smiling dove perched on his shoulder" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqhqxH2R0pHnDhxRWRlJlfQcmg0d-e62afmvVuEQBVEk5KyxcWRE65FNDKp5-rABPy9rdmocVXj7niCaHV4v71CV9mUfq8hXB0d6n1-3k22LWGDrrmOV5tTIJE69WdIM6UMpAaHxfqKncfFi0Du53IbBo1FSD0EJhNQuZfzbiegc1A31ZyQ0jRm5T5qfyDBcqYQy5kFE2Bx1t_t_Uwn5GISYbaV4IXF4yUjtVmtN1eS3BCCgv3IRRj"/>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface group-hover:text-primary transition-colors">Noé</span>
+</button>
+<!-- Personagem 5: Daniel -->
+<button class="flex flex-col items-center gap-1.5 shrink-0 group active:scale-95 transition-transform">
+<div class="w-16 h-16 rounded-full p-0.5 bg-gradient-to-tr from-primary to-secondary shadow-[0_0_10px_rgba(208,188,255,0.3)]">
+<div class="w-full h-full rounded-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Courageous young 3D Pixar cartoon boy Daniel praying peacefully with friendly glowing lion beside him" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD--x7ku3C5dQ6lnQ-1VwRHrEy5pgDAZIGED2e5PsnA96ACoYxvtfIX_lJb57I8nSMdBr6uI3pS32fVTT1yMLrLXMZeA5rBSPCcGPtTnW-vzzx2XVXCvtJxVFzwIQlx-4Io_C9aP1LVis_s-b-dYsLgloI7DLU3QXg3gIZ-zYcfTdzmshPl8Dn7q0UtuUAROgQ3ubl8i6IQcPir7bRM24o7WcFq75YSr-8HVY9x6rDIrYUp2ViuGju7"/>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface group-hover:text-primary transition-colors">Daniel</span>
+</button>
+<!-- Personagem 6: Moisés -->
+<button class="flex flex-col items-center gap-1.5 shrink-0 group active:scale-95 transition-transform">
+<div class="w-16 h-16 rounded-full p-0.5 bg-gradient-to-tr from-secondary to-primary shadow-[0_0_10px_rgba(255,185,95,0.3)]">
+<div class="w-full h-full rounded-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Heroic 3D Pixar character avatar of Moses holding wooden staff with radiant sparkles around him" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8yYoH5fZffD3W-t2Vchyf9og0Z3sw3oRBAZkPmslal-TU_KM9H3v64Mzt7PL4wKaHKDVks4Z4j1q5ui8wfx9kCYruqvFgNp3OLz8BRKrWZvoBWKh7tDyRBzVY3-eFTfTXmGP315C5aX1lAWUv00z-UvjXIZmtoA9qphte997GnkoUhhz2uJRcciS1iqzV0CpMy7OMmr87cgjgwGMZ9y5m83BosM2XSeUEAxS4NqjU6eXwQNcuOw_Y"/>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface group-hover:text-primary transition-colors">Moisés</span>
+</button>
+<!-- Personagem 7: Jonas -->
+<button class="flex flex-col items-center gap-1.5 shrink-0 group active:scale-95 transition-transform">
+<div class="w-16 h-16 rounded-full p-0.5 bg-gradient-to-tr from-tertiary to-secondary shadow-[0_0_10px_rgba(123,208,255,0.3)]">
+<div class="w-full h-full rounded-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Adventurous 3D Disney style avatar of Jonah with friendly blue whale smiling softly behind him" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCS2OESpnYlT35iB4tZ8cPsJ0HnAxX6OMgld78k5X9Uqscn1axrcDwGSGYL6yoTfhrCq1ue7TR5bZEOcFAeaWQp9yaDhzThzJK9Z18o_SrSCkniEU1S7q4oL9zrn2jIgL1WdlsMyDAK35NG493I-pOcAbbBZk267zuLOFLiAI4yPAdp7i8XFQiJecryaIViBho4nB0eHPhexHI3jJvWTkppYXGrSWVnDVQ9c5nRMQJI4iA5DrlSStt_"/>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface group-hover:text-primary transition-colors">Jonas</span>
+</button>
+</div>
+</section>
+<!-- Seção Educador / Pais: Apoio Pedagógico -->
+<section class="rounded-3xl bg-surface-container-low p-5 flex flex-col gap-space-sm shadow-lg relative overflow-hidden">
+<!-- Luz ambiente suave de fundo -->
+<div class="absolute -right-10 -bottom-10 w-44 h-44 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+<div class="flex items-start gap-space-sm">
+<div class="w-12 h-12 rounded-2xl bg-primary/20 text-primary flex items-center justify-center shrink-0 shadow-[0_0_12px_rgba(208,188,255,0.3)]">
+<span class="material-symbols-outlined text-[26px]">school</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-badge text-label-badge text-secondary uppercase">Espaço dos Pais &amp; EBD</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Para Sua Aula &amp; Ministério Infantil</h3>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+      Acesso liberado a planejamentos de aula lúdicos, dinâmicas bíblicas e autorização oficial para imprimir cópias ilimitadas para suas turmas.
+    </p>
+<div class="flex items-center gap-space-sm pt-1">
+<button class="flex-1 h-11 rounded-xl bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[18px] text-tertiary">article</span>
+        Planos de Aula
+      </button>
+<button class="flex-1 h-11 rounded-xl bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified</span>
+        Licença Impressão
+      </button>
+</div>
+</section>
+<!-- Toast / Modal de Download Feedback (Simulação Flutuante) -->
+<div class="fixed bottom-20 inset-x-margin z-50 transform translate-y-32 opacity-0 transition-all duration-300 pointer-events-none" id="downloadToast">
+<div class="rounded-2xl bg-surface-container-highest/95 backdrop-blur-xl p-4 shadow-[0_8px_32px_rgba(0,0,0,0.6)] flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-xl bg-secondary/20 text-secondary flex items-center justify-center shrink-0 shadow-[0_0_12px_rgba(255,185,95,0.4)]">
+<span class="material-symbols-outlined text-[22px]">check_circle</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-[14px] text-on-surface truncate">Download Concluído!</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant truncate">Pronto para imprimir em PDF HD (A4).</span>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-[11px] shrink-0">
+        Abrir Arquivo
+      </button>
+</div>
+</div>
+</div>
+<script>
+  function triggerDownload() {
+    const toast = document.getElementById('downloadToast');
+    if (!toast) return;
+    
+    // Mostra o toast com animação suave
+    toast.classList.remove('translate-y-32', 'opacity-0', 'pointer-events-none');
+    toast.classList.add('translate-y-0', 'opacity-100');
+    
+    // Oculta automaticamente após 3.5 segundos
+    setTimeout(() => {
+      toast.classList.remove('translate-y-0', 'opacity-100');
+      toast.classList.add('translate-y-32', 'opacity-0', 'pointer-events-none');
+    }, 3500);
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-2xl shadow-[0_-8px_32px_rgba(0,0,0,0.6)]" data-active-classes="text-primary relative before:content-[''] before:absolute before:-top-2 before:w-8 before:h-1 before:rounded-full before:bg-primary before:shadow-[0_0_12px_#d0bcff]"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[44px] text-on-surface-variant transition-transform active:scale-95" data-path="inicio" href="#"><span class="material-symbols-outlined text-[22px]">cottage</span><span class="font-label-md text-[10px] tracking-wide">Início</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[44px] text-on-surface-variant transition-transform active:scale-95" data-path="clipes" href="#"><span class="material-symbols-outlined text-[22px]">movie</span><span class="font-label-md text-[10px] tracking-wide">Clipes</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[44px] text-on-surface-variant transition-transform active:scale-95" data-path="explorar" href="#"><span class="material-symbols-outlined text-[22px]">explore</span><span class="font-label-md text-[10px] tracking-wide">Explorar</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[44px] transition-transform active:scale-95 text-primary relative before:content-[''] before:absolute before:-top-2 before:w-8 before:h-1 before:rounded-full before:bg-primary before:shadow-[0_0_12px_#d0bcff]" data-path="materiais" href="#"><span class="material-symbols-outlined text-[22px]">auto_stories</span><span class="font-label-md text-[10px] tracking-wide">Materiais</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[44px] text-on-surface-variant transition-transform active:scale-95" data-path="perfil" href="#"><span class="material-symbols-outlined text-[22px]">face</span><span class="font-label-md text-[10px] tracking-wide">Perfil</span></a></div></nav></body></html>

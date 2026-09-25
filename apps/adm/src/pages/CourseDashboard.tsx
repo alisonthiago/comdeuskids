@@ -1,0 +1,25 @@
+import React, { useEffect, useState } from 'react'
+import { ArrowLeft, CheckCircle2, FileQuestion, GraduationCap, LayoutDashboard, Plus, Settings, UsersRound, Video } from 'lucide-react'
+import { Link, Navigate, useLocation, useNavigate, useParams } from 'react-router-dom'
+
+type Course = { id: string; title: string; description: string; price: string; area: string; coverUrl?: string }
+type Module = { id: string; title: string; lessons: { id: string; title: string; type: 'Aula' | 'Quiz' }[] }
+function LegacyCourseDashboard() {
+  const { id = '' } = useParams(); const navigate = useNavigate(); const location = useLocation()
+  const [course, setCourse] = useState<Course | null>(null); const [modules, setModules] = useState<Module[]>([]); const [modal, setModal] = useState<'module' | 'lesson' | null>(null); const [name, setName] = useState(''); const [selected, setSelected] = useState('')
+  useEffect(() => { const raw = localStorage.getItem(`cdk-course-${id}`); if (raw) setCourse(JSON.parse(raw)); const saved = localStorage.getItem(`cdk-course-modules-${id}`); if (saved) setModules(JSON.parse(saved)) }, [id])
+  useEffect(() => { localStorage.setItem(`cdk-course-modules-${id}`, JSON.stringify(modules)) }, [id, modules])
+  const create = () => { if (!name.trim()) return; if (modal === 'module') setModules(prev => [...prev, { id: crypto.randomUUID(), title: name.trim(), lessons: [] }]); if (modal === 'lesson' && selected) setModules(prev => prev.map(module => module.id === selected ? { ...module, lessons: [...module.lessons, { id: crypto.randomUUID(), title: name.trim(), type: 'Aula' }] } : module)); setName(''); setModal(null) }
+  if (!course) return <div className="course-dashboard course-dashboard--missing"><h1>Curso não encontrado</h1><p>Volte para os produtos e inicie um novo cadastro.</p><Link to="/admin/produtos">Ver produtos</Link></div>
+  return <div className="course-dashboard"><header><div className="course-dashboard__top"><button onClick={() => navigate('/admin/produtos')}><ArrowLeft size={17} />Produtos</button><button className="course-dashboard__manage" onClick={() => navigate(`/membro/curso/${id}`)}>Acessar a gestão do curso</button></div><div className="course-dashboard__identity">{course.coverUrl ? <img src={course.coverUrl} alt="" /> : <span className="course-dashboard__cover"><GraduationCap /></span>}<div><small>Curso Online · Em rascunho</small><h1>{course.title}</h1><p>{course.description}</p></div></div></header>
+    {location.state?.created && <div className="course-dashboard__success"><CheckCircle2 />Curso cadastrado com sucesso. Agora crie os módulos e aulas.</div>}
+    <nav><a href="#painel">Painel</a><a className="active" href="#course-content">Gestão do curso</a><a href="#alunos">Alunos</a><a href="#configuracoes">Configurações</a></nav>
+    <main id="course-content"><aside><b>Gestão do curso</b><button className="active"><LayoutDashboard />Conteúdo</button><button><UsersRound />Turmas</button><button><UsersRound />Usuários</button><button><FileQuestion />Comentários</button><button><Settings />Configurações</button></aside><section><div className="course-dashboard__heading"><div><h2>Conteúdo do curso</h2><p>Organize os módulos, aulas, quizzes e materiais para seus alunos.</p></div><button className="dark" onClick={() => setModal('module')}><Plus size={17} />Criar módulo</button></div>{modules.length === 0 ? <div className="course-dashboard__empty"><Video size={44} /><h3>Crie o conteúdo do curso</h3><p>Comece criando o primeiro módulo. Depois adicione aulas, vídeos, textos e quizzes.</p><button className="dark" onClick={() => setModal('module')}><Plus size={17} />Criar módulo</button></div> : <div className="course-modules">{modules.map(module => <article key={module.id}><header><b>{module.title}</b><span>{module.lessons.length} {module.lessons.length === 1 ? 'conteúdo' : 'conteúdos'}</span><button onClick={() => { setSelected(module.id); setModal('lesson') }}><Plus size={17} />Adicionar</button></header>{module.lessons.map(lesson => <div className="course-lesson" key={lesson.id}><Video size={16} /><span>{lesson.title}</span><small>{lesson.type}</small></div>)}</article>)}</div>}</section></main>
+    {modal && <div className="course-modal" role="dialog" aria-modal="true"><div><h2>{modal === 'module' ? 'Novo módulo principal' : 'Nova aula'}</h2><p>{modal === 'module' ? 'Agrupe as aulas do curso em módulos.' : 'Adicione uma aula ao módulo selecionado.'}</p><label>Nome {modal === 'module' ? 'do módulo' : 'da aula'} *<input autoFocus value={name} onChange={e => setName(e.target.value)} placeholder={modal === 'module' ? 'Ex.: Módulo 1 — Introdução' : 'Ex.: Aula 1 — Boas-vindas'} /></label><footer><button onClick={() => setModal(null)}>Cancelar</button><button className="dark" onClick={create}>{modal === 'module' ? 'Criar módulo' : 'Criar aula'}</button></footer></div></div>}
+  </div>
+}
+
+export default function CourseDashboard() {
+  const { id = '' } = useParams()
+  return <Navigate to={`/membro/curso/${id}`} replace />
+}

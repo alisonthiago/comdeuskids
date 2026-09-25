@@ -1,0 +1,28 @@
+{
+  "game": "daniel-na-cova-dos-leoes",
+  "title": "Daniel na Cova dos Le\u00f5es",
+  "engine": "TopDownPuzzleEngine",
+  "visualFamily": "32x32-dungeon-and-kenney-player",
+  "assets": [
+    {
+      "id": "daniel_player",
+      "path": "/assets/daniel-na-cova-dos-leoes/PNG/Player/player_tilesheet.png",
+      "type": "spritesheet"
+    },
+    {
+      "id": "dungeon_00",
+      "path": "/assets/daniel-na-cova-dos-leoes/32x32 Dungeon Pack/Dungeon_00.png",
+      "type": "tilemap"
+    },
+    {
+      "id": "dungeon_01",
+      "path": "/assets/daniel-na-cova-dos-leoes/32x32 Dungeon Pack/Dungeon_01.png",
+      "type": "tilemap"
+    },
+    {
+      "id": "dungeon_04",
+      "path": "/assets/daniel-na-cova-dos-leoes/32x32 Dungeon Pack/Dungeon_04.png",
+      "type": "tilemap"
+    }
+  ]
+}

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary": "#00354a", "on-tertiary-fixed-variant": "#004c69", "on-tertiary-fixed": "#001e2c", "secondary-fixed": "#ffddb8", "primary-container": "#a078ff", "primary": "#d0bcff", "surface": "#131315", "on-primary-container": "#340080", "surface-variant": "#353437", "on-error": "#690005", "outline": "#958ea0", "inverse-primary": "#6d3bd7", "surface-tint": "#d0bcff", "inverse-on-surface": "#313032", "surface-container-high": "#2a2a2c", "on-primary-fixed": "#23005c", "on-error-container": "#ffdad6", "tertiary": "#7bd0ff", "outline-variant": "#494454", "surface-container-low": "#1c1b1d", "secondary-fixed-dim": "#ffb95f", "inverse-surface": "#e5e1e4", "secondary": "#ffb95f", "error-container": "#93000a", "on-secondary-container": "#5b3800", "tertiary-fixed-dim": "#7bd0ff", "on-secondary": "#472a00", "on-surface": "#e5e1e4", "primary-fixed-dim": "#d0bcff", "on-secondary-fixed": "#2a1700", "tertiary-container": "#009bd1", "on-surface-variant": "#cbc3d7", "surface-container-lowest": "#0e0e10", "tertiary-fixed": "#c4e7ff", "error": "#ffb4ab", "on-tertiary-container": "#002d40", "surface-dim": "#131315", "on-secondary-fixed-variant": "#653e00", "on-background": "#e5e1e4", "secondary-container": "#ee9800", "background": "#131315", "primary-fixed": "#e9ddff", "surface-container": "#201f21", "surface-container-highest": "#353437", "surface-bright": "#39393b", "on-primary": "#3c0091", "on-primary-fixed-variant": "#5516be" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.5rem", "space-lg": "1.5rem", "margin-tablet": "2rem", "space-md": "1rem", "space-xl": "2.5rem", "space-xs": "0.25rem", "margin-desktop": "3.5rem", "margin": "1rem", "gutter": "1.25rem", "gutter-desktop": "1.75rem" }, fontFamily: { "display-hero": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "display-hero-mobile": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-badge": ["Plus Jakarta Sans"] }, fontSize: { "display-hero": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "700" }], "display-hero-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-badge": ["11px", { "lineHeight": "12px", "letterSpacing": "0.05em", "fontWeight": "800" }] } } } };</script></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.15)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Voltar" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container active:bg-surface-container-high transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back_ios_new</span></button><img alt="Brand logo. - Primary color: #8b5cf6
+- Font: plusJakartaSans
+- Mode: dark
+- Roundness: rounded-md
+" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XcsaGA7_VlrEEK0m02iEhCk7P_a1zzXziET4X0vJjQqbbhnPmf6Qtivz4JbEO3QeFv0_j0X0DFwa3qToaP2pw0Dyjqhug84-_Be4f1LOR6IuvtqUIEHqAe1bTK7JXwllHTw1Ooa4wr0VosxJoGeH_L1uvq_k4VJnYwW-2CFQL1QVsF6Dh2UIRWi5pqx_r98BVZGdwEsOs-jCmckwZBd6cU9k27VJARir1XIJIo_SreJAllXB4pLWL0XA"/><h1 class="font-headline-sm text-headline-sm text-on-surface font-bold">Editar Perfil</h1></div><div class="flex items-center"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 bg-surface pb-safe"><div class="flex flex-col w-full pb-32">
+<div class="flex items-center justify-between px-margin py-space-sm bg-surface-container-low/60 backdrop-blur-md">
+<button class="flex items-center gap-space-xs text-primary hover:text-primary-fixed transition-colors" onclick="history.back()">
+<span class="material-symbols-outlined text-[20px]">arrow_back_ios</span>
+<span class="font-label-md text-label-md">Voltar para Perfis</span>
+</button>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/20 text-secondary font-label-badge text-label-badge uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">stars</span>
+      Modo Edição
+    </span>
+</div>
+<section class="relative px-margin pt-space-md pb-space-lg flex flex-col items-center">
+<div class="relative group cursor-pointer" id="avatarPreviewContainer">
+<div class="absolute -inset-1.5 rounded-full bg-gradient-to-tr from-primary-container via-primary to-secondary animate-pulse opacity-80 blur-sm"></div>
+<div class="relative w-28 h-28 rounded-full overflow-hidden bg-surface-container-highest shadow-xl p-1">
+<img class="w-full h-full object-cover rounded-full" data-alt="Warm 3D Pixar-style animated biblical character, young David with curly brown hair wearing a soft tunic with a gentle warm smile, rich volumetric lighting, faith-based kids entertainment style on glowing purple gradient background" id="currentAvatarImg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcL8d5GoYa1h931nLQR6RylRUr1FlX1_LuVD8VQa98dl9ezCbvy3CNsUTM7q0q6SoI-4M_PJC8B57AHCgLvprkOJrD03miA-AhAVyY98uvULX80G7EtflPNd9pVhv04qKbox-k4KikMPpcRdmXjpWDMi2IflwrCJKyQ2YbGUAt2eGRQt9843zG1UFESNxztyGoQC4-E-dcJLko60GUZiAiuzE2LAObsOSUUv2rwqBjevuivWepN68N"/>
+</div>
+<button aria-label="Trocar Avatar" class="absolute bottom-0 right-0 w-9 h-9 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-lg active:scale-95 transition-transform hover:bg-primary-fixed" type="button">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+</button>
+</div>
+<p class="mt-space-sm font-headline-sm text-headline-sm text-on-surface font-bold text-center" id="currentAvatarName">
+      Davi (Pastorzinho)
+    </p>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
+      Avatar ativo no momento
+    </span>
+<div class="w-full mt-space-lg space-y-space-md bg-surface-container-low p-space-md rounded-xl shadow-sm">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-space-xs" for="profileNameInput">
+          Nome do Perfil
+        </label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[20px]">badge</span>
+<input class="w-full pl-10 pr-4 py-2.5 rounded-lg bg-surface-container-highest text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-high transition-colors" id="profileNameInput" placeholder="Digite o nome do perfil..." type="text" value="Profª Ana"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-space-xs">
+          Tipo de Perfil
+        </label>
+<div class="grid grid-cols-3 gap-2 p-1 bg-surface-container-lowest rounded-lg" id="roleSelector">
+<button class="role-btn py-2 px-1 rounded-md font-label-md text-label-md text-center transition-all bg-surface-container-high text-primary shadow-sm" onclick="selectRole(this)" type="button">
+            Criança
+          </button>
+<button class="role-btn py-2 px-1 rounded-md font-label-md text-label-md text-center transition-all text-on-surface-variant hover:text-on-surface" onclick="selectRole(this)" type="button">
+            Professor
+          </button>
+<button class="role-btn py-2 px-1 rounded-md font-label-md text-label-md text-center transition-all text-on-surface-variant hover:text-on-surface" onclick="selectRole(this)" type="button">
+            Responsável
+          </button>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-space-xs">
+          Faixa Etária Recomendada
+        </label>
+<div class="flex items-center gap-2 overflow-x-auto pb-1" id="agePills">
+<button class="age-pill shrink-0 px-3 py-1.5 rounded-full font-label-badge text-label-badge bg-primary-container text-on-primary-container font-bold" onclick="selectAge(this)" type="button">
+            0 a 3 anos
+          </button>
+<button class="age-pill shrink-0 px-3 py-1.5 rounded-full font-label-badge text-label-badge bg-surface-container-highest text-on-surface-variant hover:bg-surface-variant" onclick="selectAge(this)" type="button">
+            4 a 6 anos
+          </button>
+<button class="age-pill shrink-0 px-3 py-1.5 rounded-full font-label-badge text-label-badge bg-surface-container-highest text-on-surface-variant hover:bg-surface-variant" onclick="selectAge(this)" type="button">
+            7 a 9 anos
+          </button>
+<button class="age-pill shrink-0 px-3 py-1.5 rounded-full font-label-badge text-label-badge bg-surface-container-highest text-on-surface-variant hover:bg-surface-variant" onclick="selectAge(this)" type="button">
+            10+ anos
+          </button>
+</div>
+</div>
+</div>
+</section>
+<section class="px-margin space-y-space-xl">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+          Escolha Seu Novo Avatar
+        </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Toque para experimentar na sua moldura
+        </p>
+</div>
+<span class="material-symbols-outlined text-secondary text-[24px]">auto_awesome</span>
+</div>
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<h3 class="font-label-lg text-label-lg text-on-surface uppercase tracking-wide">
+            Heróis da Bíblia &amp; Crianças
+          </h3>
+</div>
+<span class="font-label-badge text-label-badge text-on-surface-variant">6 opções</span>
+</div>
+<div class="grid grid-cols-3 gap-3">
+<button class="avatar-card relative flex flex-col items-center p-2 rounded-xl bg-surface-container-high transition-transform active:scale-95 text-center selected" data-avatar-title="Davi (o pastorzinho)" onclick="chooseAvatar('Davi', this)" type="button">
+<div class="relative w-16 h-16 rounded-full overflow-hidden p-0.5 bg-primary shadow-md">
+<img class="w-full h-full object-cover rounded-full" data-alt="3D animated biblical boy character, young David with curly brown hair, kind brown eyes, soft beige tunic, gentle studio lighting, Pixar art direction for Christian streaming" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8jpVg6pN6S3r0rHlJeJ0iJSy5MmQUa0amW7efZ4piKsCuTydtw9-Bc6iLPVsrwReWNWmy6cyoIIpMnv5lTg6IyESL5OXRVcCAqQhF7Si9BSF_7tFbY8uFKhwum-VIRULeNWeT9oBWJqtXhVCQL7Y6ZKHumQl0E0M2AmIW3hxTSxjE36xD3Xgm36bnwycQfjmaTDoymIpdVWSrlTecYJwvMOGqclhGKm9QkkXt1U6JQqbWS6V1uXQA"/>
+<div class="selection-check absolute top-0 right-0 w-5 h-5 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[14px] font-bold">check</span>
+</div>
+</div>
+<span class="mt-2 font-label-md text-label-md text-primary font-bold truncate w-full">Davi</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[10px] leading-tight truncate w-full">Pastorzinho</span>
+</button>
+<button class="avatar-card relative flex flex-col items-center p-2 rounded-xl bg-surface-container-low transition-transform active:scale-95 text-center" data-avatar-title="Sara (menina alegre)" onclick="chooseAvatar('Sara', this)" type="button">
+<div class="relative w-16 h-16 rounded-full overflow-hidden p-0.5 bg-surface-container-highest">
+<img class="w-full h-full object-cover rounded-full" data-alt="Joyful 3D animated young girl character named Sara wearing a gentle pastel flower in her hair, warm smile, faith animated universe style with glowing violet accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuUmVN9hFPcgtBl7Eo0rmu7JIGJT3R1YDHxuwYVGfrWuQsXFVrHRyL8ArPyTLWUbo3A_828LME9FKX7aFs5GAs4QHdzQCKoj6fL7sgNddQxH6ooRu5NWEw03t0tDVhl-0G2APeY7gR5Xi6V-K36AQT9l2KwVKi6dp3-QiiB_qSeHRNiygnljqoYhRS5oMzkMpDfpnWot5OqmuAUKz1o7vTMl6PT_nT2U6vFm4Bk5z3uaQ2By-_MckR"/>
+<div class="selection-check hidden absolute top-0 right-0 w-5 h-5 rounded-full bg-secondary text-on-secondary items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[14px] font-bold">check</span>
+</div>
+</div>
+<span class="mt-2 font-label-md text-label-md text-on-surface font-semibold truncate w-full">Sara</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[10px] leading-tight truncate w-full">Com Florzinha</span>
+</button>
+<button class="avatar-card relative flex flex-col items-center p-2 rounded-xl bg-surface-container-low transition-transform active:scale-95 text-center" data-avatar-title="Noé (o construtor)" onclick="chooseAvatar('Noé', this)" type="button">
+<div class="relative w-16 h-16 rounded-full overflow-hidden p-0.5 bg-surface-container-highest">
+<img class="w-full h-full object-cover rounded-full" data-alt="Wise and friendly 3D cartoon elder Noah with soft white beard, warm blue tunic, gentle twinkling eyes, stylized safe children animation style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDk3RiE8dTiGudcKZt-EX6dYq3a3DBQE0poqc0NTsixU8VK4a_woWsWlMavmVgDiq7LJx6nbKR089OMFek86V_socGGMleyj0K2fIY1w4Cy1drKedVnTAj5DYfshlqzDq4S1fpv_Hb530O4ndP0-3TH9Eb1j8VssjlQgAQFh38az6Y87QblSe5xa23XzGJiIKswseIQN1vQEADY-KDy6WFp05aIv2dPxPHb43jkISxE9gLoy-jpr2u8"/>
+<div class="selection-check hidden absolute top-0 right-0 w-5 h-5 rounded-full bg-secondary text-on-secondary items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[14px] font-bold">check</span>
+</div>
+</div>
+<span class="mt-2 font-label-md text-label-md text-on-surface font-semibold truncate w-full">Noé</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[10px] leading-tight truncate w-full">Com Túnica</span>
+</button>
+<button class="avatar-card relative flex flex-col items-center p-2 rounded-xl bg-surface-container-low transition-transform active:scale-95 text-center" data-avatar-title="Rainha Ester" onclick="chooseAvatar('Ester', this)" type="button">
+<div class="relative w-16 h-16 rounded-full overflow-hidden p-0.5 bg-surface-container-highest">
+<img class="w-full h-full object-cover rounded-full" data-alt="Courageous young 3D Queen Esther with delicate golden circlet tiara, royal violet accents, kind regal smile, Pixar inspired high fidelity character" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCs94pkLf3nKzkxab2I8AdBrwupApuEE1hsc7-FZVBKfjkdAYv1rHvPZGYi_71Ex7WQ9UbDIioL4jKC8g5oV6nwF7wih-d2Q3X1jrbCHsNXFD4hJs2Bk1AoRXUeTcrGsTeKScLOKNuCwblZSeYPxrBUJn63SDK88u_Poq4MiJmr2hBx1fdWj_9yBC9WlwT9WT6aJf9UYXKSYh3JNDsELl-glioumznpYRUeyL0zeMxHlh4adMMuOD2n"/>
+<div class="selection-check hidden absolute top-0 right-0 w-5 h-5 rounded-full bg-secondary text-on-secondary items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[14px] font-bold">check</span>
+</div>
+</div>
+<span class="mt-2 font-label-md text-label-md text-on-surface font-semibold truncate w-full">Ester</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[10px] leading-tight truncate w-full">Diadema Dourado</span>
+</button>
+<button class="avatar-card relative flex flex-col items-center p-2 rounded-xl bg-surface-container-low transition-transform active:scale-95 text-center" data-avatar-title="Daniel &amp; Amigo Leão" onclick="chooseAvatar('Daniel', this)" type="button">
+<div class="relative w-16 h-16 rounded-full overflow-hidden p-0.5 bg-surface-container-highest">
+<img class="w-full h-full object-cover rounded-full" data-alt="Charming 3D animated young Daniel hugging a friendly smiling cartoon lion cub, warm golden hour backlighting, high detail stylized Christian kids app art" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCg0MwrqOChpjPTOsQpscrxvnvOxwK1ggj2Q0JXMfrIkpcKhJt-I1-harCLsYTccgIYFW_l6K0TOZ7NXqYrHUxkGCGishWY4qwo3zHdFvtbHSadnRsXBqJtkkb-vI1Bk-u5sj3sjP6CnyOp2HtmG9SHAVE63hQH2Pp6ef627aXts_Ve9e_hFeC_xVWLH-6_tg8FOk-ZVI_fru7FKqxwQQb7vOX--j9nAtF_FKQgLX6CVmm8rSrIusyc"/>
+<div class="selection-check hidden absolute top-0 right-0 w-5 h-5 rounded-full bg-secondary text-on-secondary items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[14px] font-bold">check</span>
+</div>
+</div>
+<span class="mt-2 font-label-md text-label-md text-on-surface font-semibold truncate w-full">Daniel</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[10px] leading-tight truncate w-full">Amigo Leão</span>
+</button>
+<button class="avatar-card relative flex flex-col items-center p-2 rounded-xl bg-surface-container-low transition-transform active:scale-95 text-center" data-avatar-title="Moisés (o condutor)" onclick="chooseAvatar('Moisés', this)" type="button">
+<div class="relative w-16 h-16 rounded-full overflow-hidden p-0.5 bg-surface-container-highest">
+<img class="w-full h-full object-cover rounded-full" data-alt="Determined heroic 3D animated Moses holding a carved shepherd staff, sunset desert atmosphere, stylized animated look for faith streaming service" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD46pRkv34-MCaAwTd1zIiXdajSbEBVkDmIj26bZ-FJ2mWHJR0uDyL6_fqSPAWHhq3iH7fYwoMyt4QwjLorAqZxaku0bgflUOa5jpjC6c9VXrMQYl6gr6NtFmv-KsZZ5fI-xvk1DbE9egv1hlWnxGyWlm2rBd230cULoKZq-FjFBOBF-bzzpgAfniC2sndTRSqqsst5t9oT7jtYhQ7_5g5zlmer1_A2g-UCY6JgRzxPb0KGSm2ovoxH"/>
+<div class="selection-check hidden absolute top-0 right-0 w-5 h-5 rounded-full bg-secondary text-on-secondary items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[14px] font-bold">check</span>
+</div>
+</div>
+<span class="mt-2 font-label-md text-label-md text-on-surface font-semibold truncate w-full">Moisés</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[10px] leading-tight truncate w-full">Com Cajado</span>
+</button>
+</div>
+</div>
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<h3 class="font-label-lg text-label-lg text-on-surface uppercase tracking-wide">
+            Professores &amp; Educadores
+          </h3>
+</div>
+<span class="font-label-badge text-label-badge text-on-surface-variant">3 opções</span>
+</div>
+<div class="grid grid-cols-3 gap-3">
+<button class="avatar-card relative flex flex-col items-center p-2 rounded-xl bg-surface-container-low transition-transform active:scale-95 text-center" data-avatar-title="Profª Ana" onclick="chooseAvatar('Profª Ana', this)" type="button">
+<div class="relative w-16 h-16 rounded-full overflow-hidden p-0.5 bg-surface-container-highest">
+<img class="w-full h-full object-cover rounded-full" data-alt="Loving 3D animated female teacher character wearing stylish round modern glasses, warm cozy knitted cardigan, bright welcoming smile, soft educational setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlN4Ora4eOkD8f9DZhG1XUX969cXkBEnOo2tR1M-PcJYD4BLfHoqfiu5tIyNI9D7Uyh8t3g5KroQL49UVy5nQqQa04zRtzfPQ7cHt5DIdbM_VBylldNZDUM91u8Gl-51OH4geEnyc5-4xzYpldEnfuga9F6sOU-SlzfFntiGCLAzkCisXRKhxSv9cpFgXScsa-iUWNu6KT3j-QPZY2lTDyZ0xUzosJ2Sr3z3NExHwWOPMFKH7QQ8y8"/>
+<div class="selection-check hidden absolute top-0 right-0 w-5 h-5 rounded-full bg-secondary text-on-secondary items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[14px] font-bold">check</span>
+</div>
+</div>
+<span class="mt-2 font-label-md text-label-md text-on-surface font-semibold truncate w-full">Profª Ana</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[10px] leading-tight truncate w-full">Óculos Modernos</span>
+</button>
+<button class="avatar-card relative flex flex-col items-center p-2 rounded-xl bg-surface-container-low transition-transform active:scale-95 text-center" data-avatar-title="Prof. Lucas" onclick="chooseAvatar('Prof. Lucas', this)" type="button">
+<div class="relative w-16 h-16 rounded-full overflow-hidden p-0.5 bg-surface-container-highest">
+<img class="w-full h-full object-cover rounded-full" data-alt="Energetic 3D animated male music teacher holding an acoustic wooden guitar, cheerful friendly posture, rich cinematic purple and gold ambiance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3XiL8if9qiBYe9s-sSa3lhVrS7Sc7zgLZA3iqMF9TrsPVfr0bz1NC875zofnuY1-iTWk9__oojZzKwUlm8jOLSFtsEQgFCpqGxA-Ap3GWW1jA2KvO42CmtbjePDo6rxzlJLLimNAsF92fba3SJFleYhD0PoCZs-WLuGwPxHtUU2lOESf2gMYfdDCSFmSkCIgFEoexOGKxwSjKS_8zd2aWM7SZXrH3U_PxhTqR5yfT2EjjrXPGZ3sJ"/>
+<div class="selection-check hidden absolute top-0 right-0 w-5 h-5 rounded-full bg-secondary text-on-secondary items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[14px] font-bold">check</span>
+</div>
+</div>
+<span class="mt-2 font-label-md text-label-md text-on-surface font-semibold truncate w-full">Prof. Lucas</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[10px] leading-tight truncate w-full">Com Violão</span>
+</button>
+<button class="avatar-card relative flex flex-col items-center p-2 rounded-xl bg-surface-container-low transition-transform active:scale-95 text-center" data-avatar-title="Coordenadora Maria" onclick="chooseAvatar('Coord. Maria', this)" type="button">
+<div class="relative w-16 h-16 rounded-full overflow-hidden p-0.5 bg-surface-container-highest">
+<img class="w-full h-full object-cover rounded-full" data-alt="Nurturing 3D animated ministry leader woman with braided hair, holding a storybook with glowing gold pages, cheerful kind expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0Zkd6sqbM-sqBXtnHl4l-XIDapZILnY74UCwvlkKyFZV_kg7nc5AdP-Iwdjl6UaxplxQRohIjb9G3GAimS2uElc8faFcnqlEVVKCiA_EXWoBsIY527UW1zC4TjFCZi1_TSIJsgtQUFCtQ9Iy9CdF2A0HkOXd63H-Ls_oKHcETDUOfEudaQnjaoKgWO0GtUboqC0m-loJ1sXk80P3qdQ2f6rlB9bNGhos1bksuMJhUtN4elnw9f8RB"/>
+<div class="selection-check hidden absolute top-0 right-0 w-5 h-5 rounded-full bg-secondary text-on-secondary items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[14px] font-bold">check</span>
+</div>
+</div>
+<span class="mt-2 font-label-md text-label-md text-on-surface font-semibold truncate w-full">Coord. Maria</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[10px] leading-tight truncate w-full">Contadora</span>
+</button>
+</div>
+</div>
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<h3 class="font-label-lg text-label-lg text-on-surface uppercase tracking-wide">
+            Animais da Arca &amp; Mascotes
+          </h3>
+</div>
+<span class="font-label-badge text-label-badge text-on-surface-variant">4 opções</span>
+</div>
+<div class="grid grid-cols-4 gap-2">
+<button class="avatar-card relative flex flex-col items-center p-1.5 rounded-xl bg-surface-container-low transition-transform active:scale-95 text-center" data-avatar-title="Cordeirinho da Paz" onclick="chooseAvatar('Cordeirinho', this)" type="button">
+<div class="relative w-14 h-14 rounded-full overflow-hidden p-0.5 bg-surface-container-highest">
+<img class="w-full h-full object-cover rounded-full" data-alt="Extremely cute fluffy 3D baby lamb mascot with big shiny eyes and joyful smile, bright heavenly light highlights, high quality children animation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8mH_y1TNRLuH6umEuqwii5gGSv7ApBBtFjaZ6IugguCD6tEJsqjZWp6fQ7b7AEC2GO5NhtJD97kVVbeOVLZUxJxPa97Zm8kTipH1F2rcn5DIcavGNdPXr7lDe2jT_sjkLd5RbLDKrPl_sv6GIDPELTPiKCI83G7h9I6UKRVv5GecBcworxCURgY8l6XgmHMHf0XzV0k-dBrkx10dghfot2p05M1rnyf_J22XnEVzYwozlNmMaNfLd"/>
+<div class="selection-check hidden absolute top-0 right-0 w-4 h-4 rounded-full bg-secondary text-on-secondary items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[12px] font-bold">check</span>
+</div>
+</div>
+<span class="mt-1 font-label-badge text-label-badge text-on-surface font-semibold truncate w-full">Cordeiro</span>
+</button>
+<button class="avatar-card relative flex flex-col items-center p-1.5 rounded-xl bg-surface-container-low transition-transform active:scale-95 text-center" data-avatar-title="Pombinha da Paz" onclick="chooseAvatar('Pombinha', this)" type="button">
+<div class="relative w-14 h-14 rounded-full overflow-hidden p-0.5 bg-surface-container-highest">
+<img class="w-full h-full object-cover rounded-full" data-alt="Charming small 3D animated white dove holding tiny fresh green olive leaf in beak, glowing celestial aura, clean friendly kids mascot design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAA2hICARX6_eJxk5FxZX9u0JqVGx1nN_M9JSshN2bvRqDO4ZZA8HXE6zFNvM2_neXUnnjpGZF8cqM7IspYE1hWUuCPcto0Z0F2x4H2I6vNytrdNqGQ7Tkd8imiR2kvHWHNtQdCWIifAjN4fd_8vTHBHv3mfXey1T5VaJ0M-2Y6aTzKYcXifxGsc3A4EM0Xks_p3TComjkWOV4KGiK-DyLC9dWCKbpVlsPgQzC5H6u0FK0lWVx4kZZN"/>
+<div class="selection-check hidden absolute top-0 right-0 w-4 h-4 rounded-full bg-secondary text-on-secondary items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[12px] font-bold">check</span>
+</div>
+</div>
+<span class="mt-1 font-label-badge text-label-badge text-on-surface font-semibold truncate w-full">Pombinha</span>
+</button>
+<button class="avatar-card relative flex flex-col items-center p-1.5 rounded-xl bg-surface-container-low transition-transform active:scale-95 text-center" data-avatar-title="Leãozinho de Judá" onclick="chooseAvatar('Leãozinho', this)" type="button">
+<div class="relative w-14 h-14 rounded-full overflow-hidden p-0.5 bg-surface-container-highest">
+<img class="w-full h-full object-cover rounded-full" data-alt="Heroic playful 3D cartoon lion cub representing Tribe of Judah, soft furry mane, sparkling brave amber eyes, warm glowing background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgR-s0AtzQ4OP9mpl_L8rZR1qSrgkoCUAQygceRzT9HY-Rwo7PPc85g3TVtQj7gnXREb52ola8zOBN-Blb_G65wtczZieMolOaxMo78lKq79tetijkg1kWWWdD7zGH6WG0tYPFV5e95lb9rfXLqVq2d15iqi9JzRa4PATatL2XGB_S1o1fLVLan8qxBdN22XUlr3o2ngWHr3K7W1CE8Z75H-U7h5b5M8cPzBz5SMWA-1F1asvJiaX8"/>
+<div class="selection-check hidden absolute top-0 right-0 w-4 h-4 rounded-full bg-secondary text-on-secondary items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[12px] font-bold">check</span>
+</div>
+</div>
+<span class="mt-1 font-label-badge text-label-badge text-on-surface font-semibold truncate w-full">Leãozinho</span>
+</button>
+<button class="avatar-card relative flex flex-col items-center p-1.5 rounded-xl bg-surface-container-low transition-transform active:scale-95 text-center" data-avatar-title="Peixinho de Jonas" onclick="chooseAvatar('Peixinho', this)" type="button">
+<div class="relative w-14 h-14 rounded-full overflow-hidden p-0.5 bg-surface-container-highest">
+<img class="w-full h-full object-cover rounded-full" data-alt="Cheerful 3D blue and orange friendly little fish mascot swimming through luminous water bubbles, Pixar inspired cute ocean character" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARi_bp4tILG38yskEDHqQXKhCAPlyPYw68YQfeOxYpdM3QpK1_da5PDK10BFHu00oHexWs--4V62k8pMkJAKpAM-QpxKiz_M1fmMR9zhc1aaScFCruxeVIOPrBL3fvozXW-Rb9yvQ4ydA8bPkWWzkFGM71Nf3oZIc3Tx9SYjSObyTgkWZ6WU3vaszxGzIiMNZ0IFgavwWknYrbC3uuyWeilz86guEx9bTnHTSPpqbod825LWvLWQcc"/>
+<div class="selection-check hidden absolute top-0 right-0 w-4 h-4 rounded-full bg-secondary text-on-secondary items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[12px] font-bold">check</span>
+</div>
+</div>
+<span class="mt-1 font-label-badge text-label-badge text-on-surface font-semibold truncate w-full">Peixinho</span>
+</button>
+</div>
+</div>
+</section>
+<aside class="fixed bottom-0 left-0 w-full z-40 px-margin pt-3 pb-safe bg-surface/90 backdrop-blur-xl shadow-2xl">
+<div class="max-w-md mx-auto flex flex-col items-center gap-2">
+<button class="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-primary-container via-primary to-primary-fixed-dim text-on-primary-container font-headline-sm text-headline-sm font-bold flex items-center justify-center gap-2 shadow-[0_4px_24px_rgba(160,120,255,0.4)] hover:brightness-110 active:scale-[0.98] transition-all" id="saveButton" onclick="saveAvatarProfile()" type="button">
+<span class="material-symbols-outlined text-[22px]">check_circle</span>
+<span>Salvar e Aplicar Novo Avatar</span>
+</button>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-center flex items-center justify-center gap-1.5 pb-1">
+<span class="material-symbols-outlined text-[15px] text-tertiary">sync</span>
+<span>O novo avatar será atualizado instantaneamente em todos os seus dispositivos.</span>
+</p>
+</div>
+</aside>
+<div class="fixed top-20 left-1/2 -translate-x-1/2 z-50 flex items-center gap-2 bg-secondary text-on-secondary px-4 py-2 rounded-full font-label-md text-label-md shadow-xl transition-all duration-300 opacity-0 pointer-events-none -translate-y-2" id="toastFeedback">
+<span class="material-symbols-outlined text-[18px]">celebration</span>
+<span id="toastMessage">Avatar atualizado com sucesso!</span>
+</div>
+</div>
+<script>
+  function chooseAvatar(name, buttonElement) {
+    document.querySelectorAll('.avatar-card').forEach(card => {
+      card.classList.remove('bg-surface-container-high', 'selected');
+      card.classList.add('bg-surface-container-low');
+      const innerImgWrap = card.querySelector('div');
+      if (innerImgWrap) {
+        innerImgWrap.classList.remove('bg-primary');
+        innerImgWrap.classList.add('bg-surface-container-highest');
+      }
+      const titleSpan = card.querySelector('span.font-label-md, span.font-label-badge');
+      if (titleSpan) {
+        titleSpan.classList.remove('text-primary');
+        titleSpan.classList.add('text-on-surface');
+      }
+      const checkMark = card.querySelector('.selection-check');
+      if (checkMark) {
+        checkMark.classList.add('hidden');
+        checkMark.classList.remove('flex');
+      }
+    });
+
+    buttonElement.classList.add('bg-surface-container-high', 'selected');
+    buttonElement.classList.remove('bg-surface-container-low');
+    const selectedImgWrap = buttonElement.querySelector('div');
+    if (selectedImgWrap) {
+      selectedImgWrap.classList.remove('bg-surface-container-highest');
+      selectedImgWrap.classList.add('bg-primary');
+    }
+    const selectedTitle = buttonElement.querySelector('span.font-label-md, span.font-label-badge');
+    if (selectedTitle) {
+      selectedTitle.classList.remove('text-on-surface');
+      selectedTitle.classList.add('text-primary');
+    }
+    const selectedCheck = buttonElement.querySelector('.selection-check');
+    if (selectedCheck) {
+      selectedCheck.classList.remove('hidden');
+      selectedCheck.classList.add('flex');
+    }
+
+    const clickedImg = buttonElement.querySelector('img');
+    const heroImg = document.getElementById('currentAvatarImg');
+    const heroName = document.getElementById('currentAvatarName');
+    const fullTitle = buttonElement.getAttribute('data-avatar-title') || name;
+
+    if (clickedImg && heroImg) {
+      heroImg.src = clickedImg.src;
+      heroImg.setAttribute('data-alt', clickedImg.getAttribute('data-alt') || '');
+    }
+    if (heroName) {
+      heroName.textContent = fullTitle;
+    }
+
+    const container = document.getElementById('avatarPreviewContainer');
+    if (container) {
+      container.classList.add('scale-105');
+      setTimeout(() => container.classList.remove('scale-105'), 200);
+    }
+  }
+
+  function selectRole(btn) {
+    document.querySelectorAll('.role-btn').forEach(b => {
+      b.classList.remove('bg-surface-container-high', 'text-primary', 'shadow-sm');
+      b.classList.add('text-on-surface-variant');
+    });
+    btn.classList.add('bg-surface-container-high', 'text-primary', 'shadow-sm');
+    btn.classList.remove('text-on-surface-variant');
+  }
+
+  function selectAge(btn) {
+    document.querySelectorAll('.age-pill').forEach(p => {
+      p.classList.remove('bg-primary-container', 'text-on-primary-container', 'font-bold');
+      p.classList.add('bg-surface-container-highest', 'text-on-surface-variant');
+    });
+    btn.classList.add('bg-primary-container', 'text-on-primary-container', 'font-bold');
+    btn.classList.remove('bg-surface-container-highest', 'text-on-surface-variant');
+  }
+
+  function saveAvatarProfile() {
+    const toast = document.getElementById('toastFeedback');
+    const nameInput = document.getElementById('profileNameInput');
+    const toastMsg = document.getElementById('toastMessage');
+    
+    if (toast && toastMsg) {
+      const name = nameInput && nameInput.value.trim() ? nameInput.value.trim() : 'Perfil';
+      toastMsg.textContent = name + ' atualizado com sucesso!';
+      toast.classList.remove('opacity-0', 'pointer-events-none', '-translate-y-2');
+      toast.classList.add('opacity-100', 'translate-y-0');
+
+      setTimeout(() => {
+        toast.classList.remove('opacity-100', 'translate-y-0');
+        toast.classList.add('opacity-0', 'pointer-events-none', '-translate-y-2');
+      }, 3000);
+    }
+  }
+</script></main></body></html>

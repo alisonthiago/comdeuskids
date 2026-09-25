@@ -1,0 +1,543 @@
+/* ============================================================
+   COM DEUS KIDS — EXPERIÊNCIA WEB PARA SMART TV (10-Foot UI)
+   ============================================================ */
+
+.cdk-tv-body {
+  font-family: var(--cdk-font-family, 'Baloo 2', sans-serif);
+  font-size: 18px;
+  background-color: #08090b;
+  color: #fff;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+/* FOCO DO CONTROLE REMOTO (D-PAD) — ESTADO ULTRA VISÍVEL */
+.cdk-tv-body *:focus,
+.cdk-tv-focus:focus,
+.cdk-tv-btn:focus,
+.cdk-tv-card:focus {
+  outline: none !important;
+  transform: scale(1.08) !important;
+  /* O foco precisa aparecer imediatamente no controle remoto. Um anel
+     sólido é mais leve que uma sombra difusa em TVs de menor potência. */
+  box-shadow: 0 0 0 4px #22c55e !important;
+  z-index: 50 !important;
+  border-color: #22c55e !important;
+}
+
+/* Ocultar barra móvel em modo TV */
+.cdk-tv-body .cdk-mobile-bottom-nav {
+  display: none !important;
+}
+
+/* ---------- TV LOGIN POR QR CODE & CÓDIGO TEMPORÁRIO ---------- */
+.cdk-tv-login-screen {
+  min-height: 100vh;
+  width: 100%;
+  background: radial-gradient(circle at center, #161825 0%, #08090b 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 80px;
+  color: #fff;
+}
+
+.cdk-tv-login-header {
+  position: absolute;
+  top: 40px;
+  left: 60px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cdk-tv-logo-badge {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cdk-tv-login-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+}
+
+.cdk-tv-qr-box {
+  background: #fff;
+  padding: 24px;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  height: 320px;
+  margin: 0 auto;
+}
+
+.cdk-tv-qr-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.cdk-tv-login-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cdk-tv-login-title {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #f8fafc;
+}
+
+.cdk-tv-login-subtitle {
+  font-size: 20px;
+  color: #94a3b8;
+  line-height: 1.5;
+}
+
+.cdk-tv-code-card {
+  background: #141620;
+  border: 2px solid #282c3c;
+  border-radius: 16px;
+  padding: 20px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cdk-tv-code-label {
+  font-size: 14px;
+  color: #9496a1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cdk-tv-code-display {
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: 8px;
+  color: #22c55e;
+  font-family: monospace;
+}
+
+.cdk-tv-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  color: #38bdf8;
+}
+
+.cdk-tv-btn-email {
+  background: rgba(255, 255, 255, 0.08);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  color: #e2e8f0;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 12px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+/* ---------- TV: QUEM VAI ASSISTIR? ---------- */
+.cdk-tv-select-screen {
+  min-height: 100vh;
+  width: 100%;
+  background: radial-gradient(circle at center, #151722 0%, #08090b 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  color: #fff;
+}
+
+.cdk-tv-select-title {
+  font-size: 54px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.cdk-tv-select-sub {
+  font-size: 22px;
+  color: #94a3b8;
+  margin-bottom: 60px;
+}
+
+.cdk-tv-profiles-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  margin-bottom: 60px;
+}
+
+.cdk-tv-profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  width: 160px;
+  background: transparent;
+  border: none;
+  padding: 8px;
+  border-radius: 24px;
+}
+
+.cdk-tv-avatar-circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 64px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.6);
+  border: 4px solid transparent;
+  transition: border-color 160ms ease;
+}
+
+.cdk-tv-profile-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #94a3b8;
+}
+
+.cdk-tv-profile-card:focus .cdk-tv-profile-name {
+  color: #fff;
+}
+
+/* ON-SCREEN PIN NUMPAD FOR REMOTE */
+.cdk-tv-numpad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  width: 280px;
+  margin: 20px auto 0;
+}
+
+.cdk-tv-num-btn {
+  background: #191c28;
+  border: 2px solid #2a2e40;
+  border-radius: 12px;
+  font-size: 24px;
+  font-weight: 800;
+  color: #fff;
+  padding: 16px;
+  cursor: pointer;
+}
+
+/* ---------- TV HOME LAYOUT ---------- */
+.cdk-tv-home {
+  min-height: 100vh;
+  display: flex;
+  background: #08090b;
+}
+
+/* HEADER SUPERIOR STREAMING TV (SEM MENU LATERAL) */
+.cdk-tv-top-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background: rgba(8, 9, 11, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+
+.cdk-tv-header-inner {
+  width: 100%;
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 0 clamp(28px, 4vw, 56px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cdk-tv-brand {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.cdk-tv-tabs {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cdk-tv-tab {
+  padding: 8px 24px;
+  border-radius: 9999px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #94a3b8;
+  background: transparent;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+  font-family: inherit;
+}
+
+.cdk-tv-tab.active {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.cdk-tv-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.cdk-tv-icon-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  border: 2px solid transparent;
+  color: #cbd5e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.cdk-tv-profile-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 2px solid transparent;
+  border-radius: 9999px;
+  padding: 4px 16px 4px 6px;
+  cursor: pointer;
+  color: #ffffff;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.cdk-tv-avatar-badge {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 2px solid #f59e0b;
+  overflow: hidden;
+}
+
+.cdk-tv-profile-label {
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.cdk-tv-main-content {
+  flex: 1;
+  width: 100%;
+  overflow-y: auto;
+  padding-bottom: 80px;
+}
+
+/* HERO TV */
+.cdk-tv-hero {
+  height: 72vh;
+  background-size: cover;
+  background-position: center 25%;
+  display: flex;
+  align-items: flex-end;
+  padding: 60px 80px;
+  position: relative;
+}
+
+.cdk-tv-hero-content {
+  max-width: 800px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.cdk-tv-hero-title {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.05;
+  color: #fff;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.9);
+}
+
+.cdk-tv-hero-desc {
+  font-size: 18px;
+  color: #cbd5e1;
+  line-height: 1.5;
+  max-width: 700px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
+}
+
+.cdk-tv-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 12px;
+}
+
+.cdk-tv-btn-play {
+  background: #fff;
+  color: #08090b;
+  font-size: 18px;
+  font-weight: 800;
+  padding: 16px 36px;
+  border-radius: 12px;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.cdk-tv-btn-list {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 16px 32px;
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+/* CARROSSEIS TV */
+.cdk-tv-carousels-container {
+  padding: 30px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.cdk-tv-row-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #f1f5f9;
+  margin-bottom: 16px;
+}
+
+.cdk-tv-cards-scroll {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 14px 6px;
+}
+
+.cdk-tv-cards-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.cdk-tv-card {
+  flex: 0 0 320px;
+  width: 320px;
+  aspect-ratio: 16 / 9;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #141620;
+  position: relative;
+  cursor: pointer;
+  border: 3px solid transparent;
+}
+
+.cdk-tv-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cdk-tv-card-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  padding: 24px 16px 12px;
+  color: #fff;
+}
+
+.cdk-tv-card-title {
+  font-size: 16px;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* TV PLAYER OVERLAY (Desaparece após inatividade) */
+.cdk-tv-player-hud {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 80px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  z-index: 5000;
+}
+
+.cdk-tv-player-hud.idle {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.cdk-tv-player-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.cdk-tv-player-icon-btn {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.cdk-tv-player-icon-btn.primary {
+  width: 80px;
+  height: 80px;
+  background: #22c55e;
+  color: #052e16;
+}

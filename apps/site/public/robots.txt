@@ -1,0 +1,23 @@
+# Com Deus Kids — robots.txt
+User-agent: *
+Allow: /
+Allow: /familias
+Allow: /professores
+Allow: /igrejas
+Allow: /escolas
+Allow: /planos
+Allow: /categorias
+Allow: /temas
+Allow: /colecoes
+Allow: /jesus
+Allow: /termos
+Allow: /privacidade
+
+# Não indexar áreas privadas, checkout ou administrativas
+Disallow: /checkout
+Disallow: /carrinho
+Disallow: /admin
+Disallow: /membros
+Disallow: /afiliados
+
+Sitemap: https://comdeuskids.com.br/sitemap.xml

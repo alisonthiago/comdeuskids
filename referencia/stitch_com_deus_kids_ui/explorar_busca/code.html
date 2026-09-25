@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#131315;}body{overscroll-behavior:none;font-family:'Plus Jakarta Sans',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container": "#201f21", "on-error": "#690005", "primary-fixed-dim": "#d0bcff", "on-error-container": "#ffdad6", "inverse-surface": "#e5e1e4", "primary": "#d0bcff", "on-primary-container": "#340080", "surface": "#131315", "on-primary-fixed": "#23005c", "secondary-fixed": "#ffddb8", "inverse-on-surface": "#313032", "secondary": "#ffb95f", "tertiary-container": "#009bd1", "on-background": "#e5e1e4", "tertiary-fixed": "#c4e7ff", "surface-bright": "#39393b", "surface-variant": "#353437", "surface-container-high": "#2a2a2c", "inverse-primary": "#6d3bd7", "tertiary-fixed-dim": "#7bd0ff", "on-tertiary-container": "#002d40", "secondary-container": "#ee9800", "outline": "#958ea0", "primary-fixed": "#e9ddff", "on-secondary-fixed": "#2a1700", "on-tertiary-fixed": "#001e2c", "background": "#131315", "surface-container-low": "#1c1b1d", "on-tertiary-fixed-variant": "#004c69", "on-primary-fixed-variant": "#5516be", "surface-dim": "#131315", "on-surface-variant": "#cbc3d7", "primary-container": "#a078ff", "error": "#ffb4ab", "on-surface": "#e5e1e4", "on-primary": "#3c0091", "surface-container-lowest": "#0e0e10", "surface-container-highest": "#353437", "tertiary": "#7bd0ff", "on-secondary-fixed-variant": "#653e00", "on-tertiary": "#00354a", "outline-variant": "#494454", "on-secondary-container": "#5b3800", "surface-tint": "#d0bcff", "secondary-fixed-dim": "#ffb95f", "error-container": "#93000a", "on-secondary": "#472a00" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-lg": "1.5rem", "gutter-desktop": "1.75rem", "margin-desktop": "3.5rem", "space-md": "1rem", "space-xl": "2.5rem", "space-sm": "0.5rem", "margin": "1rem", "gutter": "1.25rem", "margin-tablet": "2rem" }, fontFamily: { "label-badge": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "display-hero-mobile": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "display-hero": ["Plus Jakarta Sans"] }, fontSize: { "label-badge": ["11px", { "lineHeight": "12px", "letterSpacing": "0.05em", "fontWeight": "800" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "700" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "display-hero-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "display-hero": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }] } } } };</script></head><body class="bg-surface text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #8b5cf6 - Font: plusJakartaSans - Mode: dark - Roundness: rounded-md" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XcsaGA7_VlrEEK0m02iEhCk7P_a1zzXziET4X0vJjQqbbhnPmf6Qtivz4JbEO3QeFv0_j0X0DFwa3qToaP2pw0Dyjqhug84-_Be4f1LOR6IuvtqUIEHqAe1bTK7JXwllHTw1Ooa4wr0VosxJoGeH_L1uvq_k4VJnYwW-2CFQL1QVsF6Dh2UIRWi5pqx_r98BVZGdwEsOs-jCmckwZBd6cU9k27VJARir1XIJIo_SreJAllXB4pLWL0XA"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight ml-space-xs">Explorar</span></div><div class="flex items-center gap-space-sm"><button class="w-11 h-11 flex items-center justify-center rounded-full bg-surface-container-high/60 text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">search</span></button><div class="w-11 h-11 flex items-center justify-center"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_12px_rgba(160,120,255,0.45)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full text-on-surface">
+<!-- SEARCH BAR MODULE (Hero of Explore) -->
+<section class="px-margin pt-space-md pb-space-xs flex flex-col gap-space-sm relative">
+<div class="relative w-full">
+<div class="relative flex items-center bg-surface-container-high/90 backdrop-blur-xl rounded-full shadow-lg transition-all duration-300 focus-within:shadow-[0_0_24px_rgba(208,188,255,0.35)] focus-within:bg-surface-container-highest">
+<span class="material-symbols-outlined text-primary pl-space-md text-[24px] pointer-events-none select-none">search</span>
+<input class="w-full bg-transparent text-on-surface font-body-md text-body-md placeholder-outline px-space-sm py-space-md focus:outline-none" id="explore-search-input" placeholder="O que você quer assistir hoje?" type="text" value="Davi"/>
+<!-- Micro actions inside search -->
+<div class="flex items-center gap-space-xs pr-space-sm">
+<button aria-label="Limpar busca" class="w-8 h-8 rounded-full bg-surface-variant flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" id="clear-search-btn">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+<button aria-label="Busca por voz" class="w-9 h-9 rounded-full bg-primary/20 flex items-center justify-center text-primary hover:bg-primary/30 transition-colors">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+</button>
+<button aria-label="Filtros avançados" class="w-9 h-9 rounded-full bg-surface-variant/70 flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[19px]">tune</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Pill Tags -->
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-space-xs -mx-margin px-margin">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-outline px-space-xs shrink-0 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">bolt</span> Em alta:
+      </span>
+<button class="bg-primary/25 text-primary-fixed font-label-badge text-label-badge px-3 py-1.5 rounded-full shrink-0 flex items-center gap-1 shadow-[0_0_12px_rgba(208,188,255,0.25)]">
+<span>Davi</span>
+<span class="material-symbols-outlined text-[12px]">check</span>
+</button>
+<button class="bg-surface-container-high text-on-surface-variant font-label-badge text-label-badge px-3 py-1.5 rounded-full shrink-0 hover:text-on-surface transition-colors">
+        Arca de Noé
+      </button>
+<button class="bg-surface-container-high text-on-surface-variant font-label-badge text-label-badge px-3 py-1.5 rounded-full shrink-0 hover:text-on-surface transition-colors">
+        Jesus
+      </button>
+<button class="bg-surface-container-high text-on-surface-variant font-label-badge text-label-badge px-3 py-1.5 rounded-full shrink-0 hover:text-on-surface transition-colors">
+        Músicas
+      </button>
+<button class="bg-surface-container-high text-on-surface-variant font-label-badge text-label-badge px-3 py-1.5 rounded-full shrink-0 hover:text-on-surface transition-colors">
+        Colorir
+      </button>
+<button class="text-outline hover:text-on-surface font-label-badge text-label-badge px-2 py-1.5 shrink-0 transition-colors">
+        Limpar
+      </button>
+</div>
+</section>
+<!-- CATEGORY PILLS (Horizontal Scroll) -->
+<section class="pt-space-sm pb-space-xs">
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar px-margin">
+<button class="px-4 py-2 rounded-full font-label-md text-label-md shrink-0 bg-primary text-on-primary font-bold shadow-[0_0_16px_rgba(208,188,255,0.4)] flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">stars</span>
+<span>Todos</span>
+</button>
+<button class="px-4 py-2 rounded-full font-label-md text-label-md shrink-0 bg-surface-container-high/80 text-on-surface-variant hover:text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">movie</span>
+<span>Filmes</span>
+</button>
+<button class="px-4 py-2 rounded-full font-label-md text-label-md shrink-0 bg-surface-container-high/80 text-on-surface-variant hover:text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">tv_gen</span>
+<span>Séries</span>
+</button>
+<button class="px-4 py-2 rounded-full font-label-md text-label-md shrink-0 bg-surface-container-high/80 text-on-surface-variant hover:text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">auto_stories</span>
+<span>Histórias</span>
+</button>
+<button class="px-4 py-2 rounded-full font-label-md text-label-md shrink-0 bg-surface-container-high/80 text-on-surface-variant hover:text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary-fixed">animation</span>
+<span>Desenhos</span>
+</button>
+<button class="px-4 py-2 rounded-full font-label-md text-label-md shrink-0 bg-surface-container-high/80 text-on-surface-variant hover:text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">music_note</span>
+<span>Músicas</span>
+</button>
+<button class="px-4 py-2 rounded-full font-label-md text-label-md shrink-0 bg-surface-container-high/80 text-on-surface-variant hover:text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">draw</span>
+<span>Atividades PDF</span>
+</button>
+</div>
+</section>
+<!-- AGE RANGE SELECTOR -->
+<section class="px-margin pt-space-sm pb-space-sm">
+<div class="p-space-sm bg-surface-container-low/90 rounded-2xl flex flex-col gap-space-xs">
+<div class="flex items-center justify-between px-space-xs">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary">child_care</span> Filtrar por Idade
+        </span>
+<span class="font-body-sm text-body-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">family_restroom</span> Seguro para Crianças
+        </span>
+</div>
+<div class="grid grid-cols-4 gap-1.5 pt-1">
+<button class="py-2 px-1 rounded-xl bg-surface-container-high text-on-surface-variant hover:text-on-surface flex flex-col items-center gap-1 transition-all">
+<span class="material-symbols-outlined text-[18px] text-secondary">cruelty_free</span>
+<span class="font-label-badge text-label-badge text-center leading-tight">0–3 anos</span>
+</button>
+<button class="py-2 px-1 rounded-xl bg-primary-container text-on-primary-container font-bold flex flex-col items-center gap-1 shadow-[0_0_12px_rgba(160,120,255,0.4)]">
+<span class="material-symbols-outlined text-[18px]">castle</span>
+<span class="font-label-badge text-label-badge text-center leading-tight">4–6 anos</span>
+</button>
+<button class="py-2 px-1 rounded-xl bg-surface-container-high text-on-surface-variant hover:text-on-surface flex flex-col items-center gap-1 transition-all">
+<span class="material-symbols-outlined text-[18px] text-tertiary">shield</span>
+<span class="font-label-badge text-label-badge text-center leading-tight">7–9 anos</span>
+</button>
+<button class="py-2 px-1 rounded-xl bg-surface-container-high text-on-surface-variant hover:text-on-surface flex flex-col items-center gap-1 transition-all">
+<span class="material-symbols-outlined text-[18px] text-outline">rocket_launch</span>
+<span class="font-label-badge text-label-badge text-center leading-tight">10–12 anos</span>
+</button>
+</div>
+</div>
+</section>
+<!-- SEARCH RESULTS: 'Davi' PREVIEW -->
+<section class="pt-space-md pb-space-md flex flex-col gap-space-sm">
+<div class="px-margin flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Resultados: <span class="text-primary-fixed">“Davi”</span></h2>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-primary font-label-badge text-label-badge">14 títulos</span>
+</div>
+<button class="text-secondary font-label-md text-label-md flex items-center gap-0.5 hover:underline">
+<span>Ver todos</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+<!-- Vertical Posters Grid (2:3 aspect) -->
+<div class="grid grid-cols-2 gap-space-sm px-margin">
+<!-- Card 1: Davi & Golias (Filme) -->
+<div class="relative bg-surface-container rounded-2xl overflow-hidden shadow-lg flex flex-col group active:scale-[0.98] transition-transform">
+<div class="relative aspect-[2/3] w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="3D animated style movie poster of little shepherd boy David with a sling gazing towards gigantic Goliath armor in an epic valley, bathed in divine luminous purple and celestial golden sunlight, high quality pixar render style, kids friendly, warm and inspiring atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4hjxyeuKmB90njv3ZiW_T-rejwQD9Wd402eeU-KC39zH0pc7eiK812vW8s17nH7y4BsSAciVdhiRRKqZ3ESOSG7amtpwgup1vdhQBkN0JwEgAhFRFY0L4vtYuzW_G6cO_VFYOiGAHBt9IShVF8lJI402AQOKfI76UEQhzuvM5XKlCGwiAWrFZwE4uxuTGvittdG7G_AcilsuOE9HXv1lGWG6ggYH7pTCfslqqeEhokY9te1L-atxR"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-black/30"></div>
+<!-- Relevance & Badge -->
+<div class="absolute top-2 left-2 flex items-center gap-1">
+<span class="px-2 py-0.5 rounded-md bg-primary text-on-primary font-label-badge text-label-badge font-bold shadow-md">FILME</span>
+<span class="px-1.5 py-0.5 rounded-md bg-surface-container-lowest/80 backdrop-blur-md text-secondary font-label-badge text-label-badge">98%</span>
+</div>
+<div class="absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-container-lowest/70 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[16px]">bookmark_border</span>
+</div>
+<!-- Rating -->
+<div class="absolute bottom-2 left-2 flex items-center gap-1">
+<span class="px-1.5 py-0.5 rounded bg-emerald-500/80 text-white font-label-badge text-label-badge font-bold">LIVRE</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">45 min</span>
+</div>
+</div>
+<div class="p-space-sm flex flex-col gap-0.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface line-clamp-1">Davi &amp; Golias</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">star</span> Coragem e Fé Gigante
+          </p>
+</div>
+</div>
+<!-- Card 2: O Rei Davi (Série) -->
+<div class="relative bg-surface-container rounded-2xl overflow-hidden shadow-lg flex flex-col group active:scale-[0.98] transition-transform">
+<div class="relative aspect-[2/3] w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Richly detailed kids cartoon poster showing young King David wearing a golden crown and playing an ornate golden harp under a sky filled with bright shining stars, purple and royal navy color palette, 3D animated character, wholesome faith-based family series." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAVqnqfRPYSNKoLzFdC77YOjm9dOJbou_uzYQD4DFbWRWUB0R-dAzahuy2ZXBAkgTZ_euvM1c9ZdEQWY5srtjl0tLBmv9k_RxJg_YcRUKL8Auiee-cxBQFNQxmNS1DjPLDcaG5yQhFNb2_tzHr8IjBScOIuGneoUAQ15XnXD-TlR1Gx69Me4GLxh2ua74uuQRnCPAOCRBpoXZD-UGEYR_DwCxz6RHBbaI3jCTC8PfVA2mAz28rD1IX"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-black/30"></div>
+<!-- Badges -->
+<div class="absolute top-2 left-2 flex items-center gap-1">
+<span class="px-2 py-0.5 rounded-md bg-tertiary-container text-on-tertiary-container font-label-badge text-label-badge font-bold shadow-md">SÉRIE</span>
+</div>
+<div class="absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-container-lowest/70 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[16px]">bookmark_border</span>
+</div>
+<div class="absolute bottom-2 left-2 flex items-center gap-1">
+<span class="px-1.5 py-0.5 rounded bg-emerald-500/80 text-white font-label-badge text-label-badge font-bold">LIVRE</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">8 Eps</span>
+</div>
+</div>
+<div class="p-space-sm flex flex-col gap-0.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface line-clamp-1">Heróis: Rei Davi</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary">music_note</span> Louvor &amp; Coração
+          </p>
+</div>
+</div>
+</div>
+<!-- Card 3: 16:9 Landscape Video Thumbnail -->
+<div class="px-margin pt-space-xs">
+<div class="relative bg-surface-container rounded-2xl overflow-hidden shadow-lg flex flex-col">
+<div class="relative aspect-video w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Vibrant musical cartoon clip of young David dancing with cheerful sheep in a flower pasture under radiant violet and golden sunshine, musical notes floating in magical 3D animation, joyful children worship song." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlFg47yeZ5QTDrOEeXgIcHJ_xWsMFNtSFQetkYKeHgWP3kpXvklpBU_3lNBG69n4-RJEQCqczg2k8mAGzDxyq_eN8g83B2pSjCkF1Eow8HK9UqRrD63l90ynfWq0UKT7sDn1bibY2TPeNSnOqacPTAKRgARXqesl26vgZW_zQOIytzqMhNWxpQkn4_IhUSDGfFIgZoMI7WIrCOAd_HOSNCbde-rQfH1xKJjFKAbJQeh0rzTjGxvq3B"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-black/20 to-black/30"></div>
+<!-- Badges -->
+<div class="absolute top-3 left-3 flex items-center gap-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary text-on-secondary font-label-badge text-label-badge font-bold shadow-md">MÚSICA</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-label-badge text-label-badge">3:40 min</span>
+</div>
+<!-- Play Center Button -->
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-13 h-13 rounded-full bg-primary/90 text-on-primary flex items-center justify-center shadow-[0_0_20px_rgba(208,188,255,0.7)] transform transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-[32px] pl-0.5" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+</div>
+<div class="p-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Corajoso Como Davi - Clipe Musical</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Turminha Com Deus Kids • 1.2M visualizações</p>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all shrink-0">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 4: Activity Card (Colorir & PDF) -->
+<div class="px-margin pt-space-xs">
+<div class="p-space-md bg-gradient-to-r from-surface-container-high to-surface-container rounded-2xl flex items-center justify-between gap-space-md shadow-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-14 h-14 rounded-xl bg-secondary-container/30 flex items-center justify-center shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-secondary text-[32px]">palette</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="px-2 py-0.2 rounded-md bg-secondary text-on-secondary font-label-badge text-label-badge font-bold">PDF COLORIR</span>
+<span class="font-body-sm text-body-sm text-outline">18 págs</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface truncate">Caderno de Pintura: Davi</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pronto para imprimir e colorir em família</p>
+</div>
+</div>
+<button class="px-3.5 py-2 rounded-xl bg-surface-bright text-on-surface hover:bg-primary hover:text-on-primary transition-all font-label-md text-label-md shrink-0 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>Baixar</span>
+</button>
+</div>
+</div>
+</section>
+<!-- EXPLORE BY THEME (Cinematic gradient Bento/2-column) -->
+<section class="pt-space-md pb-space-md flex flex-col gap-space-sm">
+<div class="px-margin flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">auto_awesome</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Explore por Tema Bíblico</h2>
+</div>
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-outline">Valores</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm px-margin">
+<!-- Theme 1: Amor & Graça -->
+<div class="relative h-28 rounded-2xl overflow-hidden p-space-sm flex flex-col justify-end shadow-md group cursor-pointer active:scale-95 transition-all">
+<div class="absolute inset-0 bg-gradient-to-br from-amber-600/40 via-surface-container to-surface-container-lowest"></div>
+<div class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-secondary/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</div>
+<div class="relative z-10">
+<h3 class="font-headline-sm text-headline-sm text-secondary-fixed">Amor &amp; Graça</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">19 histórias</p>
+</div>
+</div>
+<!-- Theme 2: Coragem & Fé -->
+<div class="relative h-28 rounded-2xl overflow-hidden p-space-sm flex flex-col justify-end shadow-md group cursor-pointer active:scale-95 transition-all">
+<div class="absolute inset-0 bg-gradient-to-br from-purple-700/50 via-surface-container to-surface-container-lowest"></div>
+<div class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary-fixed">
+<span class="material-symbols-outlined text-[18px]">shield</span>
+</div>
+<div class="relative z-10">
+<h3 class="font-headline-sm text-headline-sm text-primary-fixed">Coragem &amp; Fé</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">27 histórias</p>
+</div>
+</div>
+<!-- Theme 3: Obediência & Sabedoria -->
+<div class="relative h-28 rounded-2xl overflow-hidden p-space-sm flex flex-col justify-end shadow-md group cursor-pointer active:scale-95 transition-all">
+<div class="absolute inset-0 bg-gradient-to-br from-teal-800/40 via-surface-container to-surface-container-lowest"></div>
+<div class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-tertiary/20 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[18px]">lightbulb</span>
+</div>
+<div class="relative z-10">
+<h3 class="font-headline-sm text-headline-sm text-tertiary">Sabedoria</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">14 histórias</p>
+</div>
+</div>
+<!-- Theme 4: Família & Amizade -->
+<div class="relative h-28 rounded-2xl overflow-hidden p-space-sm flex flex-col justify-end shadow-md group cursor-pointer active:scale-95 transition-all">
+<div class="absolute inset-0 bg-gradient-to-br from-rose-700/40 via-surface-container to-surface-container-lowest"></div>
+<div class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-secondary-fixed/20 flex items-center justify-center text-secondary-fixed">
+<span class="material-symbols-outlined text-[18px]">groups</span>
+</div>
+<div class="relative z-10">
+<h3 class="font-headline-sm text-headline-sm text-secondary-fixed">Família &amp; Paz</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">22 histórias</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CHARACTERS ROW (Amados Personagens) -->
+<section class="pt-space-sm pb-space-md flex flex-col gap-space-sm">
+<div class="px-margin flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">face_6</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Heróis da Fé</h2>
+</div>
+<span class="font-body-sm text-body-sm text-primary">Toque para ver</span>
+</div>
+<!-- Horizontal characters avatar scroller -->
+<div class="flex items-start gap-space-md overflow-x-auto no-scrollbar px-margin py-space-xs">
+<!-- Davi -->
+<div class="flex flex-col items-center gap-1.5 shrink-0 w-18 text-center cursor-pointer group">
+<div class="relative w-16 h-16 rounded-full p-0.5 bg-gradient-to-tr from-primary via-primary-fixed to-secondary shadow-[0_0_16px_rgba(208,188,255,0.4)]">
+<div class="w-full h-full rounded-full overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform" data-alt="Close up face avatar of David with cheerful smile, shepherd curly brown hair, animated kids style 3D character, soft glowing rim lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY9itykGe5HJDkIW5GRrtN6-6DooUlDNQDg8tQIEO0H7H5cipd-2JGFg-_v52MBdXW6rMYSeJ4ZG-qXZXLHaI3aZpGPnr3nfPdF20XF7ErW_61WzWCpZV24Zzic5OhydCBVul2wQ5Dk2gmf5l0dnRW0SWfPa0rfDT8sTF_a6zjg30p0SRWAD9yeqMi6yFysHTaoV-s7klFhvjkh7JYYO2YTAHghM70S1adbYxf1ST6b9aJPl0eDDb6"/>
+</div>
+<span class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center text-[11px] shadow">
+<span class="material-symbols-outlined text-[12px]">check</span>
+</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface line-clamp-1">Davi</span>
+<span class="font-label-badge text-label-badge text-outline">Pastor</span>
+</div>
+<!-- Moisés -->
+<div class="flex flex-col items-center gap-1.5 shrink-0 w-18 text-center cursor-pointer group">
+<div class="w-16 h-16 rounded-full p-0.5 bg-surface-variant hover:bg-tertiary transition-all">
+<div class="w-full h-full rounded-full overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform" data-alt="Close up portrait avatar of Moses with friendly kind eyes holding a wooden staff, 3D animated style for children, warm desert golden hour light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOxq7G_odFHnhq1t_FapiSUs1UdGsmUyKDSgWVUBB6r-7OEerY7XIb3Yquu5IZM48fnyCje_g8mmV0z5UIefX0ybrvCSIsGY6X5WViyUTAnPFRPdV-NwOWbkr2y1MxKkDj6xJ8BTwAXA4TbS8vDj_gJ13YpWWa5MtICmYXZILwr49jitQp8-FF5RmYYUwZl0YVJdAk1LBRJcbVPvgXRCYa0OXkKcHFFZN8pQnJdrAkC6OI8miVPRZS"/>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface line-clamp-1">Moisés</span>
+<span class="font-label-badge text-label-badge text-outline">Libertador</span>
+</div>
+<!-- Noé -->
+<div class="flex flex-col items-center gap-1.5 shrink-0 w-18 text-center cursor-pointer group">
+<div class="w-16 h-16 rounded-full p-0.5 bg-surface-variant hover:bg-secondary transition-all">
+<div class="w-full h-full rounded-full overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform" data-alt="Close up smiling avatar of Noah with white beard and blue tunic with little doves flying behind, friendly kids animated movie style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIpfwyiGlvCv1s3YoGOnTM17Rrb8J_rtC4W9D7C2yqhGjRID3neYHsfEjdgZG1__Zh2z4EN75VZpu63NQcJgyZ8OtSG7aSBXMlkI79MfI21UvILSLey7Jj0xpvy8vgBeiJ8P9UZ1ZtHR_fcCU6tkyVquBCSnj6dpqLP6n51-KM1NmP_HGlEkMTBn7cVp78Cs3SG--URzMPq0JunzyBHiTBvpmj6NmBJ-YJmz55iA44sF_gh9ZZQSwG"/>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface line-clamp-1">Noé</span>
+<span class="font-label-badge text-label-badge text-outline">A Arca</span>
+</div>
+<!-- Ester -->
+<div class="flex flex-col items-center gap-1.5 shrink-0 w-18 text-center cursor-pointer group">
+<div class="w-16 h-16 rounded-full p-0.5 bg-surface-variant hover:bg-primary transition-all">
+<div class="w-full h-full rounded-full overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform" data-alt="Close up cute animated portrait of Queen Esther wearing a dainty tiara and royal violet robes, confident and loving expression, pixar style 3d render." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmQ8wysWtzAWCd2tQEUEAKb9bk0zkCl0HZTkbFKpzul_fNxUNuHzkS7f8c3iUSUcLjLXf4Cae45muK7lxVlArfAfqbeVmTtja3aaK-jiMcJYlqzGrq2B1nKg-qVZJHnNK_3m6IADg8pyQOWlzUFHTbKnOGO3Oc5RPKLfv9sbHK56T3oqN4fpSdh_VbTG1WlTi2oqAoXnj74QuDGXpVS41TGpkA8ngkevceUaL-m6a9P0flexn1LLf2"/>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface line-clamp-1">Ester</span>
+<span class="font-label-badge text-label-badge text-outline">Rainha</span>
+</div>
+<!-- Daniel -->
+<div class="flex flex-col items-center gap-1.5 shrink-0 w-18 text-center cursor-pointer group">
+<div class="w-16 h-16 rounded-full p-0.5 bg-surface-variant hover:bg-secondary transition-all">
+<div class="w-full h-full rounded-full overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform" data-alt="Animated avatar of boy Daniel with friendly friendly tame lion beside him, gentle celestial light, 3D kids animation illustration." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlT6YRiDq7rRMRMeb5Jl248Tj9RVQHg_Pn5992tsVQxJLKLXkseI7mNZ3A13bgwTSmPS9N01iQu1KcWBzh2LNNCn0vU1S7_2GjUerRvp6Re-ilKx6c8gLIzg9qRKqLSRmCdJ9_NuSegjKFpWm0kmacwBYN6jFMEQQmB2af_w3LQaDxjf34ISg0o7G5tynIVDZW6V5CBYwEkJr14EqmBJZF0u3_JujmkU5CFqKVdW4kpYvasxjLM0kX"/>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface line-clamp-1">Daniel</span>
+<span class="font-label-badge text-label-badge text-outline">Fiel</span>
+</div>
+<!-- Jesus -->
+<div class="flex flex-col items-center gap-1.5 shrink-0 w-18 text-center cursor-pointer group">
+<div class="w-16 h-16 rounded-full p-0.5 bg-gradient-to-tr from-secondary to-primary shadow-[0_0_12px_rgba(255,185,95,0.4)]">
+<div class="w-full h-full rounded-full overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform" data-alt="Warm welcoming portrait of Jesus in white robes smiling kindly at children, radiating gentle golden sun rays and peaceful atmosphere, beautiful 3D cartoon style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZCAD_CdYh1Gygw_bTVzl5_D2uPo_UVfXTm8UmqhpatDRuch1V9zZKE3iBg200u0p5PARKZfGbruUV7YXcp5_NFX-c0rSk8vrWATuMxZeXpEtl8QviX2fp3uwVZgaj-ccBFssH9poPel5_zw0-g_0jOLLbQiNze22G-ZtZcxqOSXwBbuBulFYCuEQmJ9KEV2hXubVcmtBQVIU_iRImhp6gR5p1eDlEyzj8ZYg9t-SAFHOROs0dbfoZ"/>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface line-clamp-1 font-bold">Jesus</span>
+<span class="font-label-badge text-label-badge text-secondary font-bold">Bom Pastor</span>
+</div>
+</div>
+</section>
+<!-- TOP TRENDING SEARCHES (Mais Buscados) -->
+<section class="px-margin pt-space-xs pb-space-lg flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">trending_up</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Mais Buscados pelas Crianças</h2>
+</div>
+<div class="bg-surface-container rounded-2xl overflow-hidden divide-y-0 shadow-lg">
+<!-- Item 1 -->
+<div class="p-space-sm flex items-center justify-between hover:bg-surface-container-high transition-colors cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<span class="font-display-hero-mobile text-headline-md text-primary font-extrabold w-6 text-center">1</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Davi e Golias</span>
+<span class="font-body-sm text-body-sm text-outline">Filmes, Desenhos e Músicas</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">north_east</span>
+</div>
+<!-- Item 2 -->
+<div class="p-space-sm flex items-center justify-between hover:bg-surface-container-high transition-colors cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<span class="font-display-hero-mobile text-headline-md text-secondary font-extrabold w-6 text-center">2</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">A Criação do Mundo</span>
+<span class="font-body-sm text-body-sm text-outline">Gênesis em Animação 3D</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">north_east</span>
+</div>
+<!-- Item 3 -->
+<div class="p-space-sm flex items-center justify-between hover:bg-surface-container-high transition-colors cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<span class="font-display-hero-mobile text-headline-md text-tertiary font-extrabold w-6 text-center">3</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">A Grande Arca de Noé</span>
+<span class="font-body-sm text-body-sm text-outline">Série Musical &amp; Animais</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">north_east</span>
+</div>
+<!-- Item 4 -->
+<div class="p-space-sm flex items-center justify-between hover:bg-surface-container-high transition-colors cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<span class="font-display-hero-mobile text-headline-md text-on-surface-variant font-extrabold w-6 text-center">4</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Louvores de Ninar</span>
+<span class="font-body-sm text-body-sm text-outline">Músicas calmas para dormir com Deus</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">north_east</span>
+</div>
+<!-- Item 5 -->
+<div class="p-space-sm flex items-center justify-between hover:bg-surface-container-high transition-colors cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<span class="font-display-hero-mobile text-headline-md text-on-surface-variant font-extrabold w-6 text-center">5</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Jonas &amp; o Grande Peixe</span>
+<span class="font-body-sm text-body-sm text-outline">História sobre obediência</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">north_east</span>
+</div>
+</div>
+</section>
+<!-- DELIGHT / EMPTY STATE DISCOVERY TIP -->
+<section class="px-margin pb-space-xl">
+<div class="p-space-md rounded-2xl bg-gradient-to-b from-surface-container-high/80 to-surface-container/90 backdrop-blur-md flex flex-col items-center text-center gap-space-sm shadow-md">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary shadow-[0_0_16px_rgba(208,188,255,0.3)]">
+<span class="material-symbols-outlined text-[26px]">celebration</span>
+</div>
+<div class="flex flex-col gap-1 max-w-xs">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Não achou o que procurava?</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Que tal orar, dançar e cantar com nossos clipes musicais animados feitos para o coração?
+        </p>
+</div>
+<button class="mt-1 px-5 py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center gap-2 shadow-[0_0_16px_rgba(208,188,255,0.45)] hover:bg-primary-fixed transition-all active:scale-95">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">music_video</span>
+<span>Explorar Clipes Musicais</span>
+</button>
+</div>
+</section>
+</div>
+<script>
+  // Simple micro-interaction for clear search
+  const clearBtn = document.getElementById('clear-search-btn');
+  const searchInput = document.getElementById('explore-search-input');
+  if (clearBtn && searchInput) {
+    clearBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      searchInput.focus();
+    });
+  }
+
+  // Update shell active navigation item to 'Explorar'
+  const navLinks = document.querySelectorAll('nav a[data-path]');
+  navLinks.forEach(link => {
+    if (link.getAttribute('data-path') === 'explorar') {
+      link.classList.remove('text-on-surface-variant');
+      link.classList.add('text-primary-fixed', 'font-bold');
+      const icon = link.querySelector('.material-symbols-outlined');
+      if (icon) {
+        icon.style.fontVariationSettings = "'FILL' 1";
+      }
+    } else {
+      link.classList.remove('text-primary-fixed', 'font-bold');
+      link.classList.add('text-on-surface-variant');
+      const icon = link.querySelector('.material-symbols-outlined');
+      if (icon) {
+        icon.style.fontVariationSettings = "'FILL' 0";
+      }
+    }
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-4px_24px_rgba(0,0,0,0.4)]" data-active-classes="text-primary-fixed font-bold"><div class="h-16 px-space-xs flex items-center justify-around"><a class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-all" data-path="inicio" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-badge text-label-badge">Início</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-all" data-path="clipes" href="#"><span class="material-symbols-outlined text-[22px]">movie</span><span class="font-label-badge text-label-badge">Clipes</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] min-h-[44px] transition-all text-primary-fixed font-bold" data-path="explorar" href="#"><span class="material-symbols-outlined text-[22px]">explore</span><span class="font-label-badge text-label-badge">Explorar</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-all" data-path="minha-lista" href="#"><span class="material-symbols-outlined text-[22px]">bookmark</span><span class="font-label-badge text-label-badge">Minha Lista</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-all" data-path="perfil" href="#"><span class="material-symbols-outlined text-[22px]">account_circle</span><span class="font-label-badge text-label-badge">Perfil</span></a></div></nav></body></html>

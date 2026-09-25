@@ -1,0 +1,50 @@
+# ============================================================
+# ANTIGRAVITY IGNORE — COM DEUS KIDS
+# Previne vazamento de tokens e arquivos pesados para o contexto
+# ============================================================
+
+# Dependências (Extremamente pesadas em tokens)
+node_modules/
+*/node_modules/
+*/*/node_modules/
+.pnpm-store/
+
+# Builds e Bundles gerados
+dist/
+build/
+out/
+.next/
+.output/
+*.tsbuildinfo
+
+# Caches e Ambientes Locais
+.cache/
+.vite/
+.turbo/
+.vercel/
+.npm/
+
+# Logs e Processos
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Arquivos de Sistema & IDEs
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Arquivos Temporários de Mídia e Gravações Locais
+.tempmediaStorage/
+.system_generated/
+*.mp4
+*.webm
+*.webp
+*.mov
+
+# Ambientes Locais (.env com dados sensíveis)
+.env.local
+.env.*.local

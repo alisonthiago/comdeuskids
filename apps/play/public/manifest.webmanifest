@@ -1,0 +1,52 @@
+{
+  "id": "com.comdeuskids.play",
+  "name": "Com Deus Kids",
+  "short_name": "Com Deus Kids",
+  "description": "COM DEUS KIDS — CRESCER COM DEUS DESDE A INFÂNCIA. Um universo onde crianças aprendem, brincam, assistem e crescem com Deus.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#08090b",
+  "theme_color": "#8b5cf6",
+  "categories": ["entertainment", "kids", "education"],
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/images/login-brand.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/com-deus-kids-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/logo-kids-white.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Catálogo",
+      "short_name": "Catálogo",
+      "description": "Acessar catálogo de desenhos e séries",
+      "url": "/inicio",
+      "icons": [{ "src": "/images/login-brand.svg", "sizes": "any" }]
+    },
+    {
+      "name": "Smart TV",
+      "short_name": "Modo TV",
+      "description": "Abrir interface otimizada para TV",
+      "url": "/tv",
+      "icons": [{ "src": "/images/login-brand.svg", "sizes": "any" }]
+    }
+  ]
+}

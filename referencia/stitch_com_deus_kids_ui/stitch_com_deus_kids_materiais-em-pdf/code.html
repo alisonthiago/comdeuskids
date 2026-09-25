@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'on-surface-variant': '#cbc3d7', 'primary': '#d0bcff', 'inverse-primary': '#6d3bd7', 'surface-container-highest': '#353437', 'outline': '#958ea0', 'surface-variant': '#353437', 'tertiary-fixed': '#c4e7ff', 'inverse-on-surface': '#313032', 'surface-container': '#201f21', 'secondary': '#ffb95f', 'on-tertiary-fixed-variant': '#004c69', 'tertiary': '#7bd0ff', 'on-secondary': '#472a00', 'on-tertiary-fixed': '#001e2c', 'primary-fixed': '#e9ddff', 'surface-container-high': '#2a2a2c', 'on-secondary-container': '#5b3800', 'on-surface': '#e5e1e4', 'on-primary-fixed': '#23005c', 'tertiary-fixed-dim': '#7bd0ff', 'background': '#131315', 'on-tertiary': '#00354a', 'primary-container': '#a078ff', 'surface-container-lowest': '#0e0e10', 'on-secondary-fixed-variant': '#653e00', 'secondary-container': '#ee9800', 'secondary-fixed-dim': '#ffb95f', 'inverse-surface': '#e5e1e4', 'on-error': '#690005', 'secondary-fixed': '#ffddb8', 'on-primary-container': '#340080', 'surface-container-low': '#1c1b1d', 'on-background': '#e5e1e4', 'error-container': '#93000a', 'surface-bright': '#39393b', 'on-primary-fixed-variant': '#5516be', 'error': '#ffb4ab', 'on-primary': '#3c0091', 'surface': '#131315', 'on-tertiary-container': '#002d40', 'primary-fixed-dim': '#d0bcff', 'surface-tint': '#d0bcff', 'on-error-container': '#ffdad6', 'tertiary-container': '#009bd1', 'outline-variant': '#494454', 'surface-dim': '#131315', 'on-secondary-fixed': '#2a1700' }, borderRadius: { DEFAULT: '0.25rem', lg: '0.5rem', xl: '0.75rem', full: '9999px' }, spacing: { margin: '1rem', 'space-lg': '1.5rem', 'space-xs': '0.25rem', 'space-sm': '0.5rem', gutter: '1.25rem', 'gutter-desktop': '1.75rem', 'space-md': '1rem', 'margin-desktop': '3.5rem', 'space-xl': '2.5rem', 'margin-tablet': '2rem' }, fontFamily: { 'label-badge': ['Plus Jakarta Sans'], 'body-sm': ['Plus Jakarta Sans'], 'body-md': ['Plus Jakarta Sans'], 'headline-md': ['Plus Jakarta Sans'], 'display-hero-mobile': ['Plus Jakarta Sans'], 'label-md': ['Plus Jakarta Sans'], 'display-hero': ['Plus Jakarta Sans'], 'label-lg': ['Plus Jakarta Sans'], 'headline-lg': ['Plus Jakarta Sans'], 'headline-sm': ['Plus Jakarta Sans'], 'body-lg': ['Plus Jakarta Sans'] }, fontSize: { 'label-badge': ['11px', { lineHeight: '12px', letterSpacing: '0.05em', fontWeight: '800' }], 'body-sm': ['12px', { lineHeight: '16px', fontWeight: '500' }], 'body-md': ['14px', { lineHeight: '20px', fontWeight: '400' }], 'headline-md': ['22px', { lineHeight: '28px', fontWeight: '700' }], 'display-hero-mobile': ['32px', { lineHeight: '40px', letterSpacing: '-0.02em', fontWeight: '800' }], 'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.02em', fontWeight: '700' }], 'display-hero': ['48px', { lineHeight: '56px', letterSpacing: '-0.02em', fontWeight: '800' }], 'label-lg': ['14px', { lineHeight: '18px', letterSpacing: '0.01em', fontWeight: '700' }], 'headline-lg': ['28px', { lineHeight: '36px', letterSpacing: '-0.01em', fontWeight: '700' }], 'headline-sm': ['18px', { lineHeight: '24px', fontWeight: '600' }], 'body-lg': ['16px', { lineHeight: '24px', fontWeight: '400' }] } } } };</script><style>@layer base { html, body { margin: 0; padding: 0; min-height: 100vh; background-color: #131315; color: #e5e1e4; overscroll-behavior-y: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } ::-webkit-scrollbar { display: none; }</style></head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_4px_24px_rgba(0,0,0,0.4)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Voltar" class="w-11 h-11 flex items-center justify-center rounded-full bg-surface-container-high text-on-surface hover:text-primary transition-colors active:scale-95" onclick="history.back()"><span class="material-symbols-outlined text-[20px]">arrow_back_ios_new</span></button><h1 class="font-headline-sm text-headline-sm text-on-surface pl-space-xs truncate max-w-[200px]">Detalhes Do Material</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Compartilhar" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[22px]">share</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ring-2 ring-primary/40 shadow-[0_0_10px_rgba(208,188,255,0.35)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full pb-10">
+<!-- Sub-Header Info & Quick Actions -->
+<div class="px-margin pt-space-sm pb-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-primary">auto_stories</span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary">Materiais &amp; Atividades</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button aria-label="Favoritar" class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-primary transition-transform active:scale-90" id="btn-fav" onclick="toggleFav()">
+<span class="material-symbols-outlined text-[20px]" id="fav-icon" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<div class="px-space-sm py-1 rounded-full bg-secondary/15 flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[14px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-badge text-label-badge text-secondary">OFICIAL</span>
+</div>
+</div>
+</div>
+<!-- Hero Spotlight / Primary Material Card -->
+<section class="px-margin mt-space-xs">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low shadow-xl p-margin flex flex-col items-center text-center">
+<!-- Glow ambient background -->
+<div class="absolute -top-16 -left-16 w-48 h-48 rounded-full bg-primary-container/20 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-16 -right-16 w-48 h-48 rounded-full bg-secondary/10 blur-3xl pointer-events-none"></div>
+<!-- Vertical Cover with 2:3 Aspect Ratio and Badges -->
+<div class="relative w-44 aspect-[2/3] rounded-lg shadow-[0_12px_36px_rgba(0,0,0,0.6)] overflow-hidden bg-surface-container-highest group">
+<img alt="Capa do Kit Davi &amp; Golias" class="w-full h-full object-cover" data-alt="Vibrant 3D cinematic cartoon cover illustration for a kids faith activity book featuring young David holding a shepherd staff with smiling courage in front of the giant Goliath silhouette, warm sunset lighting with purple and gold celestial gradients, crisp typography overlay, children animation studio style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuClTKBu92Etuio3ervwedZEzYCaAoWLgw1OJMuiQ9HcDNMw1cK0xb0fc3y8e1pN8SP9qX26Wyd6j4hmC8e6Fk2WEKbjrFtr4mkxcjHxCxhs37Y8BvJiswmr9spISrJCW3x5me4Rf0xvebW_55BPeXgdBFNVvLl9c5-D_xFUrQYfTxFpm1FqNBnVMxARKMTo1Y3K6uwQ4538uf-6C2VC0Q9NApTihUm8Zp-7O9JCroNWkV0RJI4lkSBc"/>
+<!-- Quality Spec Badge -->
+<div class="absolute top-2 left-2 right-2 flex justify-between items-center pointer-events-none">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md font-label-badge text-label-badge text-tertiary">
+            300 DPI
+          </span>
+<span class="px-2 py-0.5 rounded-full bg-primary/20 backdrop-blur-md font-label-badge text-label-badge text-primary-fixed">
+            PDF HD
+          </span>
+</div>
+<div class="absolute inset-x-0 bottom-0 py-1.5 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-transparent">
+<span class="font-label-badge text-label-badge text-on-surface">PRONTO P/ IMPRIMIR</span>
+</div>
+</div>
+<!-- Title & Headline -->
+<h2 class="mt-space-md font-headline-md text-headline-md text-on-surface">
+        Davi &amp; Golias — Kit Infantil de Colorir &amp; Estudo Bíblico
+      </h2>
+<!-- Metadata Badges -->
+<div class="flex flex-wrap items-center justify-center gap-space-xs mt-space-sm">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high font-label-md text-label-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">description</span> 24 Páginas
+        </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high font-label-md text-label-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-tertiary">child_care</span> 5 a 9 anos
+        </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high font-label-md text-label-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">print</span> Formato A4
+        </span>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container/20 font-label-md text-label-md text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">shield</span> Coragem &amp; Fé
+        </span>
+</div>
+<!-- Action Buttons -->
+<div class="w-full flex flex-col gap-space-sm mt-space-lg">
+<a class="w-full h-12 rounded-lg bg-primary-container text-on-primary flex items-center justify-center gap-2 font-label-lg text-label-lg shadow-[0_4px_20px_rgba(160,120,255,0.4)] transition-all active:scale-[0.98]" href="#pdf-viewer">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+<span>ABRIR E FOLHEAR PDF</span>
+</a>
+<button class="w-full h-12 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center gap-2 font-label-lg text-label-lg transition-colors active:scale-[0.98]" id="download-btn" onclick="triggerDownload()">
+<span class="material-symbols-outlined text-[20px] text-tertiary" id="download-icon">download</span>
+<span id="download-text">BAIXAR PDF COMPLETO (18 MB)</span>
+</button>
+<p class="hidden font-body-sm text-body-sm text-tertiary items-center justify-center gap-1 mt-1 transition-opacity" id="download-feedback">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> Salvo para usar offline no dispositivo
+        </p>
+</div>
+</div>
+</section>
+<!-- Horizontal Thumbnails Carousel -->
+<section class="mt-space-xl">
+<div class="px-margin flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">preview</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Prévia do Conteúdo</h3>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">5 de 24 amostras</span>
+</div>
+<!-- Scrollable Reel -->
+<div class="flex gap-space-md overflow-x-auto px-margin no-scrollbar snap-x snap-mandatory">
+<!-- Page 1 -->
+<div class="cursor-pointer snap-start shrink-0 w-36 flex flex-col gap-1.5 group" onclick="selectPage(1, 'Capa Ilustrada para Colorir')">
+<div class="relative w-full aspect-[1/1.41] rounded-lg overflow-hidden bg-surface-container-high shadow-md transition-transform group-active:scale-95">
+<img alt="Página 1" class="w-full h-full object-cover" data-alt="High resolution clean line art coloring book page showing David smiling bravely in ancient pastoral Israel with flowers and sheep, thick bold contours suitable for kids coloring." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC040pgkcQ6F7xvQ0E12gbSKU3yxDaJipa7nHrxKKWssxz-1GcpZnpGUt0jbe5sSxnKGQ0oid5EfGcshkLs1dZQTONiZtMAY8HQsI81soeCCKp-i0kGQiiJZSEY2qtOdBMozd1typc5ZM3n7G6-ysyNAstfIKoyd177L785CWSSxd_CRDrczO665Qd9P6XKgp9GxFAeTVLG5eiZsFLJ00g8Z9NLEy0j85V7E95HuoDr_txaw3jjpK9W"/>
+<span class="absolute bottom-1.5 left-1.5 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 font-label-badge text-label-badge text-on-surface">Pág 01</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface line-clamp-1">Capa para Colorir</p>
+</div>
+<!-- Page 2 -->
+<div class="cursor-pointer snap-start shrink-0 w-36 flex flex-col gap-1.5 group" onclick="selectPage(2, 'História Ilustrada: O Pequeno Pastor')">
+<div class="relative w-full aspect-[1/1.41] rounded-lg overflow-hidden bg-surface-container-high shadow-md transition-transform group-active:scale-95">
+<img alt="Página 2" class="w-full h-full object-cover" data-alt="Illustrated storybook page with cartoon style drawing of prophet Samuel blessing shepherd boy David, friendly warm colors with clear readable story text in Portuguese." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzq02NhCKlTGbkZLeOLBWg7WcLUrQvcZnC0Ow-ZcnqlyX6nVnSWjb_jtpa2_b2lSy489jIylnc-KQJ1iLQltInw5NowAS-SvIVOyCZNUOp5p1g3ysszoZFAnzfCIjTWVO4hVddPK3xQ2IMDervWWfxPe4CKzUpiXR-FOztuNXJXbDoXNtnfEB4zh-6MsECBt43miGKm8G79SNFjCEmky-oF5cFUf37TGcOOI2zJf33tpASlh26Qm3E"/>
+<span class="absolute bottom-1.5 left-1.5 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 font-label-badge text-label-badge text-on-surface">Pág 02</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface line-clamp-1">História Ilustrada</p>
+</div>
+<!-- Page 3 (Selected by default) -->
+<div class="cursor-pointer snap-start shrink-0 w-36 flex flex-col gap-1.5 group" onclick="selectPage(3, 'Caça-Palavras com Nomes Bíblicos')">
+<div class="relative w-full aspect-[1/1.41] rounded-lg overflow-hidden bg-surface-container-high shadow-md transition-transform group-active:scale-95">
+<img alt="Página 3" class="w-full h-full object-cover" data-alt="Children Bible word search puzzle diagram on clean parchment styled background with cartoon decorative harp and stone icons, playful typography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpHkmloIa0j4z7J7sVhk11yCWNX0Fajux5Rlj9R2UfIeYXMhx5Zo3e2YkPElYAXZWLb2gF_BN6zfZu6fkznuKtsL6UPDD28OvRnPGPR2WiFhp_Tk9VS25jnonedx0_oRNqlzCDGOc5ngL6kyOvR53-flD1GiX_Kbbhjcbmf9SE7-uETTLeJyW-WAOB-w6WP54grNsg33HIgA3_JeElaEfN7y_J-GD8v8mrTRHGHFTFxMtYLbyvQPQg"/>
+<span class="absolute top-1.5 right-1.5 px-1.5 py-0.5 rounded bg-primary text-on-primary font-label-badge text-label-badge">Ativo</span>
+<span class="absolute bottom-1.5 left-1.5 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 font-label-badge text-label-badge text-on-surface">Pág 03</span>
+</div>
+<p class="font-body-sm text-body-sm text-primary font-bold line-clamp-1">Caça-Palavras</p>
+</div>
+<!-- Page 4 -->
+<div class="cursor-pointer snap-start shrink-0 w-36 flex flex-col gap-1.5 group" onclick="selectPage(4, 'Labirinto: As 5 Pedrinhas de Davi')">
+<div class="relative w-full aspect-[1/1.41] rounded-lg overflow-hidden bg-surface-container-high shadow-md transition-transform group-active:scale-95">
+<img alt="Página 4" class="w-full h-full object-cover" data-alt="Children maze puzzle worksheet showing river stones leading to the battle valley of Elah, cartoon illustrations of cute brook and pebbles for kids activity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDma_n755U_CwhRQ1SJv2KulGbdlyeKANLFjDGs62VEdRny3HpQpXPVPpdrHnobj-C7CRAlj3hVaHgGpiOZCVBBPQlQH3S4Soa37I6-6N92NGbKP4VRMsKwkyPZ2gvIFrJS8a2usiq1qwYiLa1na3bgE8fcpD-SpH0BRUKelxdPC1ZSJeiH6KHRqAAPEdjZI6Hui2ZHHfWLYTFTHn42hRlzugLZBXJ-jEA4W_ZO_-HD0PaHeTyajzqw"/>
+<span class="absolute bottom-1.5 left-1.5 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 font-label-badge text-label-badge text-on-surface">Pág 04</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface line-clamp-1">Labirinto Bíblico</p>
+</div>
+<!-- Page 5 -->
+<div class="cursor-pointer snap-start shrink-0 w-36 flex flex-col gap-1.5 group" onclick="selectPage(5, 'Máscaras &amp; Fantoche de Dedo para Recortar')">
+<div class="relative w-full aspect-[1/1.41] rounded-lg overflow-hidden bg-surface-container-high shadow-md transition-transform group-active:scale-95">
+<img alt="Página 5" class="w-full h-full object-cover" data-alt="Printable cut-out finger puppet craft sheet showing David, armor pieces, and little sheep with scissor dashed lines, creative children Sunday school printable." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzeR0257LFzN6pp9S3a9bOAr5APIOXjvYKmfpyji2SS8rLZbBaSzW8P_MR6IM4oH_LzfRR1wAcQqlQzHcUbplI0MqS9Tq5fBE6NdNpXPou93uIHCCPmvt0W6eEUhgFF01_kVSwRQ8WF_JLJAKpaXZ-0GqJqNEEWgONta7KO7dmzPl32yU4toBflE-Qyh37BWCCll-bWcxKmMUsVHoech-QkSI1B6qeggz8umnAd9ygEdJXQR8ulTZu"/>
+<span class="absolute bottom-1.5 left-1.5 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 font-label-badge text-label-badge text-on-surface">Pág 05</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface line-clamp-1">Fantoche de Dedo</p>
+</div>
+</div>
+</section>
+<!-- Interactive Embedded PDF Reader Mockup -->
+<section class="px-margin mt-space-xl scroll-mt-20" id="pdf-viewer">
+<div class="rounded-xl bg-surface-container-low shadow-xl p-space-md flex flex-col">
+<!-- Reader Header Bar -->
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md text-on-surface" id="reader-title">Página 3: Caça-Palavras</span>
+</div>
+<span class="font-label-badge text-label-badge text-primary bg-primary-container/20 px-2 py-0.5 rounded-full" id="page-counter">
+          Página 3 de 24
+        </span>
+</div>
+<!-- PDF Canvas Viewport -->
+<div class="relative w-full aspect-[1/1.3] bg-surface-container-lowest rounded-lg overflow-hidden flex items-center justify-center shadow-inner">
+<img alt="Visualizador de Página PDF" class="w-full h-full object-contain p-2" data-alt="Detailed full page preview of kids Bible study activity page with word search grid, stylized cartoon characters, and Portuguese faith study questions on ancient scroll design background." id="reader-sheet" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJ6xS2OeeC4zgUSm5f3rcmLaF2VNLET3Wlv_P-sL79j9hKHLxyO213o2JbsZuw9hlfga5iCI1XU5OQgIoObw6r57lNraxO7QOsoiL9f751xxK83Fc2EERW2vS0pRJYiGHGOtmZakiWJnFu6nTOCASA0VDTbbZtfLWpZkSnb9PytLbHE9C3WljqqU03eccT1T1TMYTa6zA8Ry69MpAq19VEPF0fgrufIoZow8KoH0n2UtIEcYqWQ8qn"/>
+<!-- Subtle Watermark overlay -->
+<div class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-surface-container-lowest/70 backdrop-blur-sm pointer-events-none">
+<span class="font-label-badge text-label-badge text-outline">Com Deus Kids • Uso Familiar</span>
+</div>
+</div>
+<!-- PDF Control Dock -->
+<div class="flex items-center justify-between mt-space-sm pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<button class="h-9 px-3 rounded-lg bg-surface-container-high text-on-surface flex items-center gap-1 font-label-md text-label-md active:scale-95" onclick="prevPage()">
+<span class="material-symbols-outlined text-[16px]">chevron_left</span> Anterior
+          </button>
+<button class="h-9 px-3 rounded-lg bg-surface-container-high text-on-surface flex items-center gap-1 font-label-md text-label-md active:scale-95" onclick="nextPage()">
+            Próxima <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+<div class="flex items-center gap-1">
+<button aria-label="Aumentar Zoom" class="w-9 h-9 rounded-lg bg-surface-container-high text-on-surface-variant flex items-center justify-center hover:text-primary active:scale-95" onclick="toggleZoom()">
+<span class="material-symbols-outlined text-[18px]" id="zoom-icon">zoom_in</span>
+</button>
+<button aria-label="Tela Cheia" class="w-9 h-9 rounded-lg bg-surface-container-high text-on-surface-variant flex items-center justify-center hover:text-primary active:scale-95" onclick="toggleFullScreen()">
+<span class="material-symbols-outlined text-[18px]">fullscreen</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Streaming Connection Banner: Continue a Aventura -->
+<section class="px-margin mt-space-xl">
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-r from-surface-container-low via-surface-container to-surface-container-high shadow-lg p-margin flex flex-col gap-space-md">
+<!-- Glow ambient decorative -->
+<div class="absolute -right-8 -top-8 w-32 h-32 rounded-full bg-secondary-container/20 blur-2xl pointer-events-none"></div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-secondary">Continue a Aventura</span>
+</div>
+<!-- 16:9 Landscape Media Card with Progress -->
+<div class="relative w-full aspect-video rounded-lg overflow-hidden bg-surface-container-highest shadow-md group">
+<img alt="Filme Animado Davi e Golias" class="w-full h-full object-cover" data-alt="Cinematic 16 by 9 frame from 3D animated faith movie David and Goliath, showing young shepherd David standing courageously under majestic celestial light in the valley, high production animated feature style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5_J9Z5b_KUlbXxwotSywFsi42VijnhK006DkiG2_gt5xCxEKNiVywVGGqewRwGtYNNzmAd89p261yhttEGuVEGaJ_BUhTE-KTvzfdOhANhKCkWASsC5SM7ABq0zK1r5V_XQXE-PyMEcpdtTUR2wkd-UqdPqllUBPhLgeZSZZcZMNoJ-GexIk69yvQRPqBLKpzESY0aXxdIPSpvo9pi4qkqHDv6dC8aYZaHu-MGeEhuhbmES1FecUb"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-transparent flex items-end p-3">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-lg">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface">Davi &amp; Golias: O Filme Animado</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Episódio Especial • 45 min</p>
+</div>
+</div>
+</div>
+<!-- Progress Bar at Bottom Edge -->
+<div class="absolute bottom-0 inset-x-0 h-1 bg-on-surface/20">
+<div class="w-2/5 h-full bg-primary"></div>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Assista ao episódio antes de fazer as atividades para enriquecer a experiência e fixar o aprendizado bíblico em família!
+      </p>
+<!-- Dual Actions -->
+<div class="grid grid-cols-2 gap-space-sm">
+<button class="h-11 rounded-lg bg-on-surface text-surface font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-md active:scale-95">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+          Assistir Filme
+        </button>
+<button class="h-11 rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 active:scale-95">
+<span class="material-symbols-outlined text-[18px] text-secondary">quiz</span>
+          Quiz Bíblico (5)
+        </button>
+</div>
+</div>
+</section>
+<!-- Related Materials Carousel -->
+<section class="mt-space-xl">
+<div class="px-margin flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">recommend</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Você também pode gostar</h3>
+</div>
+<button class="font-label-md text-label-md text-primary hover:underline">Ver todos</button>
+</div>
+<!-- Horizontal Posters Reel -->
+<div class="flex gap-space-md overflow-x-auto px-margin no-scrollbar snap-x snap-mandatory">
+<!-- Related 1 -->
+<div class="cursor-pointer snap-start shrink-0 w-36 flex flex-col gap-1.5 group">
+<div class="relative w-full aspect-[2/3] rounded-lg overflow-hidden bg-surface-container-high shadow-md transition-transform group-active:scale-95">
+<img alt="A Arca de Noé" class="w-full h-full object-cover" data-alt="Cover illustration of Noah Ark activity book for kids with cheerful pairs of animals and a vibrant rainbow in celestial skies, modern 3D cartoon style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-KaHUoblPjuk9pIsWYGEB2QBl8JF5cxxPAaaavrIDEcPBAD0VQuxapBSP-o2Hp_JlpQHVMyjH9Jq0tndP0WouF9QDgacDBl0dMgbFgSZC-VavaZB192s6vPN-rkvI3Mxv5z88nVZaxNLdfj1IV3z8m6HxHviHPp0f-w0LNhTd5jg4oY3NkaGGNUDLn2h_1MNTdkGtH2R7Dzaty0r3elnZFY3h2lX6QjHxT8xBYNgrl9zm1LVdvagk"/>
+<span class="absolute top-2 left-2 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 font-label-badge text-label-badge text-secondary">32 PÁG</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface line-clamp-1">A Arca de Noé</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Caderno de Desenhos</p>
+</div>
+<!-- Related 2 -->
+<div class="cursor-pointer snap-start shrink-0 w-36 flex flex-col gap-1.5 group">
+<div class="relative w-full aspect-[2/3] rounded-lg overflow-hidden bg-surface-container-high shadow-md transition-transform group-active:scale-95">
+<img alt="O Bom Samaritano" class="w-full h-full object-cover" data-alt="Cover illustration of Good Samaritan printable workshop book for kids featuring helping hands and smiling friendly character on cobblestone ancient road." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQwX99OP_cIkkk5a4qxny0I93kZuQllBrG8JhwfyZVNpNMcKOxjxXoW1ij8E5bKN0xVW8mGi3OVSoT4YDSeDrbveC_UaQ-nGAQCqFJuL77oloquNKc5qzAJFXHLUM5az7d5A9mX9U2iqgF6vczNAyDXL4CNQAII511bPml-ffJDd2UK9O4PfaPt3058MfTi4dJaXe05kYYTQ0KXA9xxAdx03nFWj_f1ukKZ3ipQi-_Js-ErSXVuUZd"/>
+<span class="absolute top-2 left-2 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 font-label-badge text-label-badge text-secondary">18 PÁG</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface line-clamp-1">O Bom Samaritano</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Atividades Práticas</p>
+</div>
+<!-- Related 3 -->
+<div class="cursor-pointer snap-start shrink-0 w-36 flex flex-col gap-1.5 group">
+<div class="relative w-full aspect-[2/3] rounded-lg overflow-hidden bg-surface-container-high shadow-md transition-transform group-active:scale-95">
+<img alt="Canções de Davi" class="w-full h-full object-cover" data-alt="Cover illustration of David Psalms songs and music sheets for kids with stylized golden musical harp and musical notes dancing in starlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDD9CEbR7zmmMkMUaRCNcji4bMl4JzUI38qz4scVlzBTeo1M3ViuFiEoYtUYKiM4clVHrjDmGhA_NFqCam5s0Dk2s9potKt00G69takl8JBPGdG5_AAKLR1MrhHKO_y7Kr3KH-L9z5WGOE4KziR41ixGLypwHZAtvmYSDmYg8PmRGilfVUNQsO22h2A2OdW1w_8gjkYkthezpGG2WTaOV7D3iTEXU8t4lcLnyFXtfgpd2iw5_wA6KOY"/>
+<span class="absolute top-2 left-2 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 font-label-badge text-label-badge text-tertiary">MÚSICA</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface line-clamp-1">Canções de Davi</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Partituras &amp; Letras</p>
+</div>
+</div>
+</section>
+</div>
+<script>
+  let currentPage = 3;
+  const totalPages = 24;
+  const pageTitles = {
+    1: 'Página 1: Capa Colorida para Colorir',
+    2: 'Página 2: História Ilustrada em Linguagem Infantil',
+    3: 'Página 3: Caça-Palavras com Nomes Bíblicos',
+    4: 'Página 4: Labirinto das 5 Pedrinhas',
+    5: 'Página 5: Máscara e Fantoche de Dedo'
+  };
+
+  let isFav = true;
+  function toggleFav() {
+    isFav = !isFav;
+    const icon = document.getElementById('fav-icon');
+    if (isFav) {
+      icon.style.fontVariationSettings = "'FILL' 1";
+      icon.className = 'material-symbols-outlined text-[20px] text-primary';
+    } else {
+      icon.style.fontVariationSettings = "'FILL' 0";
+      icon.className = 'material-symbols-outlined text-[20px] text-outline';
+    }
+  }
+
+  function selectPage(pageNumber, pageTitle) {
+    currentPage = pageNumber;
+    updateReaderUI(pageTitle);
+  }
+
+  function prevPage() {
+    if (currentPage > 1) {
+      currentPage--;
+      updateReaderUI();
+    }
+  }
+
+  function nextPage() {
+    if (currentPage < totalPages) {
+      currentPage++;
+      updateReaderUI();
+    }
+  }
+
+  function updateReaderUI(customTitle) {
+    const counter = document.getElementById('page-counter');
+    const titleEl = document.getElementById('reader-title');
+    if (counter) counter.innerText = 'Página ' + currentPage + ' de ' + totalPages;
+    if (titleEl) {
+      titleEl.innerText = customTitle || pageTitles[currentPage] || ('Página ' + currentPage + ': Estudo das Escrituras');
+    }
+  }
+
+  let isZoomed = false;
+  function toggleZoom() {
+    isZoomed = !isZoomed;
+    const img = document.getElementById('reader-sheet');
+    const icon = document.getElementById('zoom-icon');
+    if (isZoomed) {
+      img.classList.add('scale-125', 'transition-transform');
+      icon.innerText = 'zoom_out';
+    } else {
+      img.classList.remove('scale-125');
+      icon.innerText = 'zoom_in';
+    }
+  }
+
+  function toggleFullScreen() {
+    const readerEl = document.getElementById('pdf-viewer');
+    if (!document.fullscreenElement) {
+      if (readerEl.requestFullscreen) readerEl.requestFullscreen().catch(() => {});
+    } else {
+      if (document.exitFullscreen) document.exitFullscreen().catch(() => {});
+    }
+  }
+
+  function triggerDownload() {
+    const btnText = document.getElementById('download-text');
+    const btnIcon = document.getElementById('download-icon');
+    const feedback = document.getElementById('download-feedback');
+
+    btnText.innerText = 'BAIXANDO ARQUIVO...';
+    btnIcon.innerText = 'sync';
+    btnIcon.classList.add('animate-spin');
+
+    setTimeout(() => {
+      btnIcon.classList.remove('animate-spin');
+      btnIcon.innerText = 'task_alt';
+      btnText.innerText = 'ARQUIVO PRONTO';
+      feedback.classList.remove('hidden');
+      feedback.classList.add('flex');
+    }, 1200);
+  }
+</script></main></body></html>

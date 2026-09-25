@@ -1,0 +1,1552 @@
+/* ============================================================
+   COM DEUS KIDS — NOVO LAYOUT STREAMING PREMIUM (1:1 STITCH)
+   Alto desempenho, 60fps com GPU, suporte a TV e Mobile
+   ============================================================ */
+
+/* 1. TOKENS DE LAYOUT E ESPAÇAMENTO GLOBAL (FLUID FULL-WIDTH STREAMING) */
+:root {
+  --cdk-layout-max-width: 100%;
+  --cdk-gutter-horizontal: clamp(14px, 2vw, 32px);
+  --cdk-header-height: 68px;
+  --cdk-hero-gap-top: clamp(8px, 1.2vh, 16px);
+  --cdk-hero-gap-bottom: clamp(18px, 2.5vh, 32px);
+  --cdk-hero-radius: clamp(16px, 1.4vw, 22px);
+  --cdk-sidebar-floating-gap: clamp(8px, 1vw, 14px);
+  --cdk-sidebar-width: 48px;
+
+  /* Tokens de Vidro Fosco Preto (Dark Frosted / Smoked Glass) */
+  --glass-bg: rgba(18, 20, 22, 0.88);
+  --glass-border: rgba(255, 255, 255, 0.09);
+  --glass-blur: 18px;
+  --glass-radius: 18px;
+}
+
+/* Container central de conteúdo compartilhado — Fluido e Encaixado nas Laterais */
+.cdk-stream-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding-left: clamp(52px, 4vw, 72px);
+  padding-right: var(--cdk-gutter-horizontal);
+  box-sizing: border-box;
+}
+
+/* 2. ESTRUTURA GERAL DO LAYOUT */
+.cdk-stitch-shell {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #08090b;
+  color: #ffffff;
+  display: flex;
+  position: relative;
+  font-family: var(--cdk-font-family, 'Baloo 2', sans-serif);
+  overflow-x: hidden;
+}
+
+/* 2. SIDEBAR LATERAL FLUTUANTE (TOTALMENTE TRANSPARENTE — APENAS ÍCONES FLUTUANTES) */
+.cdk-stitch-sidebar {
+  width: var(--cdk-sidebar-width);
+  position: fixed;
+  top: calc(var(--cdk-header-height) + 14px);
+  bottom: clamp(20px, 3vh, 36px);
+  left: clamp(12px, 1.3vw, 18px);
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  z-index: 120;
+  user-select: none;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: auto;
+}
+
+/* Sem textura ou fundo na sidebar */
+.cdk-stitch-sidebar::before {
+  display: none !important;
+}
+
+.cdk-sidebar-top-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.cdk-sidebar-bottom-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+/* Ícones Flutuantes Puros — Sem fundo, sem borda */
+.cdk-sidebar-btn {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 12px;
+  color: #94a3b8;
+  cursor: pointer;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), color 0.2s ease, filter 0.2s ease;
+  outline: none;
+  text-decoration: none;
+  box-shadow: none !important;
+}
+
+.cdk-sidebar-btn:hover {
+  color: #ffffff;
+  background: transparent !important;
+  transform: scale(1.16);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.45));
+}
+
+.cdk-sidebar-btn.active {
+  color: #22c55e;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  transform: scale(1.14);
+  filter: drop-shadow(0 0 14px rgba(34, 197, 94, 0.75));
+}
+
+.cdk-sidebar-btn:focus-visible,
+.cdk-tv-focus.cdk-sidebar-btn:focus {
+  color: #22c55e;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  transform: scale(1.22);
+  filter: drop-shadow(0 0 18px rgba(34, 197, 94, 0.95));
+}
+
+/* 3. ÁREA PRINCIPAL DE CONTEÚDO (LARGURA TOTAL 100%) */
+.cdk-stitch-main {
+  flex: 1;
+  width: 100%;
+  margin-left: 0 !important;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #08090b;
+}
+
+/* ============================================================
+   COM DEUS KIDS — VIDRO FOSCO EMBAÇADO OFICIAL (FOTORREALISTA)
+   - Textura exata da imagem anexada: vidro fosco com relevo e luzes desfocadas atrás
+   - Ocupa 100% da altura da tela (100vh) antes de iniciar o degradê para o preto sólido
+   ============================================================ */
+.cdk-stitch-main::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: clamp(860px, 100vh, 1080px);
+  pointer-events: none;
+  z-index: 0;
+
+  background-image: url('/images/vidro_embaçado_oficial.png?v=3');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  /* Transição suave: 100% visível na altura da tela (100vh), depois inicia o degradê para preto sólido #08090b */
+  -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 82%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 82%, rgba(0, 0, 0, 0) 100%);
+  opacity: 0.95;
+}
+
+/* Camada atmosférica sutil com bisel superior de vidro */
+.cdk-stitch-main::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: clamp(860px, 100vh, 1080px);
+  pointer-events: none;
+  z-index: 0;
+
+  background: linear-gradient(
+    180deg,
+    rgba(8, 9, 11, 0.35) 0%,
+    transparent 35%,
+    rgba(8, 9, 11, 0.45) 75%,
+    #08090b 100%
+  );
+  box-shadow: inset 0 1.5px 0 rgba(255, 255, 255, 0.12);
+
+  -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 84%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 84%, rgba(0, 0, 0, 0) 100%);
+}
+
+/* ============================================================
+   CLASSE UTILITÁRIA GLOBAL — .frosted-black-glass
+   Para reutilizar em cards, modais, painéis e componentes
+   ============================================================ */
+.frosted-black-glass {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(38, 40, 43, 0.82) 0%,
+      rgba(22, 24, 27, 0.90) 48%,
+      rgba(12, 14, 16, 0.94) 100%
+    );
+  backdrop-filter: blur(var(--glass-blur, 18px)) saturate(115%);
+  -webkit-backdrop-filter: blur(var(--glass-blur, 18px)) saturate(115%);
+  border: 1px solid var(--glass-border, rgba(255, 255, 255, 0.09));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.07),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.45),
+    0 18px 50px rgba(0, 0, 0, 0.35);
+  border-radius: var(--glass-radius, 18px);
+}
+
+.frosted-black-glass::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      circle at 72% 18%,
+      rgba(255, 255, 255, 0.055),
+      transparent 24%
+    ),
+    radial-gradient(
+      circle at 28% 68%,
+      rgba(255, 255, 255, 0.025),
+      transparent 32%
+    ),
+    linear-gradient(
+      115deg,
+      rgba(255, 255, 255, 0.025),
+      transparent 35%,
+      rgba(255, 255, 255, 0.018) 62%,
+      transparent
+    );
+  opacity: 0.8;
+}
+
+.frosted-black-glass::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    repeating-radial-gradient(
+      circle at 20% 30%,
+      rgba(255, 255, 255, 0.018) 0px,
+      rgba(255, 255, 255, 0.018) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+  background-size: 5px 5px;
+  opacity: 0.20;
+  mix-blend-mode: soft-light;
+}
+
+/* Garante que o header e o conteúdo fiquem à frente da textura atmosférica */
+.cdk-stitch-header,
+.cdk-stream-container,
+.cdk-stitch-rail {
+  position: relative;
+  z-index: 1;
+}
+
+/* Modo TV: Sidebar nunca aparece e conteúdo ocupa 100% da largura com safe area */
+.cdk-stitch-main.cdk-main-tv-mode,
+.cdk-tv-body .cdk-stitch-main {
+  margin-left: 0 !important;
+}
+
+.cdk-tv-body .cdk-stitch-sidebar {
+  display: none !important;
+}
+
+/* 4. BARRA SUPERIOR (HEADER) */
+.cdk-stitch-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: var(--cdk-header-height);
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  pointer-events: auto;
+  transition: background-color 0.25s ease, backdrop-filter 0.25s ease;
+}
+
+.cdk-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: clamp(14px, 2vw, 28px);
+  padding-right: clamp(14px, 2vw, 28px);
+}
+
+/* Marca Oficial */
+.cdk-header-brand {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cdk-header-brand-title {
+  font-size: 19px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+}
+
+.cdk-header-brand-kids {
+  font-size: 15px;
+  font-weight: 800;
+  color: #22c55e;
+  margin-top: -2px;
+}
+
+/* Tabs Centrais Superiores */
+.cdk-header-tabs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+}
+
+.cdk-header-tab {
+  padding: 6px 18px;
+  border-radius: 9999px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #94a3b8;
+  background: transparent;
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  outline: none;
+  white-space: nowrap;
+}
+
+.cdk-header-tab:hover {
+  color: #ffffff;
+}
+
+.cdk-header-tab.active {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.15);
+  font-weight: 700;
+}
+
+/* Destaque com borda verde quando em Séries ou Músicas */
+.cdk-header-tab.green-outline.active {
+  color: #4ade80;
+  border-color: #22c55e;
+  background-color: rgba(34, 197, 94, 0.12);
+  box-shadow: 0 0 12px rgba(34, 197, 94, 0.25);
+}
+
+.cdk-header-tab:focus-visible,
+.cdk-tv-focus.cdk-header-tab:focus {
+  border-color: #22c55e;
+  box-shadow: 0 0 0 3px #22c55e, 0 0 18px rgba(34, 197, 94, 0.5);
+  transform: scale(1.06);
+}
+
+/* Lado Direito do Header */
+.cdk-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.cdk-header-icon-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  color: #cbd5e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+  outline: none;
+}
+
+.cdk-header-icon-btn:hover {
+  color: #ffffff;
+  transform: scale(1.08);
+}
+
+.cdk-header-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2.5px solid #f59e0b;
+  overflow: hidden;
+  cursor: pointer;
+  background: #1e293b;
+  box-shadow: 0 0 12px rgba(245, 158, 11, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.cdk-header-avatar:hover {
+  transform: scale(1.08);
+}
+
+.cdk-header-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ============================================================
+   5. BILLBOARD HERO CONTIDO & ENCAIXADO NAS LATERAIS
+   Elimina espaços vazios excessivos com escala cinematográfica
+   ============================================================ */
+.cdk-billboard-wrapper {
+  width: 100%;
+  margin-top: var(--cdk-hero-gap-top);
+  margin-bottom: var(--cdk-hero-gap-bottom);
+  /* Espaço externo lateral exclusivo para a seção do Hero Billboard */
+  padding-left: clamp(24px, 3.5vw, 48px);
+  padding-right: clamp(24px, 3.5vw, 48px);
+  box-sizing: border-box;
+  position: relative;
+}
+
+.cdk-billboard-card {
+  position: relative;
+  width: 100%;
+  /* Seção do card mais alta com escala cinematográfica */
+  min-height: clamp(520px, 68vh, 760px);
+  max-height: 820px;
+  border-radius: var(--cdk-hero-radius);
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.75), 0 2px 10px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background-color: #0d0f14;
+  user-select: none;
+}
+
+/* Slides do Carrossel com transição suave via GPU (opacity + transform) */
+.cdk-billboard-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.65s;
+  will-change: opacity;
+}
+
+.cdk-billboard-slide.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  z-index: 2;
+}
+
+/* Imagem Full Bleed dentro do Billboard Card */
+.cdk-billboard-backdrop {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+  transform: scale(1.015);
+  transition: transform 7s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.cdk-billboard-slide.active .cdk-billboard-backdrop {
+  transform: scale(1);
+}
+
+/* ============================================================
+   REGRA GLOBAL — UNIVERSAL MEDIA HERO OVERLAY
+   Esquerda escura protegendo texto + Inferior fundindo no background
+   ============================================================ */
+.cdk-media-overlay,
+.cdk-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    /* Gradiente horizontal: 95% preto na esquerda diminuindo suavemente para a direita */
+    linear-gradient(90deg, #08090b 0%, rgba(8, 9, 11, 0.94) 22%, rgba(8, 9, 11, 0.65) 50%, rgba(8, 9, 11, 0.15) 75%, transparent 100%),
+    /* Gradiente inferior: fusão gradativa com o fundo escuro da página */
+    linear-gradient(0deg, #08090b 0%, rgba(8, 9, 11, 0.8) 18%, transparent 55%);
+  pointer-events: none;
+  z-index: 3;
+}
+
+/* Conteúdo interno do Billboard posicionado mais alto com elegância */
+.cdk-billboard-content,
+.cdk-hero-content {
+  position: absolute;
+  left: clamp(28px, 4.5vw, 64px);
+  bottom: clamp(40px, 6.5vh, 76px);
+  max-width: clamp(360px, 48vw, 620px);
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(12px, 1.6vh, 18px);
+}
+
+/* Legado .cdk-stitch-hero compatível caso usado estático */
+.cdk-stitch-hero {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 21 / 9;
+  min-height: clamp(380px, 48vh, 540px);
+  max-height: 580px;
+  border-radius: var(--cdk-hero-radius);
+  overflow: hidden;
+  background-size: cover;
+  background-position: center 25%;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Badges / Tags no Hero (Série, Livre, HD, 10 episódios) */
+.cdk-hero-badges {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.cdk-hero-badge-green {
+  background-color: #22c55e;
+  color: #052e16;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 3px 10px;
+  border-radius: 9999px;
+  letter-spacing: 0.02em;
+}
+
+.cdk-hero-badge-gray {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #e2e8f0;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 9999px;
+  backdrop-filter: blur(8px);
+}
+
+/* ============================================================
+   ESTILO BILLBOARD NETFLIX 1:1 — EVIDENCE, ATRIBUTOS & CONTROLES
+   ============================================================ */
+
+/* 1. Evidence Tag Superior (ex: "Incluído na sua assinatura Com Deus Kids") */
+.cdk-billboard-evidence {
+  display: inline-flex;
+  align-items: center;
+}
+
+.cdk-evidence-text {
+  color: #4ade80;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  background: rgba(34, 197, 94, 0.14);
+  padding: 3.5px 12px;
+  border-radius: 9999px;
+  border: 1px solid rgba(34, 197, 94, 0.32);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 2px 8px rgba(34, 197, 94, 0.15);
+}
+
+/* 2. Barra de Atributos com Bullets (•) */
+.cdk-billboard-attributes {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #cbd5e1;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.cdk-attr-tag {
+  color: #e2e8f0;
+  letter-spacing: 0.01em;
+}
+
+.cdk-attr-dot {
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 800;
+  user-select: none;
+}
+
+/* Selo Oficial de Classificação Indicativa (Livre - Verde) */
+.cdk-maturity-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background-color: #16a34a;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 800;
+  border-radius: 4px;
+  line-height: 1;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  user-select: none;
+}
+
+/* 3. Controle de Som no Canto Superior Direito do Billboard (Padrão Netflix) */
+.cdk-billboard-controls {
+  position: absolute;
+  top: clamp(16px, 2.8vh, 26px);
+  right: clamp(18px, 3.2vw, 36px);
+  z-index: 15;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cdk-billboard-sound-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(10, 12, 16, 0.65);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease, border-color 0.2s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+
+.cdk-billboard-sound-btn:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.cdk-billboard-sound-btn:focus-visible,
+.cdk-tv-focus.cdk-billboard-sound-btn:focus {
+  border-color: #22c55e;
+  box-shadow: 0 0 0 3px #22c55e;
+  transform: scale(1.12);
+}
+
+.cdk-billboard-metadata {
+  max-width: 540px;
+}
+
+.cdk-hero-title {
+  font-size: clamp(34px, 4.8vw, 54px);
+  font-weight: 800;
+  line-height: 1.08;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.6);
+}
+
+.cdk-hero-desc {
+  font-size: clamp(14px, 1.3vw, 16px);
+  color: #cbd5e1;
+  line-height: 1.5;
+  font-weight: 500;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.cdk-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 6px;
+  flex-wrap: wrap;
+}
+
+/* Botão Verde de Assistir Agora */
+.cdk-btn-watch-green {
+  background: #22c55e;
+  color: #052e16;
+  font-size: 15px;
+  font-weight: 800;
+  padding: 12px 28px;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease, filter 0.2s ease;
+  outline: none;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(34, 197, 94, 0.35);
+}
+
+.cdk-btn-watch-green:hover {
+  transform: scale(1.04);
+  filter: brightness(1.06);
+  box-shadow: 0 6px 24px rgba(34, 197, 94, 0.5);
+}
+
+.cdk-btn-watch-green:focus-visible,
+.cdk-tv-focus.cdk-btn-watch-green:focus {
+  transform: scale(1.08);
+  box-shadow: 0 0 0 3px #ffffff, 0 0 28px rgba(34, 197, 94, 0.7);
+}
+
+/* Botão Secundário Dark Glass (Mais informações / Minha Lista) */
+.cdk-btn-glass {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease;
+  outline: none;
+  text-decoration: none;
+}
+
+.cdk-btn-glass:hover {
+  transform: scale(1.04);
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.cdk-btn-glass:focus-visible,
+.cdk-tv-focus.cdk-btn-glass:focus {
+  border-color: #22c55e;
+  box-shadow: 0 0 0 3px #22c55e, 0 0 20px rgba(34, 197, 94, 0.4);
+  transform: scale(1.08);
+}
+
+/* ============================================================
+   CONTROLES DO HERO CAROUSEL (INDICADORES & BOTÕES TV/MOUSE)
+   ============================================================ */
+
+/* Indicadores discretos: ● ○ ○ ○ */
+.cdk-carousel-indicators {
+  position: absolute;
+  bottom: clamp(18px, 3vh, 32px);
+  right: clamp(24px, 4.5vw, 56px);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 10;
+  background: rgba(8, 9, 11, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 6px 14px;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.cdk-carousel-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.3);
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  outline: none;
+}
+
+.cdk-carousel-dot:hover {
+  background: rgba(255, 255, 255, 0.6);
+  transform: scale(1.2);
+}
+
+.cdk-carousel-dot.active {
+  width: 26px;
+  background: #22c55e;
+  border-color: rgba(34, 197, 94, 0.8);
+  box-shadow: 0 0 12px rgba(34, 197, 94, 0.65);
+}
+
+.cdk-carousel-dot:focus-visible,
+.cdk-tv-focus.cdk-carousel-dot:focus {
+  border-color: #ffffff;
+  box-shadow: 0 0 0 2px #22c55e, 0 0 16px rgba(34, 197, 94, 0.8);
+  transform: scale(1.25);
+}
+
+/* Botões discretos de navegação Prev / Next */
+.cdk-carousel-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(10, 12, 16, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, background-color 0.2s ease, transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cdk-billboard-card:hover .cdk-carousel-nav-btn,
+.cdk-carousel-nav-btn:focus-visible,
+.cdk-tv-focus.cdk-carousel-nav-btn:focus {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.cdk-carousel-nav-btn:hover {
+  background: rgba(34, 197, 94, 0.2);
+  border-color: #22c55e;
+  transform: translateY(-50%) scale(1.08);
+}
+
+.cdk-carousel-nav-btn:focus-visible,
+.cdk-tv-focus.cdk-carousel-nav-btn:focus {
+  opacity: 1;
+  pointer-events: auto;
+  border-color: #22c55e;
+  box-shadow: 0 0 0 3px #22c55e, 0 0 20px rgba(34, 197, 94, 0.5);
+  transform: translateY(-50%) scale(1.12);
+}
+
+.cdk-carousel-nav-prev {
+  left: 18px;
+}
+
+.cdk-carousel-nav-next {
+  right: 18px;
+}
+
+/* 6. SUB-FILTROS (Pills de Séries e Músicas) */
+.cdk-filter-pills-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 clamp(24px, 5vw, 64px);
+  margin-top: -12px;
+  margin-bottom: 18px;
+  position: relative;
+  z-index: 20;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.cdk-filter-pill {
+  padding: 8px 20px;
+  border-radius: 9999px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #cbd5e1;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: transform 0.18s ease, background-color 0.18s ease, color 0.18s ease;
+  outline: none;
+}
+
+.cdk-filter-pill:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.cdk-filter-pill.active {
+  background-color: #064e3b;
+  border-color: #22c55e;
+  color: #4ade80;
+  box-shadow: 0 0 14px rgba(34, 197, 94, 0.3);
+}
+
+/* Pills Coloridas da Seção Músicas */
+.cdk-music-pill-all { background: linear-gradient(135deg, #1d4ed8, #2563eb); color: #fff; }
+.cdk-music-pill-praise { background: linear-gradient(135deg, #15803d, #22c55e); color: #fff; }
+.cdk-music-pill-clips { background: linear-gradient(135deg, #059669, #10b981); color: #fff; }
+.cdk-music-pill-playback { background: linear-gradient(135deg, #b45309, #d97706); color: #fff; }
+.cdk-music-pill-popular { background: linear-gradient(135deg, #1e3a8a, #3b82f6); color: #fff; }
+
+/* 7. SEÇÃO DE CARROSSEL / CONTINUE ASSISTINDO */
+.cdk-stitch-rail {
+  padding: 10px clamp(24px, 5vw, 64px) 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  z-index: 10;
+}
+
+.cdk-rail-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cdk-rail-title {
+  font-size: clamp(18px, 1.8vw, 22px);
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+}
+
+.cdk-cards-scroll-container {
+  display: flex;
+  align-items: stretch;
+  gap: 18px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 8px 4px 18px;
+}
+
+.cdk-cards-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Card 16:9 de Alta Performance */
+.cdk-stitch-card {
+  flex: 0 0 clamp(220px, 22vw, 320px);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  position: relative;
+  outline: none;
+  user-select: none;
+}
+
+.cdk-card-media {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+  background-color: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.22s ease, border-color 0.22s ease;
+  will-change: transform;
+}
+
+.cdk-stitch-card:hover .cdk-card-media {
+  transform: translateY(-4px) scale(1.02);
+  border-color: rgba(34, 197, 94, 0.5);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.7);
+}
+
+.cdk-stitch-card:focus-visible .cdk-card-media,
+.cdk-tv-focus.cdk-stitch-card:focus .cdk-card-media {
+  transform: scale(1.06);
+  border-color: #22c55e;
+  box-shadow: 0 0 0 3px #22c55e, 0 14px 36px rgba(34, 197, 94, 0.5);
+}
+
+.cdk-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Badge de Play Circular no Canto Inferior Esquerdo */
+.cdk-card-play-btn {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.75);
+  border: 2px solid #eab308;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #eab308;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+
+/* Badge HD / 3D no Canto Inferior Direito */
+.cdk-card-quality-badge {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: rgba(0, 0, 0, 0.65);
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+  z-index: 5;
+}
+
+/* Linha de Progresso Verde no fundo do card */
+.cdk-card-progress-track {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.2);
+  z-index: 6;
+}
+
+.cdk-card-progress-bar {
+  height: 100%;
+  background-color: #22c55e;
+}
+
+.cdk-card-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.3;
+}
+
+.cdk-card-sub {
+  font-size: 12px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+/* Responsividade Mobile e Tablets */
+@media (max-width: 768px) {
+  .cdk-stitch-sidebar {
+    display: none;
+  }
+  .cdk-stitch-main {
+    margin-left: 0;
+    padding-bottom: 76px;
+  }
+  .cdk-stitch-header {
+    height: 60px;
+    padding: 0 16px;
+  }
+  .cdk-header-tabs {
+    display: none;
+  }
+  .cdk-billboard-wrapper {
+    margin-top: 10px;
+    margin-bottom: 24px;
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
+  }
+  .cdk-billboard-card {
+    aspect-ratio: 16 / 12;
+    min-height: 440px;
+    max-height: 520px;
+    border-radius: 16px;
+  }
+  .cdk-billboard-content {
+    left: 16px;
+    right: 16px;
+    bottom: 26px;
+    max-width: calc(100% - 32px);
+    gap: 12px;
+  }
+  .cdk-hero-title {
+    font-size: 28px;
+  }
+  .cdk-hero-desc {
+    font-size: 13px;
+    line-height: 1.4;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .cdk-btn-watch-green {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  .cdk-btn-glass {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+  .cdk-carousel-indicators {
+    right: 14px;
+    bottom: 14px;
+    padding: 4px 10px;
+    gap: 6px;
+  }
+  .cdk-carousel-dot {
+    width: 7px;
+    height: 7px;
+  }
+  .cdk-carousel-dot.active {
+    width: 18px;
+  }
+  .cdk-carousel-nav-btn {
+    display: none;
+  }
+  .cdk-stitch-hero {
+    min-height: 400px;
+    padding: 70px 16px 30px;
+  }
+  .cdk-stitch-rail {
+    padding: 10px 16px 36px;
+  }
+}
+
+/* Suporte a preferência por redução de movimento (Acessibilidade e Desempenho) */
+@media (prefers-reduced-motion: reduce) {
+  .cdk-billboard-slide,
+  .cdk-billboard-backdrop,
+  .cdk-carousel-dot,
+  .cdk-btn-watch-green,
+  .cdk-btn-glass {
+    transition: none !important;
+    transform: none !important;
+    animation: none !important;
+  }
+}
+
+/* ============================================================
+   NOVO LAYOUT DE POPUP DE PERFIL (1:1 COM A REFERÊNCIA VISUAL)
+   ============================================================ */
+
+/* Botão de Sino de Notificações com Badge Numérico */
+.cdk-header-bell-btn {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  color: #cbd5e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+  outline: none;
+}
+
+.cdk-header-bell-btn:hover {
+  color: #ffffff;
+  transform: scale(1.08);
+}
+
+.cdk-header-bell-badge {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  min-width: 17px;
+  height: 17px;
+  padding: 0 4px;
+  border-radius: 9999px;
+  background-color: #ef4444;
+  color: #ffffff;
+  font-size: 10.5px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  box-shadow: 0 0 8px rgba(239, 68, 68, 0.6);
+}
+
+/* Trigger do Avatar com Anel Neon Verde e Seta */
+.cdk-avatar-trigger {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 9999px;
+  outline: none;
+  transition: transform 0.2s ease;
+}
+
+.cdk-avatar-trigger:hover {
+  transform: scale(1.05);
+}
+
+.cdk-avatar-glow-ring {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid #22c55e;
+  box-shadow: 0 0 12px rgba(34, 197, 94, 0.7);
+  overflow: hidden;
+  background: #1e293b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cdk-avatar-glow-ring img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Card Principal do Popup de Perfil */
+.cdk-profile-dropdown {
+  position: absolute;
+  top: calc(100% + 14px);
+  right: 0;
+  width: clamp(290px, 22vw, 320px);
+  background-color: rgba(18, 20, 26, 0.94);
+  backdrop-filter: blur(28px) saturate(1.4);
+  -webkit-backdrop-filter: blur(28px) saturate(1.4);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 16px 14px 12px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.85), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  z-index: 150;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  animation: cdkDropdownFadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  user-select: none;
+}
+
+@keyframes cdkDropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Triângulo Ponteiro no Topo do Popup */
+.cdk-profile-dropdown::before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  right: 28px;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Cabeçalho do Popup: "Quem está assistindo?" + Botão "Ver todos >" */
+.cdk-profile-dropdown-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4px 10px;
+}
+
+.cdk-profile-dropdown-title {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.cdk-profile-dropdown-title-white {
+  font-size: 15px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.cdk-profile-dropdown-title-green {
+  font-size: 17px;
+  font-weight: 800;
+  color: #22c55e;
+}
+
+.cdk-profile-view-all-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 9999px;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #cbd5e1;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+  font-family: inherit;
+}
+
+.cdk-profile-view-all-btn:hover {
+  background: rgba(255, 255, 255, 0.16);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateX(2px);
+}
+
+/* Lista de Perfis */
+.cdk-profile-dropdown-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Item de Perfil Ativo (Destacado com Borda Verde Neon) */
+.cdk-profile-item-active {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 12px;
+  background: rgba(34, 197, 94, 0.08);
+  border: 1.5px solid #22c55e;
+  box-shadow: 0 0 14px rgba(34, 197, 94, 0.22);
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+/* Item de Outros Perfis */
+.cdk-profile-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 12px;
+  background: transparent;
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.cdk-profile-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateX(2px);
+}
+
+.cdk-profile-item-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cdk-profile-avatar-thumb {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  object-fit: cover;
+  background: #1e293b;
+  flex-shrink: 0;
+}
+
+.cdk-profile-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+}
+
+.cdk-profile-name {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.cdk-profile-sub {
+  font-size: 11px;
+  font-weight: 500;
+  color: #94a3b8;
+}
+
+/* Checkmark Verde Circular à Direita do Perfil Ativo */
+.cdk-profile-check-badge {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #22c55e;
+  color: #052e16;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 0 8px rgba(34, 197, 94, 0.5);
+}
+
+/* Divisor Fino */
+.cdk-profile-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+  margin: 6px 4px;
+}
+
+/* Lista de Menus do Sistema */
+.cdk-profile-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* Item de Menu com Ícone, Título, Descrição e Chevron */
+.cdk-profile-menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.18s ease;
+  outline: none;
+}
+
+.cdk-profile-menu-item:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.cdk-profile-menu-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cdk-profile-menu-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  color: #cbd5e1;
+  flex-shrink: 0;
+}
+
+.cdk-profile-menu-item:hover .cdk-profile-menu-icon {
+  color: #ffffff;
+}
+
+.cdk-profile-menu-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+}
+
+.cdk-profile-menu-title {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #f1f5f9;
+}
+
+.cdk-profile-menu-desc {
+  font-size: 11px;
+  font-weight: 500;
+  color: #94a3b8;
+}
+
+.cdk-profile-menu-chevron {
+  color: #64748b;
+  transition: transform 0.18s ease, color 0.18s ease;
+  flex-shrink: 0;
+}
+
+.cdk-profile-menu-item:hover .cdk-profile-menu-chevron {
+  color: #cbd5e1;
+  transform: translateX(2px);
+}
+
+/* Botão Sair com Destaque Vermelho */
+.cdk-profile-logout-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.18s ease;
+  outline: none;
+  margin-top: 2px;
+}
+
+.cdk-profile-logout-item:hover {
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.cdk-profile-logout-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cdk-profile-logout-icon {
+  color: #ef4444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  flex-shrink: 0;
+}
+
+.cdk-profile-logout-title {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #f1f5f9;
+}
+
+.cdk-profile-logout-item:hover .cdk-profile-logout-title {
+  color: #ef4444;
+}
+

@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_detail" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-surface-variant": "#cbc3d7", "secondary-fixed": "#ffddb8", "surface-tint": "#d0bcff", "on-secondary-container": "#5b3800", "on-primary-fixed": "#23005c", "on-surface": "#e5e1e4", "on-tertiary-fixed": "#001e2c", "outline-variant": "#494454", "primary-container": "#a078ff", "error": "#ffb4ab", "surface-container-highest": "#353437", "surface-container-lowest": "#0e0e10", "on-secondary-fixed-variant": "#653e00", "on-primary-container": "#340080", "tertiary-container": "#009bd1", "surface-container-low": "#1c1b1d", "inverse-surface": "#e5e1e4", "on-primary": "#3c0091", "outline": "#958ea0", "primary-fixed-dim": "#d0bcff", "error-container": "#93000a", "on-background": "#e5e1e4", "inverse-primary": "#6d3bd7", "primary": "#d0bcff", "on-tertiary-fixed-variant": "#004c69", "background": "#131315", "on-tertiary": "#00354a", "inverse-on-surface": "#313032", "surface-container": "#201f21", "secondary-fixed-dim": "#ffb95f", "primary-fixed": "#e9ddff", "surface-variant": "#353437", "secondary": "#ffb95f", "surface-dim": "#131315", "on-error": "#690005", "surface": "#131315", "surface-container-high": "#2a2a2c", "on-secondary": "#472a00", "tertiary": "#7bd0ff", "surface-bright": "#39393b", "on-error-container": "#ffdad6", "on-secondary-fixed": "#2a1700", "secondary-container": "#ee9800", "tertiary-fixed": "#c4e7ff", "on-tertiary-container": "#002d40", "on-primary-fixed-variant": "#5516be", "tertiary-fixed-dim": "#7bd0ff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xl": "2.5rem", "margin-tablet": "2rem", "margin-desktop": "3.5rem", "gutter": "1.25rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "gutter-desktop": "1.75rem", "space-md": "1rem", "margin": "1rem" }, fontFamily: { "label-md": ["Plus Jakarta Sans"], "display-hero-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "display-hero": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-badge": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"] }, fontSize: { "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "700" }], "display-hero-mobile": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "800" }], "headline-lg": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "700" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "headline-md": ["22px", { lineHeight: "28px", fontWeight: "700" }], "display-hero": ["48px", { lineHeight: "56px", letterSpacing: "-0.02em", fontWeight: "800" }], "label-lg": ["14px", { lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "700" }], "headline-sm": ["18px", { lineHeight: "24px", fontWeight: "600" }], "label-badge": ["11px", { lineHeight: "12px", letterSpacing: "0.05em", fontWeight: "800" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "500" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#131315;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/70 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.4)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><a class="w-11 h-11 flex items-center justify-center rounded-full bg-surface-variant/50 backdrop-blur-md text-on-surface hover:text-primary hover:bg-surface-variant/80 transition-colors active:scale-95 shadow-[0_2px_8px_rgba(0,0,0,0.3)]" data-path="home-cinematografica" href="#"><span class="material-symbols-outlined text-[24px]">arrow_back</span></a><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface truncate max-w-[170px]">Detalhes Do Conteúdo</span></div><div class="flex items-center gap-space-xs"><a class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-variant/40 transition-colors" data-path="busca" href="#"><span class="material-symbols-outlined text-[22px]">search</span></a><a class="w-11 h-11 flex items-center justify-center" data-path="perfil-da-crianca" href="#"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_12px_rgba(208,188,255,0.4)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-20 bg-surface"><div class="flex flex-col w-full text-on-surface select-none pb-12">
+<!-- HERO CINEMATOGRÁFICO DE TOPO -->
+<div class="relative w-full aspect-[4/5] max-h-[500px] overflow-hidden flex flex-col justify-end">
+<!-- Imagem de Fundo Heroica com Data-Alt Exclusivo -->
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 hover:scale-105" data-alt="Cinematic 3D animation style scene of a brave young shepherd boy David in simple tunics with slingshot facing a colossal towering shadowy Philistine warrior Goliath on an ancient hill at dusk under an awe-inspiring starry purple and deep blue nebula sky. Soft golden divine light rays illuminate David, gentle cinematic volumetric lighting, warm spiritual atmosphere, premium family movie aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB7ANrOgmKWrJoa01Jzx5EV7HfbkHYTHUxtekdJSItLkrcZ_xmua953I18WbPGPOmeoYGib7WS-FoC2xRDNYyApm-NrB1ES5cUMDe1wQLw7F4B4gPR8SbOohtF9eLgpIKU1rlc3XivmtAv6bRbS-y-OJUHU0dH4c0zxFejAE90A4A03QdWv37HifwlvGETnFoo_VI8kcLQayQt_EFbHEb3xRIQOLjcqxk-XitKOI0gqrqjv8t3_-KhB')">
+</div>
+<!-- Gradientes de Fusão Perfeita com o Canvas Escuro -->
+<div class="absolute inset-0 bg-gradient-to-t from-[#131315] via-[#131315]/60 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-[#131315]/80 via-transparent to-transparent"></div>
+<div class="absolute -inset-x-20 top-0 h-44 bg-radial from-primary/20 via-transparent to-transparent opacity-40 pointer-events-none"></div>
+<!-- Conteúdo do Hero -->
+<div class="relative z-10 px-margin flex flex-col gap-space-xs pb-space-sm">
+<!-- Tag Dourada / Categoria da Fé -->
+<div class="inline-flex items-center gap-1.5 self-start px-2.5 py-1 rounded-full bg-secondary-container/30 backdrop-blur-md">
+<span class="material-symbols-outlined text-secondary text-[14px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="font-label-badge text-label-badge text-secondary tracking-widest uppercase">História Bíblica</span>
+</div>
+<!-- Título Monumental -->
+<h1 class="font-display-hero-mobile text-display-hero-mobile font-extrabold tracking-tight text-white drop-shadow-lg">
+        Davi &amp; Golias
+      </h1>
+<!-- Metadados em Linha Compacta -->
+<div class="flex flex-wrap items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1 text-secondary font-bold">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+          98%
+        </span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>2026</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="px-1.5 py-0.5 rounded bg-surface-variant/70 text-tertiary font-label-badge text-label-badge uppercase">Livre</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>45 min</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest/80 text-on-surface font-label-badge text-label-badge">4K HDR</span>
+</div>
+<!-- Sinopse Tocante -->
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mt-1">
+        Uma tocante história sobre fé, coragem e confiança inabalável em Deus. Descubra como um jovem pastor enfrentou um temível gigante confiando na força do Altíssimo.
+      </p>
+<!-- Ações Principais (Botões) -->
+<div class="flex items-center gap-space-sm pt-space-xs mt-1">
+<button class="flex-1 h-12 rounded-xl bg-white text-surface-container-lowest font-headline-sm text-headline-sm flex items-center justify-center gap-2 font-bold active:scale-95 transition-transform shadow-[0_4px_24px_rgba(208,188,255,0.35)]" id="btn-play-hero">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+          ASSISTIR
+        </button>
+<!-- Botão Minha Lista -->
+<button aria-label="Adicionar à Minha Lista" class="w-12 h-12 rounded-xl bg-surface-container-high/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-primary transition-colors active:scale-90" id="btn-fav">
+<span class="material-symbols-outlined text-[22px]">bookmark_add</span>
+</button>
+<!-- Botão Curtir / Favoritar -->
+<button aria-label="Curtir história" class="w-12 h-12 rounded-xl bg-surface-container-high/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-secondary transition-colors active:scale-90" id="btn-like">
+<span class="material-symbols-outlined text-[22px]">favorite</span>
+</button>
+<!-- Botão Baixar Offline -->
+<button aria-label="Baixar para assistir offline" class="w-12 h-12 rounded-xl bg-surface-container-high/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-tertiary transition-colors active:scale-90" id="btn-download">
+<span class="material-symbols-outlined text-[22px]">arrow_circle_down</span>
+</button>
+</div>
+</div>
+</div>
+<!-- ATALHOS DA JORNADA 'CONTINUE A EXPERIÊNCIA' (HUB INTERATIVO) -->
+<div class="px-margin mt-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[20px]">explore</span>
+        Jornada da Criança
+      </span>
+<span class="font-label-badge text-label-badge text-primary uppercase tracking-wider">Passo a Passo</span>
+</div>
+<!-- 4 Cards Rápidos em Grid 2x2 -->
+<div class="grid grid-cols-2 gap-space-xs mt-1">
+<!-- Card 1: Assistir -->
+<button class="p-3 rounded-xl bg-surface-container text-left flex items-start gap-3 active:scale-95 transition-all hover:bg-surface-container-high shadow-sm" onclick="switchTab('tab-visao-geral')">
+<div class="w-9 h-9 rounded-lg bg-primary/20 text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-lg text-label-lg font-bold text-white truncate">1. Assistir</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Filme • 45 min</p>
+</div>
+</button>
+<!-- Card 2: Lição Bíblica -->
+<button class="p-3 rounded-xl bg-surface-container text-left flex items-start gap-3 active:scale-95 transition-all hover:bg-surface-container-high shadow-sm" onclick="switchTab('tab-licao')">
+<div class="w-9 h-9 rounded-lg bg-secondary/20 text-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-lg text-label-lg font-bold text-white truncate">2. Lição Viva</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">10 min reflexão</p>
+</div>
+</button>
+<!-- Card 3: Quiz -->
+<button class="p-3 rounded-xl bg-surface-container text-left flex items-start gap-3 active:scale-95 transition-all hover:bg-surface-container-high shadow-sm" onclick="switchTab('tab-quiz')">
+<div class="w-9 h-9 rounded-lg bg-tertiary/20 text-tertiary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">psychology</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-lg text-label-lg font-bold text-white truncate">3. Quiz Davi</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Ganhe 100 pts</p>
+</div>
+</button>
+<!-- Card 4: Imprimir / Atividades -->
+<button class="p-3 rounded-xl bg-surface-container text-left flex items-start gap-3 active:scale-95 transition-all hover:bg-surface-container-high shadow-sm" onclick="switchTab('tab-atividades')">
+<div class="w-9 h-9 rounded-lg bg-primary-container/20 text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">palette</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-lg text-label-lg font-bold text-white truncate">4. Colorir &amp; PDF</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">18 páginas</p>
+</div>
+</button>
+</div>
+</div>
+<!-- BARRA DE ABAS HORIZONTAIS COM SCROLL -->
+<div class="mt-space-lg px-margin flex items-center gap-space-sm overflow-x-auto no-scrollbar scroll-smooth">
+<button class="tab-btn px-4 py-2.5 rounded-full text-white font-label-lg text-label-lg whitespace-nowrap bg-primary-container text-on-primary-container font-bold shadow-[0_2px_12px_rgba(208,188,255,0.25)] transition-all" id="nav-tab-visao-geral" onclick="switchTab('tab-visao-geral')">
+      Visão Geral
+    </button>
+<button class="tab-btn px-4 py-2.5 rounded-full text-on-surface-variant font-label-lg text-label-lg whitespace-nowrap bg-surface-container-high hover:text-white transition-all" id="nav-tab-episodios" onclick="switchTab('tab-episodios')">
+      Série Completa
+    </button>
+<button class="tab-btn px-4 py-2.5 rounded-full text-on-surface-variant font-label-lg text-label-lg whitespace-nowrap bg-surface-container-high hover:text-white transition-all" id="nav-tab-licao" onclick="switchTab('tab-licao')">
+      Lição Bíblica
+    </button>
+<button class="tab-btn px-4 py-2.5 rounded-full text-on-surface-variant font-label-lg text-label-lg whitespace-nowrap bg-surface-container-high hover:text-white transition-all" id="nav-tab-quiz" onclick="switchTab('tab-quiz')">
+      Quiz Interativo
+    </button>
+<button class="tab-btn px-4 py-2.5 rounded-full text-on-surface-variant font-label-lg text-label-lg whitespace-nowrap bg-surface-container-high hover:text-white transition-all" id="nav-tab-atividades" onclick="switchTab('tab-atividades')">
+      Caderno de Atividades
+    </button>
+</div>
+<!-- CONTEÚDO DAS ABAS INTERATIVAS -->
+<div class="px-margin mt-space-md flex flex-col gap-space-lg">
+<!-- ABA 1: VISÃO GERAL -->
+<div class="tab-pane flex flex-col gap-space-md" id="tab-visao-geral">
+<!-- Card Sobre a História -->
+<div class="p-space-md rounded-2xl bg-surface-container flex flex-col gap-space-xs shadow-md">
+<h2 class="font-headline-sm text-headline-sm text-white font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">auto_stories</span>
+          Sobre a História
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Golias zombava do exército de Israel com sua força assustadora e sua armadura de bronze. Mas o pequeno Davi sabia que não precisava de espadas reluzentes ou couraças pesadas: ele caminhava em nome do Deus Vivo. Uma obra emocionante que ensina aos pequenos que o amor e a coragem vencem qualquer medo.
+        </p>
+</div>
+<!-- Card O que Vamos Aprender -->
+<div class="p-space-md rounded-2xl bg-surface-container flex flex-col gap-space-xs shadow-md">
+<h3 class="font-headline-sm text-headline-sm text-white font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">lightbulb</span>
+          O que vamos aprender?
+        </h3>
+<div class="flex flex-col gap-2 mt-1">
+<div class="flex items-start gap-2.5">
+<span class="w-5 h-5 rounded-full bg-primary/20 text-primary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</span>
+<span class="font-body-md text-body-md text-on-surface">Confiar em Deus mesmo quando nos sentimos pequenos e desprotegidos.</span>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="w-5 h-5 rounded-full bg-primary/20 text-primary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</span>
+<span class="font-body-md text-body-md text-on-surface">Ter coragem frente às dificuldades do dia a dia na escola ou em casa.</span>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="w-5 h-5 rounded-full bg-primary/20 text-primary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</span>
+<span class="font-body-md text-body-md text-on-surface">Lembrar que o Senhor não olha para a aparência exterior, mas contempla o coração.</span>
+</div>
+</div>
+</div>
+<!-- Versículo Chave Iluminado -->
+<div class="relative p-space-md rounded-2xl bg-surface-container-high overflow-hidden shadow-lg">
+<div class="absolute -right-4 -bottom-4 w-28 h-28 bg-secondary/10 rounded-full blur-2xl pointer-events-none"></div>
+<span class="font-display-hero-mobile text-display-hero-mobile text-secondary/30 font-serif leading-none block select-none">“</span>
+<blockquote class="font-headline-sm text-headline-sm text-white font-bold tracking-tight italic -mt-6">
+          Porque a batalha é do Senhor, e Ele vos entregará nas nossas mãos!
+        </blockquote>
+<div class="mt-space-xs flex items-center justify-between">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-secondary font-bold">1 Samuel 17:47</span>
+<span class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">bookmark_heart</span>
+            Memorizar
+          </span>
+</div>
+</div>
+</div>
+<!-- ABA 2: SÉRIE COMPLETA (EPISÓDIOS) -->
+<div class="tab-pane hidden flex flex-col gap-space-md" id="tab-episodios">
+<!-- Seletor de Temporada Stylized -->
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container">
+<span class="font-headline-sm text-headline-sm font-bold text-white flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">movie_filter</span>
+          Temporada 1
+        </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">5 Episódios</span>
+</div>
+<!-- Lista de Episódios -->
+<div class="flex flex-col gap-space-sm">
+<!-- Ep 01 -->
+<div class="flex gap-3 p-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="relative w-28 aspect-video rounded-lg overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Vibrant 3D rendered animated scene showing the beginning of Creation with glowing light, rolling turquoise waters, lush emerald islands and golden sunrise." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4Co_L_r0zBF1ZWlVeWr5jF4rX9D3V1etHoe5APX4Jx6l-lzhCpiUM9493JniVUojVvm4kHDIC3wjM_0F8XrP4sQ56EE9Kqm3le_qeC9k8MBU_T4XNhlUvEw_n-lv8qRQcc_ip1BjebKjGidjjvzYccd2nCW_d9LdRTWtXOsB04fKPbCzIBk3iFatBUGGPG_ulKGzIY7gV3ij3dp0FeE8hgOefwrhAeIzUZjG2DOVOcY47mFyPat1X"/>
+<div class="absolute bottom-1 right-1 bg-surface-container-lowest/80 px-1 rounded text-white font-label-badge text-label-badge">22 min</div>
+<!-- Barra de Progresso Completo -->
+<div class="absolute bottom-0 inset-x-0 h-1 bg-white/20">
+<div class="h-full bg-primary w-full"></div>
+</div>
+</div>
+<div class="flex flex-col justify-center min-w-0">
+<span class="font-label-badge text-label-badge text-secondary font-bold">EPISÓDIO 1</span>
+<h4 class="font-label-lg text-label-lg font-bold text-white truncate">O Começo de Tudo</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Deus cria o mundo com beleza e vida abundante.</p>
+</div>
+</div>
+<!-- Ep 02 -->
+<div class="flex gap-3 p-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="relative w-28 aspect-video rounded-lg overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Colorful 3D cartoon style scene of Noah's Ark perched on a mountaintop with a brilliant glowing rainbow spanning across deep blue cloudscapes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnGSmpzguF8r-FWxzgP0p-owkKw0WzyGflgaTN0Tkf6gLGMP_-EwCsmVdps-dh5b_QiH1C-ENzhcm84-wIrhHCT3m6p8vHmGb2dfy5XAo_xjE0x65ZW5PtICIhWDAjJA8KOnDChqErkzxmQFjzvWdK1epiI6RX4zOIh5-tcd9nuPKmAQa83_oHeNv-w5lSSINzpCg_pf0InV08-g-4W5Vvq8FjtiFSbr6qGhNHtY3ebd0ajKTC6bds"/>
+<div class="absolute bottom-1 right-1 bg-surface-container-lowest/80 px-1 rounded text-white font-label-badge text-label-badge">24 min</div>
+<div class="absolute bottom-0 inset-x-0 h-1 bg-white/20">
+<div class="h-full bg-primary w-2/3"></div>
+</div>
+</div>
+<div class="flex flex-col justify-center min-w-0">
+<span class="font-label-badge text-label-badge text-secondary font-bold">EPISÓDIO 2</span>
+<h4 class="font-label-lg text-label-lg font-bold text-white truncate">A Arca de Noé</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Uma promessa selada com o arco-íris da aliança divina.</p>
+</div>
+</div>
+<!-- Ep 03 (Atual) -->
+<div class="flex gap-3 p-2.5 rounded-xl bg-surface-container-high shadow-md">
+<div class="relative w-28 aspect-video rounded-lg overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Close-up 3D cartoon shot of shepherd David smiling gently under warm sunlight, holding his wooden sling with sparkling confidence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4NKLNlRBePuQzMGUWGKO8Pe4-yL8Ctw0h6JqAtHEbRw3C1aoqZ9Nj_XOqcsDaKpVSOIENCac4ok8ZeOlZmwaj9NEFlpH8SLicPQrAxgpGNu4IFk3kI6NCPCWtnbIavdqDJhEMjjnZkv2CHxAlTABjI293-9ZGyIPcNNrUyRS4Ht6CoUh7McIIoZgO3D4E2IdskflLH9Fu-ghUhzC6Y61vAgzxksvxTaDdBgHWLDIlgh9mZN-hVFoJ"/>
+<div class="absolute inset-0 bg-primary/20 flex items-center justify-center">
+<div class="w-8 h-8 rounded-full bg-white text-surface-container-lowest flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-1 right-1 bg-surface-container-lowest/80 px-1 rounded text-white font-label-badge text-label-badge">45 min</div>
+</div>
+<div class="flex flex-col justify-center min-w-0">
+<span class="font-label-badge text-label-badge text-primary font-bold">ASSISTINDO AGORA</span>
+<h4 class="font-label-lg text-label-lg font-bold text-white truncate">Davi e o Gigante</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Coragem genuína nascida da fé sincera.</p>
+</div>
+</div>
+<!-- Ep 04 -->
+<div class="flex gap-3 p-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="relative w-28 aspect-video rounded-lg overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="3D animated illustration of Joseph in ancient Egypt standing proudly in front of towering pharaoh palace pillars under a shimmering sunset." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGyxhGB1_fiUeovV0vp0wtivf4LMEYK-l-jt3aCCm6FKxebdJ7iG2PX0DZ03UmF9uhlYrD6vJyXTwiVjvgIkqAtGScXS9Tkdzi-qjsXjKPvaAdtd_ZfgYUpjbJVEW2tHMCoyu-QS9ycOKyFr0b2EUQPzqN0yy7E4eCZg9g2Ag6AKz9ZBaqKJ1N1IBPI9Q8ozHyTreeUVhFEfVOPHsNw5-Hqd5czIAUnl8malgRJzDLPY_x4Z6x6vGl"/>
+<div class="absolute bottom-1 right-1 bg-surface-container-lowest/80 px-1 rounded text-white font-label-badge text-label-badge">26 min</div>
+</div>
+<div class="flex flex-col justify-center min-w-0">
+<span class="font-label-badge text-label-badge text-secondary font-bold">EPISÓDIO 4</span>
+<h4 class="font-label-lg text-label-lg font-bold text-white truncate">José do Egito</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Sonhos divinos, perdão e reencontro de família.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- ABA 3: LIÇÃO BÍBLICA INFANTIL -->
+<div class="tab-pane hidden flex flex-col gap-space-md" id="tab-licao">
+<div class="p-space-md rounded-2xl bg-surface-container flex flex-col gap-space-xs shadow-md">
+<div class="flex items-center justify-between">
+<span class="font-label-badge text-label-badge text-secondary font-bold uppercase tracking-wider">Momento em Família</span>
+<span class="font-label-badge text-label-badge bg-secondary-container/20 text-secondary px-2 py-0.5 rounded-full">Lição 1 de 3</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-white">Qual é o seu gigante hoje?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Às vezes nossos gigantes não usam lanças ou armaduras. Eles se chamam medo do escuro, vergonha de falar com novos amigos ou tristeza quando algo dá errado. Mas a história de Davi nos ensina que Deus é infinitamente maior do que qualquer problema!
+        </p>
+<!-- Caixa de Reflexão Interativa -->
+<div class="p-3.5 rounded-xl bg-surface-container-high flex flex-col gap-2 mt-2">
+<p class="font-label-lg text-label-lg font-bold text-white flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">question_answer</span>
+            Pergunta para conversar agora:
+          </p>
+<p class="font-body-md text-body-md text-on-surface-variant italic">
+            "Existe algo que te deixa com medo ultimamente? Como podemos orar juntos agora para pedir coragem a Deus?"
+          </p>
+</div>
+<button class="mt-2 w-full h-11 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 active:scale-95 transition-transform shadow-md">
+          Concluir Lição e Ganhar Estrela
+          <span class="material-symbols-outlined text-[18px]">workspace_premium</span>
+</button>
+</div>
+</div>
+<!-- ABA 4: PREVIEW DO QUIZ INTERATIVO -->
+<div class="tab-pane hidden flex flex-col gap-space-md" id="tab-quiz">
+<div class="p-space-md rounded-2xl bg-surface-container flex flex-col gap-space-sm shadow-md">
+<div class="flex items-center justify-between">
+<span class="font-label-badge text-label-badge text-primary uppercase font-bold tracking-wider">Desafio dos Campeões</span>
+<span class="font-label-badge text-label-badge text-on-surface-variant">Pergunta 2 de 5</span>
+</div>
+<!-- Barra de Progresso do Quiz -->
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary w-2/5 rounded-full"></div>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-white mt-1">
+          O que Davi usou para vencer o gigante Golias?
+        </h3>
+<!-- Opções com Feedback Dinâmico -->
+<div class="flex flex-col gap-2.5 mt-2" id="quiz-options">
+<button class="quiz-btn w-full p-3.5 rounded-xl bg-surface-container-high text-left font-label-lg text-label-lg text-on-surface flex items-center justify-between transition-all active:scale-98" onclick="selectQuizAnswer(this, false)">
+<span>A) Uma armadura de ferro e espada</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 text-error">close</span>
+</button>
+<button class="quiz-btn w-full p-3.5 rounded-xl bg-surface-container-high text-left font-label-lg text-label-lg text-on-surface flex items-center justify-between transition-all active:scale-98" onclick="selectQuizAnswer(this, true)">
+<span>B) Uma funda, pedrinhas e fé em Deus</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 text-primary">check_circle</span>
+</button>
+<button class="quiz-btn w-full p-3.5 rounded-xl bg-surface-container-high text-left font-label-lg text-label-lg text-on-surface flex items-center justify-between transition-all active:scale-98" onclick="selectQuizAnswer(this, false)">
+<span>C) Um escudo pesado de bronze</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 text-error">close</span>
+</button>
+</div>
+<div class="hidden p-3 rounded-xl bg-primary/20 text-on-surface flex items-center gap-2 mt-1" id="quiz-feedback">
+<span class="material-symbols-outlined text-primary text-[20px]">celebration</span>
+<span class="font-body-sm text-body-sm font-bold">Muito bem! Davi sabia que a força real vem do Senhor!</span>
+</div>
+</div>
+</div>
+<!-- ABA 5: MATERIAIS PARA IMPRIMIR (ATIVIDADES) -->
+<div class="tab-pane hidden flex flex-col gap-space-md" id="tab-atividades">
+<!-- Item Atividade 1 -->
+<div class="flex gap-3.5 p-3 rounded-2xl bg-surface-container shadow-md">
+<div class="relative w-24 h-32 rounded-xl overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="3D styled printable coloring book cover featuring David standing heroic with his sling, friendly animals and clean outlined cartoon line art ready to be colored." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC197VR0VU5HwWeKnvI7IZj7XNfKZPWsqpJMSUm3wPBsqHmEptR-84MqfX0bU6myP48nANcFytr2VTw-TWj6zl7EhlM4k_YqChbLGtc_EYPjYB0aQXSsl_5zHarpto1GyfJ6iQEkjlx5itr0PBhVsrUE5dOiHwgMpmrT0S-c3GFOV5IVR5Fh7TcnGLJSdFn2VonkKggVOGYVUFPgYYAeA389bDg1pjj5Kyr7ABt3sxIBJ2xr4qOGU4S"/>
+<span class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 text-secondary font-label-badge text-label-badge">PDF</span>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<span class="font-label-badge text-label-badge text-secondary font-bold">ATIVIDADE EDUCATIVA</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-white truncate">Caderno de Atividades</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">Labirintos, caça-palavras e perguntas bíblicas infantis. 18 páginas.</p>
+</div>
+<div class="flex items-center gap-2 mt-2">
+<button class="flex-1 h-9 rounded-lg bg-primary-container text-on-primary-container font-label-badge text-label-badge font-bold flex items-center justify-center gap-1 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[16px]">download</span>
+              BAIXAR
+            </button>
+<button class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item Atividade 2 -->
+<div class="flex gap-3.5 p-3 rounded-2xl bg-surface-container shadow-md">
+<div class="relative w-24 h-32 rounded-xl overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Whimsical printable black and white coloring page for toddlers showing David playing his harp under a smiling golden sun with gentle sheep resting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYtxjxUj4b_bLHUfOR3T6NTlSWG-wS9HbGC7l93Bue1CAzmKavy-1l6hEWdu74fAlJR46YC1zwSZPOK8jyMnNcnzUF4pbgyXaWCvRiU1FG6AA1xkJwmCzwcNMdq88z3V6UnhLMTfzlN0124pc6SyBkuHBI_2YWBvXnNCzyqu2InMjYD8Bxmmq9_abkixHXZ6dCC4-cVdUopEZ65SRjlreXfzR5MXiRAK93k8sps5bhdfPxlYQDfpYm"/>
+<span class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 text-secondary font-label-badge text-label-badge">PDF</span>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<span class="font-label-badge text-label-badge text-secondary font-bold">LIVRO DE COLORIR</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-white truncate">Davi e Sua Harpa</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">Páginas de colorir lúdicas para os menores estimularem a criatividade.</p>
+</div>
+<div class="flex items-center gap-2 mt-2">
+<button class="flex-1 h-9 rounded-lg bg-primary-container text-on-primary-container font-label-badge text-label-badge font-bold flex items-center justify-center gap-1 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[16px]">download</span>
+              BAIXAR
+            </button>
+<button class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- SEÇÃO 'MAIS COMO ESTE' (CARROSSEL HORIZONTAL) -->
+<div class="mt-space-xl flex flex-col gap-space-xs">
+<div class="px-margin flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm font-bold text-white flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">recommend</span>
+        Mais Como Este
+      </h3>
+<span class="font-label-badge text-label-badge text-primary font-bold">Ver Todos</span>
+</div>
+<!-- Trilho Horizontal de Posters -->
+<div class="flex gap-space-sm overflow-x-auto px-margin no-scrollbar scroll-smooth pt-1 pb-2">
+<!-- Pôster 1: Daniel -->
+<div class="w-32 flex-shrink-0 flex flex-col gap-1.5 active:scale-95 transition-transform cursor-pointer">
+<div class="relative w-full aspect-[2/3] rounded-xl overflow-hidden shadow-lg">
+<img class="w-full h-full object-cover" data-alt="Cinematic 3D animation movie poster of brave boy Daniel standing peacefully surrounded by magnificent slumbering lions in an ancient stone cavern bathed in heavenly golden rays." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfcnm8YahmEVjVcOkGpUgNn1ncUygxjrP9c2nVtvi2pyU5EN61o8Bb15F1eCu9r7VW8SbtLE1CdcDRrLRNhn_um1ikAJ_MpiRKM9roz2y94vRAQ9L6MZSf46uQX5DZktW07-CWXMF3jYKIkost6vjndxmzfYiOlNIFOwDUW2zAeD5cabFwZD5uXKtV5EOTNASPX2A3-cCgcCpSj_tPqewxye_Cx4STYf1T0tAuM-1pTrrQxRUHjpC1"/>
+<div class="absolute bottom-1 left-1 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 text-white font-label-badge text-label-badge">Livre</div>
+</div>
+<p class="font-label-md text-label-md font-bold text-white truncate">Daniel &amp; Leões</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant -mt-1">38 min</span>
+</div>
+<!-- Pôster 2: Moisés -->
+<div class="w-32 flex-shrink-0 flex flex-col gap-1.5 active:scale-95 transition-transform cursor-pointer">
+<div class="relative w-full aspect-[2/3] rounded-xl overflow-hidden shadow-lg">
+<img class="w-full h-full object-cover" data-alt="Epic children animated 3D film poster of Moses holding his wooden staff high as colossal walls of clear turquoise ocean water part under a dramatic sunset sky." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlopWDMn-juscEoYKh45p0nBEqiHQC-vE6xg2DiLuSix0i1U2xIQnHt6KOgcmLgS_RK5iaaZDyDIcAzD62DKmkohSIXyntGCxkFD8OrP2MRF_CQRkFd2H_0wbRF5r8Q82UUdlctwz-HYGNeToNGzpV5Qqg7NNde6mAFooNgrsT9nnumZAnty9FbUDkngiF5KkHhwREVELGGuEOotTlVzbhPPWnTV1loUWaX2YCbteidbU822jYN8wm"/>
+<div class="absolute bottom-1 left-1 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 text-white font-label-badge text-label-badge">Livre</div>
+</div>
+<p class="font-label-md text-label-md font-bold text-white truncate">O Mar Vermelho</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant -mt-1">50 min</span>
+</div>
+<!-- Pôster 3: Ester -->
+<div class="w-32 flex-shrink-0 flex flex-col gap-1.5 active:scale-95 transition-transform cursor-pointer">
+<div class="relative w-full aspect-[2/3] rounded-xl overflow-hidden shadow-lg">
+<img class="w-full h-full object-cover" data-alt="Charming Disney Pixar inspired 3D animation poster of young Queen Esther wearing a delicate sparkling tiara with courageous eyes in a majestic Persian palace courtyard." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCzGX6nmNEBRCnID7CCp0I7uhysBwYwgmTrUPurAHVHxdSUMDvya_gSg65g8an24t4heo8PZXB9rogtPCI58B0ANZEpVAQiVpFHwW2nmntCMx-A7ZGVAo4TAjesW_0ORc3I0NkUhFTiIbJlckulkNV77B5Yoaxkcnf75x1kuofgqJezHO9feBp1l5Cd4bFhBxlJwbuoWi8S3pQu8hBJfzSMFd7AoV_R_n-Hdz5jKmNChqanqi5Lig7"/>
+<div class="absolute bottom-1 left-1 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 text-white font-label-badge text-label-badge">Livre</div>
+</div>
+<p class="font-label-md text-label-md font-bold text-white truncate">Rainha Ester</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant -mt-1">42 min</span>
+</div>
+<!-- Pôster 4: Jonas -->
+<div class="w-32 flex-shrink-0 flex flex-col gap-1.5 active:scale-95 transition-transform cursor-pointer">
+<div class="relative w-full aspect-[2/3] rounded-xl overflow-hidden shadow-lg">
+<img class="w-full h-full object-cover" data-alt="Playful 3D cartoon poster of Jonah and a giant friendly bioluminescent whale under glowing deep sea ocean waters with sparkling bubbles." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDojkNf-m8Fye1Ct55PYoOJH7AUPLcx4P__Vnfg7AH_jywPz4nCqA1PK9Ls6IJ67ix5uk4QMb9Gi9DPUq1929AQGrbOGnM5n8vaeoAqk4Dgvq8UUQvJ53Xl3qxM7JWqso9bQyuzV5WRnLLZUFJ2C3UmkBreVbJ1xc_qPO4mS0rLuEevAgHoUAvvfXrBRCOlCLHCeJEG_Le4ltvjU99w2y9VO5qAtRfETlxvXKwPhMY7jC1uukZDU_nG"/>
+<div class="absolute bottom-1 left-1 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 text-white font-label-badge text-label-badge">Livre</div>
+</div>
+<p class="font-label-md text-label-md font-bold text-white truncate">Jonas &amp; o Grande Peixe</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant -mt-1">35 min</span>
+</div>
+</div>
+</div>
+<!-- OVERLAY DO PLAYER CINEMATOGRÁFICO (INTERATIVO) -->
+<div class="fixed inset-0 z-50 bg-[#0B0B0D] flex flex-col justify-between p-margin hidden transition-opacity duration-300" id="video-player-overlay">
+<!-- Barra Superior do Player -->
+<div class="flex items-center justify-between w-full pt-safe">
+<button aria-label="Fechar reprodutor" class="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center text-white active:scale-90" onclick="closePlayer()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+<div class="text-center">
+<p class="font-label-lg text-label-lg font-bold text-white">Davi e Golias</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Episódio 3 • Temporada 1</p>
+</div>
+<button class="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center text-white active:scale-90">
+<span class="material-symbols-outlined text-[20px]">closed_caption</span>
+</button>
+</div>
+<!-- Vídeo Simulado / Cena Central -->
+<div class="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl bg-black my-auto flex items-center justify-center">
+<img class="w-full h-full object-cover opacity-85" data-alt="Dramatic widescreen 16:9 movie still of young shepherd David holding his small sling, looking up fearlessly into the sky with glowing stars above a rocky valley in Israel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfvnJXoDH8CnTJr0gdthF5RlrFDmlAJrG5KPeiviVsD167WEPolr0_8-aeihtHruw-tePjwpT_PRRxojnbDZRXoAP6_45jqbxahiq5QroNutyj_hG6eZoSm4-hIfFDYO3dxJwRfiIzbr2JrHDWXmzjvV9gkZMmNsAyyEwgaI6C8HYofl9r_nXOYtU6h8ZSw_FaBP3nSNoAxiQlgw9dVaDIFpmY_-lQDGLG6LAsaOuUP7qTr36Rtnzw"/>
+<!-- Controles Centrais -->
+<div class="absolute inset-0 flex items-center justify-center gap-8">
+<button class="w-12 h-12 rounded-full bg-black/40 backdrop-blur-md text-white flex items-center justify-center active:scale-90">
+<span class="material-symbols-outlined text-[24px]">replay_10</span>
+</button>
+<button class="w-16 h-16 rounded-full bg-white text-black flex items-center justify-center shadow-xl active:scale-90" id="btn-player-toggle" onclick="togglePlayback()">
+<span class="material-symbols-outlined text-[32px]" id="player-icon" style="font-variation-settings: 'FILL' 1;">pause</span>
+</button>
+<button class="w-12 h-12 rounded-full bg-black/40 backdrop-blur-md text-white flex items-center justify-center active:scale-90">
+<span class="material-symbols-outlined text-[24px]">forward_10</span>
+</button>
+</div>
+<!-- Scrubber Inferior -->
+<div class="absolute bottom-3 inset-x-4 flex flex-col gap-1.5">
+<div class="w-full h-1.5 rounded-full bg-white/30 overflow-hidden cursor-pointer">
+<div class="h-full bg-primary w-[32%] rounded-full shadow-glow"></div>
+</div>
+<div class="flex items-center justify-between font-label-badge text-label-badge text-white/90">
+<span>14:20</span>
+<span>45:00</span>
+</div>
+</div>
+</div>
+<!-- Rodapé do Player com Ação Conclusão / Celebração -->
+<div class="pb-safe flex flex-col gap-2">
+<div class="p-3.5 rounded-xl bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[22px]" style="font-variation-settings: 'FILL' 1;">stars</span>
+<div>
+<p class="font-label-lg text-label-lg font-bold text-white">Assistindo com Lucas</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Próxima Lição disponível</p>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-secondary text-on-secondary font-label-badge text-label-badge font-bold active:scale-95" onclick="showCelebrationModal()">
+          Finalizar
+        </button>
+</div>
+</div>
+</div>
+<!-- MODAL DE CELEBRAÇÃO INFANTIL (VOCÊ TERMINOU! 🎉) -->
+<div class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-margin hidden" id="modal-celebracao">
+<div class="w-full max-w-sm p-space-lg rounded-3xl bg-surface-container-high flex flex-col items-center text-center gap-space-sm shadow-2xl relative overflow-hidden">
+<!-- Brilho Dourado de Fundo -->
+<div class="absolute -top-12 inset-x-0 h-32 bg-secondary/20 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Medalha / Avatar de Celebração -->
+<div class="w-20 h-20 rounded-full bg-secondary-container/30 text-secondary flex items-center justify-center shadow-lg animate-bounce">
+<span class="material-symbols-outlined text-[44px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-badge text-label-badge text-secondary font-bold uppercase tracking-widest">Parabéns Pequeno Vencedor!</span>
+<h3 class="font-headline-lg text-headline-lg font-extrabold text-white">Você Terminou! 🎉</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+          Você aprendeu como Davi confiou no Senhor. Ganhou +100 estrelas celestiais!
+        </p>
+</div>
+<!-- Ações de Encerramento com Chave de Ouro -->
+<div class="flex flex-col w-full gap-2 mt-2">
+<button class="w-full h-12 rounded-xl bg-primary text-on-primary font-headline-sm text-headline-sm font-bold flex items-center justify-center gap-2 active:scale-95 shadow-md" onclick="closeCelebrationAndGoQuiz()">
+<span class="material-symbols-outlined text-[20px]">psychology</span>
+          Fazer o Quiz Agora
+        </button>
+<button class="w-full h-11 rounded-xl bg-surface-variant/60 text-white font-label-lg text-label-lg font-bold active:scale-95" onclick="closeCelebrationModal()">
+          Voltar aos Detalhes
+        </button>
+</div>
+</div>
+</div>
+</div>
+<!-- SCRIPT DE INTERAÇÕES E DELIGHT -->
+<script>
+  // Troca de Abas
+  function switchTab(tabId) {
+    // Esconde todas as abas
+    document.querySelectorAll('.tab-pane').forEach(el => el.classList.add('hidden'));
+    
+    // Remove estilo ativo de todos os botões de aba
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.className = "tab-btn px-4 py-2.5 rounded-full text-on-surface-variant font-label-lg text-label-lg whitespace-nowrap bg-surface-container-high hover:text-white transition-all";
+    });
+
+    // Mostra aba selecionada
+    const activePane = document.getElementById(tabId);
+    if (activePane) activePane.classList.remove('hidden');
+
+    // Ativa botão correspondente
+    const activeNav = document.getElementById('nav-' + tabId);
+    if (activeNav) {
+      activeNav.className = "tab-btn px-4 py-2.5 rounded-full text-white font-label-lg text-label-lg whitespace-nowrap bg-primary-container text-on-primary-container font-bold shadow-[0_2px_12px_rgba(208,188,255,0.25)] transition-all";
+    }
+  }
+
+  // Interatividade do Quiz
+  function selectQuizAnswer(btn, isCorrect) {
+    const feedback = document.getElementById('quiz-feedback');
+    const allBtns = document.querySelectorAll('.quiz-btn');
+
+    // Reseta estados anteriores
+    allBtns.forEach(b => {
+      b.classList.remove('bg-primary/30', 'bg-error/30', 'text-white');
+      const icon = b.querySelector('.material-symbols-outlined');
+      if (icon) icon.classList.add('opacity-0');
+    });
+
+    const icon = btn.querySelector('.material-symbols-outlined');
+    if (isCorrect) {
+      btn.classList.add('bg-primary/30', 'text-white');
+      if (icon) icon.classList.remove('opacity-0');
+      feedback.classList.remove('hidden');
+    } else {
+      btn.classList.add('bg-error/30', 'text-white');
+      if (icon) icon.classList.remove('opacity-0');
+      feedback.classList.add('hidden');
+    }
+  }
+
+  // Player de Vídeo Overlay
+  const playerOverlay = document.getElementById('video-player-overlay');
+  const btnPlayHero = document.getElementById('btn-play-hero');
+
+  if (btnPlayHero && playerOverlay) {
+    btnPlayHero.addEventListener('click', () => {
+      playerOverlay.classList.remove('hidden');
+    });
+  }
+
+  function closePlayer() {
+    if (playerOverlay) playerOverlay.classList.add('hidden');
+  }
+
+  let isPlaying = true;
+  function togglePlayback() {
+    const icon = document.getElementById('player-icon');
+    isPlaying = !isPlaying;
+    if (icon) {
+      icon.innerText = isPlaying ? 'pause' : 'play_arrow';
+    }
+  }
+
+  // Modal de Celebração
+  const celebModal = document.getElementById('modal-celebracao');
+
+  function showCelebrationModal() {
+    if (celebModal) celebModal.classList.remove('hidden');
+  }
+
+  function closeCelebrationModal() {
+    if (celebModal) celebModal.classList.add('hidden');
+    closePlayer();
+  }
+
+  function closeCelebrationAndGoQuiz() {
+    closeCelebrationModal();
+    switchTab('tab-quiz');
+  }
+
+  // Micro-interações de Favoritar
+  const btnFav = document.getElementById('btn-fav');
+  if (btnFav) {
+    btnFav.addEventListener('click', function() {
+      const icon = this.querySelector('span');
+      if (icon.innerText === 'bookmark_add') {
+        icon.innerText = 'bookmark_added';
+        this.classList.add('text-primary');
+      } else {
+        icon.innerText = 'bookmark_add';
+        this.classList.remove('text-primary');
+      }
+    });
+  }
+
+  const btnLike = document.getElementById('btn-like');
+  if (btnLike) {
+    btnLike.addEventListener('click', function() {
+      const icon = this.querySelector('span');
+      if (icon.style.fontVariationSettings.includes("'FILL' 1")) {
+        icon.style.fontVariationSettings = "'FILL' 0";
+        this.classList.remove('text-secondary');
+      } else {
+        icon.style.fontVariationSettings = "'FILL' 1";
+        this.classList.add('text-secondary');
+      }
+    });
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-4px_24px_rgba(0,0,0,0.5)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center w-14 h-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="home-cinematografica" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-badge text-label-badge mt-1">Início</span></a><a class="flex flex-col items-center justify-center w-14 h-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="clipes" href="#"><span class="material-symbols-outlined text-[22px]">play_circle</span><span class="font-label-badge text-label-badge mt-1">Clipes</span></a><a class="flex flex-col items-center justify-center w-14 h-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="aprender-e-explorar" href="#"><span class="material-symbols-outlined text-[22px]">explore</span><span class="font-label-badge text-label-badge mt-1">Aprender</span></a><a class="flex flex-col items-center justify-center w-14 h-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="minha-lista" href="#"><span class="material-symbols-outlined text-[22px]">bookmark</span><span class="font-label-badge text-label-badge mt-1">Minha Lista</span></a><a class="flex flex-col items-center justify-center w-14 h-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="perfil-da-crianca" href="#"><span class="material-symbols-outlined text-[22px]">account_circle</span><span class="font-label-badge text-label-badge mt-1">Perfil</span></a></div></nav></body></html>

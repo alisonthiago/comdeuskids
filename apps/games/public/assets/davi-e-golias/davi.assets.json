@@ -1,0 +1,48 @@
+{
+  "game": "davi-e-golias",
+  "title": "Davi e Golias",
+  "engine": "ActionPrecisionEngine",
+  "visualFamily": "kenney-adventurer-and-sl-knight",
+  "assets": [
+    {
+      "id": "davi_adventurer",
+      "path": "/assets/davi-e-golias/PNG/Adventurer/adventurer_tilesheet.png",
+      "type": "spritesheet"
+    },
+    {
+      "id": "israel_soldier",
+      "path": "/assets/davi-e-golias/PNG/Soldier/soldier_tilesheet.png",
+      "type": "spritesheet"
+    },
+    {
+      "id": "golias_idle",
+      "path": "/assets/davi-e-golias/golias/Idle.png",
+      "type": "spritesheet"
+    },
+    {
+      "id": "golias_attack",
+      "path": "/assets/davi-e-golias/golias/Attacks.png",
+      "type": "spritesheet"
+    },
+    {
+      "id": "golias_hurt",
+      "path": "/assets/davi-e-golias/golias/Hurt.png",
+      "type": "spritesheet"
+    },
+    {
+      "id": "golias_death",
+      "path": "/assets/davi-e-golias/golias/Death.png",
+      "type": "spritesheet"
+    },
+    {
+      "id": "sheep_idle",
+      "path": "/assets/a-ovelha-perdida/HappySheep_Idle.png",
+      "type": "spritesheet"
+    },
+    {
+      "id": "rocks",
+      "path": "/assets/a-ovelha-perdida/Rocks_01.png",
+      "type": "image"
+    }
+  ]
+}

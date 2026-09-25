@@ -1,0 +1,367 @@
+@import '../../../../packages/ui/tokens.css';
+@import './streaming.css';
+@import './tv.css';
+@import './stitch-streaming.css';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cdk-bg: #131315;
+  --cdk-canvas: #0b0b0d;
+  --cdk-surface: #1c1b1d;
+  --cdk-surface-hover: #201f21;
+  --cdk-surface-active: #2a2a2c;
+  --cdk-surface-high: #353437;
+  --cdk-border: #2a2a2c;
+  --cdk-border-light: rgba(255, 255, 255, 0.08);
+  --cdk-brand-green: #22c55e;
+  --cdk-brand-green-light: #4ade80;
+  --cdk-brand-green-glow: rgba(34, 197, 94, 0.35);
+  --cdk-brand-green-bg: rgba(34, 197, 94, 0.12);
+  --cdk-purple: #22c55e;
+  --cdk-purple-light: #4ade80;
+  --cdk-purple-glow: rgba(34, 197, 94, 0.35);
+  --cdk-gold: #ffb95f;
+  --cdk-text-main: #e5e1e4;
+  --cdk-text-muted: #cbc3d7;
+  --cdk-text-dim: #958ea0;
+
+  /* Responsive layout tokens */
+  --page-padding-x: 16px;
+  --page-max-width: 1680px;
+  --content-max-width: 1380px;
+  --header-height: 68px;
+}
+
+@media (min-width: 640px) {
+  :root {
+    --page-padding-x: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --page-padding-x: 48px;
+  }
+}
+
+@media (min-width: 1600px) {
+  :root {
+    --page-padding-x: 72px;
+  }
+}
+
+@media (min-width: 1920px) {
+  :root {
+    --page-padding-x: 88px;
+  }
+}
+
+html {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+/* Movimento opcional: mantém feedback visual sem deslocamentos que possam
+   causar desconforto. Também evita rolagem animada quando solicitado. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+  }
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #131315;
+  color: #e5e1e4;
+  font-family: var(--cdk-font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+.cdk-loading-screen {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: #0b0b0d;
+  color: #e5e1e4;
+  font-family: var(--cdk-font-family, 'Baloo 2', sans-serif);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Shell Global */
+.cdk-stream-shell {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #131315;
+  color: #e5e1e4;
+  display: flex;
+  flex-direction: column;
+}
+
+.cdk-stream-body {
+  flex: 1;
+  width: 100%;
+}
+
+/* Containers Globais Responsivos */
+.cdk-container {
+  width: 100%;
+  max-width: var(--page-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--page-padding-x);
+  padding-right: var(--page-padding-x);
+}
+
+.cdk-content-container {
+  width: 100%;
+  max-width: var(--content-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--page-padding-x);
+  padding-right: var(--page-padding-x);
+}
+
+/* Grids Adaptativos */
+.cdk-grid-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+@media (min-width: 640px) {
+  .cdk-grid-cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cdk-grid-cards {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .cdk-grid-cards {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .cdk-grid-cards {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 28px;
+  }
+}
+
+/* Grids de 2 Colunas para Páginas de Detalhes e Gestão */
+.cdk-responsive-detail-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .cdk-responsive-detail-grid {
+    display: grid;
+    grid-template-columns: 1.8fr 1.2fr;
+    gap: 36px;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 1440px) {
+  .cdk-responsive-detail-grid {
+    grid-template-columns: 2fr 1.1fr;
+    gap: 48px;
+  }
+}
+
+/* Grids de Gestão (Professor, Família, Igreja) */
+.cdk-management-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .cdk-management-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .cdk-management-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+}
+
+/* Hero Cinematográfico Widescreen */
+.cdk-widescreen-hero {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background-color: #0b0b0d;
+}
+
+@media (min-width: 640px) {
+  .cdk-widescreen-hero {
+    aspect-ratio: 16 / 10;
+    max-height: 480px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cdk-widescreen-hero {
+    aspect-ratio: 21 / 9;
+    min-height: 440px;
+    max-height: 600px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .cdk-widescreen-hero {
+    min-height: 520px;
+    max-height: 680px;
+  }
+}
+
+/* Mobile Bottom Navigation Bar: VISÍVEL SOMENTE NO MOBILE <= 768px (E NUNCA NO DESKTOP >= 1024px) */
+.cdk-mobile-bottom-nav {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  /* Respiro externo entre a navegação fixa e o primeiro bloco de cada página. */
+  .cdk-stream-body {
+    padding-top: 16px;
+  }
+
+  .cdk-mobile-bottom-nav {
+    display: flex !important;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 72px;
+    padding: 6px 6px calc(8px + env(safe-area-inset-bottom, 0px));
+    background-color: rgba(19, 19, 21, 0.94);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    align-items: center;
+    justify-content: space-around;
+    z-index: 90;
+    font-family: var(--cdk-font-body);
+  }
+
+  .cdk-desktop-nav-links {
+    display: none !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  /* No tablet intermediário, mantemos header compacto e sem barra inferior pesada */
+  .cdk-mobile-bottom-nav {
+    display: none !important;
+  }
+}
+
+.cdk-mobile-nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+  color: #958ea0;
+  font-size: 11px;
+  font-weight: 600;
+  transition: color 0.15s ease;
+}
+
+.cdk-mobile-nav-link.active {
+  color: #22c55e;
+  font-weight: 800;
+}
+
+/* Visibilidade por viewport */
+@media (max-width: 768px) {
+  .cdk-desktop-only {
+    display: none !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .cdk-mobile-only {
+    display: none !important;
+  }
+}
+
+/* Scrollbar visível e acessível no Desktop */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #131315;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #353437;
+  border-radius: 6px;
+  border: 2px solid #131315;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #22c55e;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

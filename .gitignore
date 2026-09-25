@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+**/node_modules/
+.pnpm-store/
+
+# Build outputs & caches
+dist/
+**/dist/
+build/
+**/build/
+out/
+.cache/
+**/.cache/
+.vite/
+**/.vite/
+.turbo/
+*.tsbuildinfo
+
+# OS & Editor files
+.DS_Store
+**/.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# Environment & credentials
+.env
+.env.local
+.env.*.local
+
+# Temporary storage & system generated
+.tempmediaStorage/
+.system_generated/
+
+# Large Game Asset Archives (>100MB files rejected by GitHub)
+design-reference/games-assets/*.zip
+design-reference/games-assets/*.rar
+design-reference/games-assets/*.unitypackage

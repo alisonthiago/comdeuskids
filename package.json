@@ -1,0 +1,29 @@
+{
+  "name": "comdeuskids-monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -n \"ADM,SITE,PLAY,MEMBROS,AFILIADOS,GAMES\" -c \"magenta,blue,green,cyan,white,yellow\" \"npm run dev:adm\" \"npm run dev:site\" \"npm run dev:play\" \"npm run dev:membros\" \"npm run dev:afiliados\" \"npm run dev:games\"",
+    "dev:adm": "npm run dev --workspace=@comdeuskids/adm",
+    "dev:site": "npm run dev --workspace=@comdeuskids/site",
+    "dev:play": "npm run dev --workspace=@comdeuskids/play",
+    "dev:membros": "npm run dev --workspace=@comdeuskids/membros",
+    "dev:afiliados": "npm run dev --workspace=@comdeuskids/afiliados",
+    "dev:games": "npm run dev --workspace=@comdeuskids/games",
+    "dev:app": "npm run dev:play",
+    "build": "npm run build --workspaces --if-present",
+    "build:adm": "npm run build --workspace=@comdeuskids/adm",
+    "build:site": "npm run build --workspace=@comdeuskids/site",
+    "build:play": "npm run build --workspace=@comdeuskids/play",
+    "build:membros": "npm run build --workspace=@comdeuskids/membros",
+    "build:afiliados": "npm run build --workspace=@comdeuskids/afiliados",
+    "build:games": "npm run build --workspace=@comdeuskids/games",
+    "build:app": "npm run build:play"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.5"
+  }
+}

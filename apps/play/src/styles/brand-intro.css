@@ -1,0 +1,74 @@
+.brand-intro {
+  position: fixed;
+  z-index: 10000;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: 100dvh;
+  overflow: hidden;
+  background: #00152d;
+  animation: brand-intro-exit 200ms cubic-bezier(.4, 0, 1, 1) 1.8s forwards;
+}
+
+.brand-intro__mark {
+  position: relative;
+  width: min(42vw, 390px);
+  aspect-ratio: 1330.66 / 797.47;
+}
+
+.brand-intro__part,
+.brand-intro__full-logo {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform-origin: center;
+}
+/* Camadas do SVG oficial: a geometria da marca não é redesenhada. */
+.brand-intro__smile { clip-path: inset(76% 0 0); transform-origin: 50% 100%; animation: brand-smile-draw 550ms cubic-bezier(.22,.76,.24,1) 150ms both; }
+.brand-intro__kids { clip-path: inset(36% 0 23%); opacity: 0; transform: translateY(10px) scale(.97); animation: brand-kids-enter 500ms cubic-bezier(.22,.76,.24,1) 500ms both; }
+.brand-intro__com-deus { clip-path: inset(0 0 59%); opacity: 0; transform: scale(.98); animation: brand-com-deus-enter 450ms cubic-bezier(.22,.76,.24,1) 800ms both; }
+.brand-intro__full-logo { opacity: 0; animation: brand-full-logo 1ms linear 1250ms both; }
+.brand-intro__skip {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  padding: 8px 12px;
+  color: rgba(255, 255, 255, .72);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, .20);
+  border-radius: 999px;
+  font: 600 12px/1 var(--cdk-font-body, 'Baloo 2', sans-serif);
+  cursor: pointer;
+  transition: color 150ms ease, border-color 150ms ease, opacity 150ms ease;
+}
+
+.brand-intro__skip:hover {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, .45);
+}
+
+.brand-intro__skip:focus-visible { outline: 2px solid #00e83f; outline-offset: 3px; }
+@keyframes brand-smile-draw { from { clip-path: inset(76% 100% 0 0); } to { clip-path: inset(76% 0 0 0); } }
+@keyframes brand-kids-enter { to { opacity: 1; transform: translateY(0) scale(1); } }
+@keyframes brand-com-deus-enter { to { opacity: 1; transform: scale(1); } }
+@keyframes brand-full-logo { to { opacity: 1; } }
+@keyframes brand-intro-exit { to { opacity: 0; visibility: hidden; pointer-events: none; } }
+
+@media (max-width: 1024px) {
+  .brand-intro__mark { width: min(52vw, 370px); }
+}
+
+@media (max-width: 700px) {
+  .brand-intro__mark { width: min(74vw, 310px); }
+  .brand-intro__skip { right: 14px; bottom: 14px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-intro__part { display: none; }
+  .brand-intro__full-logo { opacity: 1; animation: none; }
+  .brand-intro { animation: brand-intro-exit 1ms linear 300ms forwards; }
+}

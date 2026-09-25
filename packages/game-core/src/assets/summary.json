@@ -1,0 +1,400 @@
+{
+  "totalAssets": 18307,
+  "totalPacks": 74,
+  "typeCounts": {
+    "3d-model": 5924,
+    "environment": 2975,
+    "tile": 5732,
+    "character": 1032,
+    "animal": 411,
+    "prop": 65,
+    "collectible": 296,
+    "ui": 750,
+    "building": 433,
+    "vegetation": 507,
+    "effect": 161,
+    "audio": 20,
+    "background": 1
+  },
+  "visualStyles": [
+    "3d-lowpoly",
+    "3d-stylized",
+    "cartoon-2d",
+    "hand-drawn",
+    "pixel-art",
+    "vector-flat"
+  ],
+  "biblicalCandidatesCount": 3518,
+  "packs": {
+    "2D_SL_Knight_v1.0": {
+      "zip": "2D_SL_Knight_v1.0.zip",
+      "validAssets": 15,
+      "license": "Included in Pack (See License File)"
+    },
+    "32x32 Dungeon Pack": {
+      "zip": "32x32 Dungeon Pack.zip",
+      "validAssets": 41,
+      "license": "Free Game Asset / License on Pack"
+    },
+    "3D Leap Land": {
+      "zip": "3D Leap Land.zip",
+      "validAssets": 155,
+      "license": "Free Game Asset / License on Pack"
+    },
+    "Dungeon assets pack": {
+      "zip": "Dungeon assets pack.zip",
+      "validAssets": 26,
+      "license": "Free Game Asset / License on Pack"
+    },
+    "Free Sample": {
+      "zip": "Free Sample.zip",
+      "validAssets": 20,
+      "license": "Free Game Asset / License on Pack"
+    },
+    "GandalfHardcore Archer": {
+      "zip": "GandalfHardcore Archer.zip",
+      "validAssets": 9,
+      "license": "Free Game Asset / License on Pack"
+    },
+    "HighLandsFantasyBuildings": {
+      "zip": "HighLandsFantasyBuildings.zip",
+      "validAssets": 55,
+      "license": "Free Game Asset / License on Pack"
+    },
+    "KayKit_Adventurers_2.0_FREE (1)": {
+      "zip": "KayKit_Adventurers_2.0_FREE (1).zip",
+      "validAssets": 184,
+      "license": "CC0 / Free for Commercial Use (Kay Lousberg)"
+    },
+    "KayKit_Adventurers_2.0_FREE": {
+      "zip": "KayKit_Adventurers_2.0_FREE.zip",
+      "validAssets": 184,
+      "license": "CC0 / Free for Commercial Use (Kay Lousberg)"
+    },
+    "KayKit_Character_Animations_1.1": {
+      "zip": "KayKit_Character_Animations_1.1.zip",
+      "validAssets": 33,
+      "license": "CC0 / Free for Commercial Use (Kay Lousberg)"
+    },
+    "KayKit_Forest_Nature_Pack_1.0_FREE": {
+      "zip": "KayKit_Forest_Nature_Pack_1.0_FREE.zip",
+      "validAssets": 427,
+      "license": "CC0 / Free for Commercial Use (Kay Lousberg)"
+    },
+    "KayKit_HalloweenBits_1.0_FREE (1)": {
+      "zip": "KayKit_HalloweenBits_1.0_FREE (1).zip",
+      "validAssets": 266,
+      "license": "CC0 / Free for Commercial Use (Kay Lousberg)"
+    },
+    "KayKit_HalloweenBits_1.0_FREE": {
+      "zip": "KayKit_HalloweenBits_1.0_FREE.zip",
+      "validAssets": 266,
+      "license": "CC0 / Free for Commercial Use (Kay Lousberg)"
+    },
+    "KayKit_Medieval_Hexagon_Pack_1.0_FREE": {
+      "zip": "KayKit_Medieval_Hexagon_Pack_1.0_FREE.zip",
+      "validAssets": 984,
+      "license": "CC0 / Free for Commercial Use (Kay Lousberg)"
+    },
+    "KayKit_Platformer_Pack_1.0_FREE": {
+      "zip": "KayKit_Platformer_Pack_1.0_FREE.zip",
+      "validAssets": 1524,
+      "license": "CC0 / Free for Commercial Use (Kay Lousberg)"
+    },
+    "KayKit_Space_Base_Bits_1.0_FREE": {
+      "zip": "KayKit_Space_Base_Bits_1.0_FREE.zip",
+      "validAssets": 251,
+      "license": "CC0 / Free for Commercial Use (Kay Lousberg)"
+    },
+    "Large Building 01 (1)": {
+      "zip": "Large Building 01 (1).zip",
+      "validAssets": 2,
+      "license": "Free Game Asset / License on Pack"
+    },
+    "Large Building 01": {
+      "zip": "Large Building 01.zip",
+      "validAssets": 2,
+      "license": "Free Game Asset / License on Pack"
+    },
+    "Medieval Village MegaKit[Standard] (1)": {
+      "zip": "Medieval Village MegaKit[Standard] (1).zip",
+      "validAssets": 583,
+      "license": "Included in Pack (See License File)"
+    },
+    "Medieval Village MegaKit[Standard]": {
+      "zip": "Medieval Village MegaKit[Standard].zip",
+      "validAssets": 583,
+      "license": "Included in Pack (See License File)"
+    },
+    "MedievalHousesFree": {
+      "zip": "MedievalHousesFree.zip",
+      "validAssets": 2,
+      "license": "Free Game Asset / License on Pack"
+    },
+    "Mini Pixel Pack 1": {
+      "zip": "Mini Pixel Pack 1.zip",
+      "validAssets": 39,
+      "license": "Included in Pack (See License File)"
+    },
+    "PORCO": {
+      "zip": "PORCO.zip",
+      "validAssets": 3,
+      "license": "Included in Pack (See License File)"
+    },
+    "Pixel Adventure 1 (1)": {
+      "zip": "Pixel Adventure 1 (1).zip",
+      "validAssets": 175,
+      "license": "Free / Itch.io Game Asset License (Free for Commercial and Non-Commercial)"
+    },
+    "Pixel Adventure 1": {
+      "zip": "Pixel Adventure 1.zip",
+      "validAssets": 175,
+      "license": "Free / Itch.io Game Asset License (Free for Commercial and Non-Commercial)"
+    },
+    "Pixel Adventure Platformer": {
+      "zip": "Pixel Adventure Platformer.zip",
+      "validAssets": 3,
+      "license": "Free / Itch.io Game Asset License (Free for Commercial and Non-Commercial)"
+    },
+    "Pixelole's overword Tileset1.0 free": {
+      "zip": "Pixelole's overword Tileset1.0 free.zip",
+      "validAssets": 1,
+      "license": "Free Game Asset / License on Pack"
+    },
+    "Small Building 01": {
+      "zip": "Small Building 01.zip",
+      "validAssets": 2,
+      "license": "Free Game Asset / License on Pack"
+    },
+    "Small Building 02": {
+      "zip": "Small Building 02.zip",
+      "validAssets": 2,
+      "license": "Free Game Asset / License on Pack"
+    },
+    "Small Building 03": {
+      "zip": "Small Building 03.zip",
+      "validAssets": 2,
+      "license": "Free Game Asset / License on Pack"
+    },
+    "Small Building 04": {
+      "zip": "Small Building 04.zip",
+      "validAssets": 2,
+      "license": "Free Game Asset / License on Pack"
+    },
+    "Sprite Pack 4": {
+      "zip": "Sprite Pack 4.zip",
+      "validAssets": 29,
+      "license": "Included in Pack (See License File)"
+    },
+    "Stylized Nature MegaKit[Standard]": {
+      "zip": "Stylized Nature MegaKit[Standard].zip",
+      "validAssets": 316,
+      "license": "Included in Pack (See License File)"
+    },
+    "TUBARAO": {
+      "zip": "TUBARAO.zip",
+      "validAssets": 10,
+      "license": "Included in Pack (See License File)"
+    },
+    "Tall Building 01": {
+      "zip": "Tall Building 01.zip",
+      "validAssets": 2,
+      "license": "Free Game Asset / License on Pack"
+    },
+    "Tall Building 02 (1)": {
+      "zip": "Tall Building 02 (1).zip",
+      "validAssets": 2,
+      "license": "Free Game Asset / License on Pack"
+    },
+    "Tall Building 02": {
+      "zip": "Tall Building 02.zip",
+      "validAssets": 2,
+      "license": "Free Game Asset / License on Pack"
+    },
+    "Tall Building 03": {
+      "zip": "Tall Building 03.zip",
+      "validAssets": 2,
+      "license": "Free Game Asset / License on Pack"
+    },
+    "Tiny Building": {
+      "zip": "Tiny Building.zip",
+      "validAssets": 2,
+      "license": "Free Game Asset / License on Pack"
+    },
+    "Tiny Swords (1)": {
+      "zip": "Tiny Swords (1).zip",
+      "validAssets": 197,
+      "license": "Free / Itch.io Game Asset License (Free for Commercial and Non-Commercial)"
+    },
+    "Tiny Swords (Free Pack) (1)": {
+      "zip": "Tiny Swords (Free Pack) (1).zip",
+      "validAssets": 410,
+      "license": "Free / Itch.io Game Asset License (Free for Commercial and Non-Commercial)"
+    },
+    "Tiny Swords (Free Pack)": {
+      "zip": "Tiny Swords (Free Pack).zip",
+      "validAssets": 410,
+      "license": "Free / Itch.io Game Asset License (Free for Commercial and Non-Commercial)"
+    },
+    "Tiny Swords": {
+      "zip": "Tiny Swords.zip",
+      "validAssets": 197,
+      "license": "Free / Itch.io Game Asset License (Free for Commercial and Non-Commercial)"
+    },
+    "Treasure Hunters": {
+      "zip": "Treasure Hunters.zip",
+      "validAssets": 1204,
+      "license": "Free Game Asset / License on Pack"
+    },
+    "cachorro-1": {
+      "zip": "cachorro-1.zip",
+      "validAssets": 2,
+      "license": "Included in Pack (See License File)"
+    },
+    "kenney_1-bit-platformer-pack": {
+      "zip": "kenney_1-bit-platformer-pack.zip",
+      "validAssets": 806,
+      "license": "CC0 1.0 Universal (Public Domain - Free for Commercial Use)"
+    },
+    "kenney_abstract-platformer": {
+      "zip": "kenney_abstract-platformer.zip",
+      "validAssets": 384,
+      "license": "CC0 1.0 Universal (Public Domain - Free for Commercial Use)"
+    },
+    "kenney_animal-pack": {
+      "zip": "kenney_animal-pack.zip",
+      "validAssets": 97,
+      "license": "CC0 1.0 Universal (Public Domain - Free for Commercial Use)"
+    },
+    "kenney_construct-game-sources": {
+      "zip": "kenney_construct-game-sources.zip",
+      "validAssets": 1,
+      "license": "CC0 1.0 Universal (Public Domain - Free for Commercial Use)"
+    },
+    "kenney_jumper-pack": {
+      "zip": "kenney_jumper-pack.zip",
+      "validAssets": 125,
+      "license": "CC0 1.0 Universal (Public Domain - Free for Commercial Use)"
+    },
+    "kenney_new-platformer-pack-1.1 (1)": {
+      "zip": "kenney_new-platformer-pack-1.1 (1).zip",
+      "validAssets": 1322,
+      "license": "CC0 1.0 Universal (Public Domain - Free for Commercial Use)"
+    },
+    "kenney_new-platformer-pack-1.1": {
+      "zip": "kenney_new-platformer-pack-1.1.zip",
+      "validAssets": 1322,
+      "license": "CC0 1.0 Universal (Public Domain - Free for Commercial Use)"
+    },
+    "kenney_pixel-platformer-blocks": {
+      "zip": "kenney_pixel-platformer-blocks.zip",
+      "validAssets": 334,
+      "license": "CC0 1.0 Universal (Public Domain - Free for Commercial Use)"
+    },
+    "kenney_pixel-platformer-farm-expansion": {
+      "zip": "kenney_pixel-platformer-farm-expansion.zip",
+      "validAssets": 116,
+      "license": "CC0 1.0 Universal (Public Domain - Free for Commercial Use)"
+    },
+    "kenney_pixel-platformer-food-expansion": {
+      "zip": "kenney_pixel-platformer-food-expansion.zip",
+      "validAssets": 116,
+      "license": "CC0 1.0 Universal (Public Domain - Free for Commercial Use)"
+    },
+    "kenney_pixel-platformer": {
+      "zip": "kenney_pixel-platformer.zip",
+      "validAssets": 240,
+      "license": "CC0 1.0 Universal (Public Domain - Free for Commercial Use)"
+    },
+    "kenney_platformer-art-buildings": {
+      "zip": "kenney_platformer-art-buildings.zip",
+      "validAssets": 102,
+      "license": "CC0 1.0 Universal (Public Domain - Free for Commercial Use)"
+    },
+    "kenney_platformer-art-candy": {
+      "zip": "kenney_platformer-art-candy.zip",
+      "validAssets": 99,
+      "license": "CC0 1.0 Universal (Public Domain - Free for Commercial Use)"
+    },
+    "kenney_platformer-art-deluxe": {
+      "zip": "kenney_platformer-art-deluxe.zip",
+      "validAssets": 983,
+      "license": "CC0 1.0 Universal (Public Domain - Free for Commercial Use)"
+    },
+    "kenney_platformer-art-extended-enemies": {
+      "zip": "kenney_platformer-art-extended-enemies.zip",
+      "validAssets": 176,
+      "license": "CC0 1.0 Universal (Public Domain - Free for Commercial Use)"
+    },
+    "kenney_platformer-art-extended-tileset": {
+      "zip": "kenney_platformer-art-extended-tileset.zip",
+      "validAssets": 377,
+      "license": "CC0 1.0 Universal (Public Domain - Free for Commercial Use)"
+    },
+    "kenney_platformer-art-mushrooms": {
+      "zip": "kenney_platformer-art-mushrooms.zip",
+      "validAssets": 55,
+      "license": "CC0 1.0 Universal (Public Domain - Free for Commercial Use)"
+    },
+    "kenney_platformer-art-pixel": {
+      "zip": "kenney_platformer-art-pixel.zip",
+      "validAssets": 904,
+      "license": "CC0 1.0 Universal (Public Domain - Free for Commercial Use)"
+    },
+    "kenney_platformer-art-requests": {
+      "zip": "kenney_platformer-art-requests.zip",
+      "validAssets": 102,
+      "license": "CC0 1.0 Universal (Public Domain - Free for Commercial Use)"
+    },
+    "kenney_platformer-bricks": {
+      "zip": "kenney_platformer-bricks.zip",
+      "validAssets": 156,
+      "license": "CC0 1.0 Universal (Public Domain - Free for Commercial Use)"
+    },
+    "kenney_platformer-characters": {
+      "zip": "kenney_platformer-characters.zip",
+      "validAssets": 177,
+      "license": "CC0 1.0 Universal (Public Domain - Free for Commercial Use)"
+    },
+    "kenney_platformer-kit": {
+      "zip": "kenney_platformer-kit.zip",
+      "validAssets": 619,
+      "license": "CC0 1.0 Universal (Public Domain - Free for Commercial Use)"
+    },
+    "kenney_scribble-platformer-expansion_1.0": {
+      "zip": "kenney_scribble-platformer-expansion_1.0.zip",
+      "validAssets": 208,
+      "license": "CC0 1.0 Universal (Public Domain - Free for Commercial Use)"
+    },
+    "kenney_simplified-platformer-pack": {
+      "zip": "kenney_simplified-platformer-pack.zip",
+      "validAssets": 98,
+      "license": "CC0 1.0 Universal (Public Domain - Free for Commercial Use)"
+    },
+    "kenney_toy-brick-pack": {
+      "zip": "kenney_toy-brick-pack.zip",
+      "validAssets": 551,
+      "license": "CC0 1.0 Universal (Public Domain - Free for Commercial Use)"
+    },
+    "leao": {
+      "zip": "leao.zip",
+      "validAssets": 8,
+      "license": "Included in Pack (See License File)"
+    },
+    "principe - puma": {
+      "zip": "principe - puma.zip",
+      "validAssets": 2,
+      "license": "Included in Pack (See License File)"
+    },
+    "rato": {
+      "zip": "rato.zip",
+      "validAssets": 2,
+      "license": "Included in Pack (See License File)"
+    },
+    "tigre": {
+      "zip": "tigre.zip",
+      "validAssets": 2,
+      "license": "Included in Pack (See License File)"
+    }
+  }
+}
